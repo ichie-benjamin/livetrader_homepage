@@ -7,14 +7,8 @@ import Google from "/public/icons/asset-google.svg";
 import Donald from "/public/icons/asset-mcdonalds.svg";
 import Tesla from "/public/icons/asset-tesla.svg";
 import Hero from "/public/images/ebu_bg.png";
-import { FaLongArrowAltRight } from "react-icons/fa";
 import { Wrapper } from "./components";
-import { ArrowRight } from "lucide-react";
 import { TabsDemo } from "./components/ui/tabDemo";
-import CardOne from "/public/assets/product-cdfsforex.webp";
-import CardTwo from "/public/assets/product-buycrypto.webp";
-import CardThree from "/public/assets/product-cryptofutures.webp";
-import CardFour from "/public/assets/product-copytrading.webp";
 import { cn } from "./lib/utils";
 import { 
   // reviews,

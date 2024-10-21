@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {MiniChart, SingleTicker} from "react-ts-tradingview-widgets";
+// import {MiniChart, SingleTicker} from "react-ts-tradingview-widgets";
 
 const AssetRow = ({ asset } : any) => (
     <div className="group relative hover:-mx-8 hover:px-8 transition-all duration-300">
