@@ -5,9 +5,9 @@ export const config = {
     site_description: "Live trading is a reliable and secure platform for trading financial instruments. Join us to experience a seamless and efficient trading environment.",
     logo : "/images/logo.png",
     site_slogan: 'Trading with ease',
-    login_url: '/',
+    login_url: '#',
     email: 'support@livetrader.com',
-    signup_url: '/',
+    signup_url: '#',
 }
 
 export const MISSION_VISION_VALUES = {
