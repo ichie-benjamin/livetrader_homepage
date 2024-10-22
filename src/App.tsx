@@ -297,7 +297,7 @@ function App() {
                     <div className="max-w-40 pt-2 md:pt-8">
                       <img
                         className=" bottom-0 right-0 object-cover h-24 w-24 sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-44  group-hover:h-[1] group-hover:sm:h-[131px] group-hover:lg:w-[147px] transition-all duration-300 ease-in-out"
-                        src='/public/assets/product-cdfsforex.webp'
+                        src='/assets/product-cdfsforex.webp'
                         alt="imgimg"
                         height={200}
                         width={200}
@@ -320,7 +320,7 @@ function App() {
                     <div className="max-w-40 pt-2 md:pt-8">
                       <img
                         className=" bottom-0 right-0 object-cover h-24 w-24 sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-44  group-hover:h-[1] group-hover:sm:h-[131px] group-hover:lg:w-[147px] transition-all duration-300 ease-in-out"
-                        src='/public/assets/product-cryptofutures.webp'
+                        src='/assets/product-cryptofutures.webp'
                         alt="imgimg"
                         height={200}
                         width={200}
@@ -343,7 +343,7 @@ function App() {
                     <div className="max-w-40  pt-2 md:pt-8">
                       <img
                         className=" bottom-0 right-0 object-cover h-24 w-24 sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-44  group-hover:h-[1] group-hover:sm:h-[131px] group-hover:lg:w-[147px] transition-all duration-300 ease-in-out"
-                        src='/public/assets/product-cryptofutures.webp'
+                        src='/assets/product-cryptofutures.webp'
                         alt="imgimg"
                         height={200}
                         width={200}
@@ -366,7 +366,7 @@ function App() {
                     <div className="max-w-40  pt-2 md:pt-8">
                       <img
                         className=" bottom-0 right-0 object-cover h-24 w-24 sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-44  group-hover:h-[1] group-hover:sm:h-[131px] group-hover:lg:w-[147px] transition-all duration-300 ease-in-out"
-                        src='/public/assets/product-copytrading.webp'
+                        src='/assets/product-copytrading.webp'
                         alt="imgimg"
                         height={200}
                         width={200}
