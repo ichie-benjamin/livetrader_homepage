@@ -1,6 +1,6 @@
 "use client";
 import { Tabs } from "../sourceFiles/tabs";
-import Linear from "@/public/assets/dashboard.svg";
+// import Linear from "@/public/assets/dashboard.svg";
 import AssetTable from "../home/AssetTable";
 export function TabsDemo() {
   const tabs = [

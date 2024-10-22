@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 // import {MiniChart, SingleTicker} from "react-ts-tradingview-widgets";
 
 const AssetRow = ({ asset } : any) => (

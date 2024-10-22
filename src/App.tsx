@@ -26,7 +26,7 @@ import { GiCheckMark } from "react-icons/gi";
 // import { GiCheckMark } from "react-icons/gi";
 import Marquee from "./components/ui/marquee";
 import { UserIcon } from "lucide-react";
-import { Button } from "./components/ui/button";
+// import { Button } from "./components/ui/button";
 function App() {
   const firstTestimonial = TESTIMONIALS.slice(0, TESTIMONIALS.length / 2);
   const secondTestimonial = TESTIMONIALS.slice(TESTIMONIALS.length / 2);
