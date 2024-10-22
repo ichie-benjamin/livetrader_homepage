@@ -10,13 +10,14 @@ import Hero from "/public/images/ebu_bg.png";
 import { Wrapper } from "./components";
 import { TabsDemo } from "./components/ui/tabDemo";
 import { cn } from "./lib/utils";
-import { 
+import {
   // reviews,
   config,
   WHY_CHOOSE_LIVETRADING,
   HOW_TO_GET_STARTED,
   TESTIMONIALS,
-  MISSION_VISION_VALUES, } from "./constants";
+  MISSION_VISION_VALUES,
+} from "./constants";
 import SectionBadge from "./components/ui/section-badge";
 import { GiCheckMark } from "react-icons/gi";
 // import { EconomicCalendar, MarketOverview } from "react-ts-tradingview-widgets";
@@ -76,8 +77,6 @@ function App() {
                     >
                       Open account
                     </a>
-
-                 
                   </div>
                 </div>
 
@@ -197,45 +196,42 @@ function App() {
           </section>
         </Container>
       </Wrapper>
-      
+
       <div className="my-5 sm:my-10 md:my-16 lg:my-28 flex flex-col md:flex-row gap-4 lg:justify-between justify-center lg:gap-8 text-white md:divide-y-0  divide-y md:divide-x divide-[#2e2d2d] w-full">
-          <div className="mx-auto w-full">
-            <h2 className=" text-3xl text-white text-center lg:text-6xl ">
-              {" "}
-              24/7
-            </h2>
-            <p className="max-w-3xl text-base text-center md:text-lg text-foreground/80 sm:mt-6 sm:text-center">
-              Human support
-            </p>
-          </div>
-          <div className="mx-auto w-full">
-            <h2 className=" text-3xl text-white text-center lg:text-6xl ">
-              {" "}
-              0%
-            </h2>
-            <p className="max-w-3xl text-base text-center md:text-lg text-foreground/80 sm:mt-6 sm:text-center">
-              Fees from{" "}
-            </p>
-          </div>
-          <div className="mx-auto w-full">
-            <h2 className=" text-3xl text-white text-center lg:text-6xl ">
-              {" "}
-              $20,000
-            </h2>
-            <p className="max-w-3xl text-base text-center md:text-lg text-foreground/80 sm:mt-6 sm:text-center">
-              Compensation Fund per user
-            </p>
-          </div>
-          <div className="mx-auto w-full">
-            <h2 className=" text-3xl text-white text-center lg:text-6xl ">
-              {" "}
-              100%
-            </h2>
-            <p className="max-w-3xl text-base text-center md:text-lg text-foreground/80 sm:mt-6 sm:text-center">
-              Human support
-            </p>
-          </div>
+        <div className="mx-auto w-full">
+          <h2 className=" text-3xl text-white text-center lg:text-6xl ">
+            {" "}
+            24/7
+          </h2>
+          <p className="max-w-3xl text-base text-center md:text-lg text-foreground/80 sm:mt-6 sm:text-center">
+            Human support
+          </p>
         </div>
+        <div className="mx-auto w-full">
+          <h2 className=" text-3xl text-white text-center lg:text-6xl "> 0%</h2>
+          <p className="max-w-3xl text-base text-center md:text-lg text-foreground/80 sm:mt-6 sm:text-center">
+            Fees from{" "}
+          </p>
+        </div>
+        <div className="mx-auto w-full">
+          <h2 className=" text-3xl text-white text-center lg:text-6xl ">
+            {" "}
+            $20,000
+          </h2>
+          <p className="max-w-3xl text-base text-center md:text-lg text-foreground/80 sm:mt-6 sm:text-center">
+            Compensation Fund per user
+          </p>
+        </div>
+        <div className="mx-auto w-full">
+          <h2 className=" text-3xl text-white text-center lg:text-6xl ">
+            {" "}
+            100%
+          </h2>
+          <p className="max-w-3xl text-base text-center md:text-lg text-foreground/80 sm:mt-6 sm:text-center">
+            Human support
+          </p>
+        </div>
+      </div>
 
       {/*  */}
       <Wrapper>
@@ -269,9 +265,8 @@ function App() {
         </Container>
       </Wrapper>
 
-        {/* section 2 */}
-        <Wrapper>
-      
+      {/* section 2 */}
+      <Wrapper>
         <section className="w-full">
           <div className="flex flex-col text-[20px] sm:text-xl lg:text-2xl items-center mt-12 max-w-7xl- md:w-full ">
             <h1 className="text-[#fff] my-1 font-bold">Select your product</h1>
@@ -297,8 +292,8 @@ function App() {
                     <div className="max-w-40 pt-2 md:pt-8">
                       <img
                         className=" bottom-0 right-0 object-cover h-24 w-24 sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-44  group-hover:h-[1] group-hover:sm:h-[131px] group-hover:lg:w-[147px] transition-all duration-300 ease-in-out"
-                        src='/assets/product-cdfsforex.webp'
-                        alt="imgimg"
+                        src="/assets/product-cdfsforex.webp"
+                        alt="image"
                         height={200}
                         width={200}
                       />
@@ -320,8 +315,8 @@ function App() {
                     <div className="max-w-40 pt-2 md:pt-8">
                       <img
                         className=" bottom-0 right-0 object-cover h-24 w-24 sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-44  group-hover:h-[1] group-hover:sm:h-[131px] group-hover:lg:w-[147px] transition-all duration-300 ease-in-out"
-                        src='/assets/product-cryptofutures.webp'
-                        alt="imgimg"
+                        src="/assets/product-cryptofutures.webp"
+                        alt="image"
                         height={200}
                         width={200}
                       />
@@ -343,8 +338,8 @@ function App() {
                     <div className="max-w-40  pt-2 md:pt-8">
                       <img
                         className=" bottom-0 right-0 object-cover h-24 w-24 sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-44  group-hover:h-[1] group-hover:sm:h-[131px] group-hover:lg:w-[147px] transition-all duration-300 ease-in-out"
-                        src='/assets/product-cryptofutures.webp'
-                        alt="imgimg"
+                        src="/assets/product-cryptofutures.webp"
+                        alt="image"
                         height={200}
                         width={200}
                       />
@@ -366,8 +361,8 @@ function App() {
                     <div className="max-w-40  pt-2 md:pt-8">
                       <img
                         className=" bottom-0 right-0 object-cover h-24 w-24 sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-44  group-hover:h-[1] group-hover:sm:h-[131px] group-hover:lg:w-[147px] transition-all duration-300 ease-in-out"
-                        src='/assets/product-copytrading.webp'
-                        alt="imgimg"
+                        src="/assets/product-copytrading.webp"
+                        alt="image"
                         height={200}
                         width={200}
                       />
@@ -377,27 +372,21 @@ function App() {
               </div>
             </div>
             <div className="flex justify-center w-full mt-16">
-            <a
-                  href={config.login_url}
-                  target="_blank"
-                  className="hover:bg-[#2955FF] w-full shadow-[#191d2e] shadow-xl relative border-[#2955FF]  bg-[#0070f3] font-bold rounded-md text-white transition duration-200 lg:text-xl md:ease-linear md:w-60 text-center align-center py-4 border-radius"
-                >
-                  Get Started
-                </a>
+              <a
+                href={config.login_url}
+                target="_blank"
+                className="hover:bg-[#2955FF] w-full shadow-[#191d2e] shadow-xl relative border-[#2955FF]  bg-[#0070f3] font-bold rounded-md text-white transition duration-200 lg:text-xl md:ease-linear md:w-60 text-center align-center py-4 border-radius"
+              >
+                Get Started
+              </a>
             </div>
           </div>
         </section>
-        
-
-       
       </Wrapper>
 
+      {/* About us */}
 
-      
-
-                    {/* About us */}
-
-                    <Wrapper className="py-12">
+      <Wrapper className="py-12">
         <Container>
           <section className="w-full" id="about">
             <div className="w-full  flex justify-between md:p-8">
@@ -494,8 +483,8 @@ function App() {
         </Container>
       </Wrapper>
 
-        {/* how it works */}
-        <Wrapper className="flex flex-col items-center justify-center py-12 relative">
+      {/* how it works */}
+      <Wrapper className="flex flex-col items-center justify-center py-12 relative">
         <Container>
           <div className="max-w-md mx-auto text-start md:text-center">
             <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
@@ -536,58 +525,80 @@ function App() {
           <section className="w-full" id="about">
             <div className="w-full  flex justify-between md:p-8">
               <div className="w-full px-1 md:p-5 py-10 md:py-32 bg-white rounded-2xl ">
-                
-
                 <div className="grid grid-cols-1 lg:grid-cols-12 ">
                   <div className="lg:col-span-8">
-
                     <div className="">
                       <div className=" bg-[#0063A6] py-2  px-2">
                         <p className="text-sm  text-gray-100 dark:text-gray-300 group-hover:font-semibold lg:text-base text-foreground/80 ">
-                        Financial Services Compensation Scheme (FSCS)                        </p>
+                          Financial Services Compensation Scheme (FSCS){" "}
+                        </p>
                       </div>
                       <div className="flex justify-between items-center border-x py-2  px-2">
                         <p className="text-sm  text-gray-600 dark:text-gray-300 group-hover:font-semibold lg:text-base text-foreground/80 w-5/6">
-                        The Financial Services Compensation Scheme (FSCS) is the UK’s safety net for customers of authorized financial firms. If a company goes out of business or stops trading, the FSCS might compensate its customers. It covers businesses regulated by the Financial Conduct Authority (FCA).
-                        <br />
-                        Clients of E-Bull Trading AI Inc. fall under the ‘investments’ category. If there’s a problem with segregated accounts (accounts where your money is kept separate from the company’s funds), you’ll still be eligible for compensation. If E-Bull Trading AI Inc. went into liquidation, the money in segregated accounts would be returned to clients after the costs of managing the process. If there’s any missing money, you might still be compensated through the FSCS.
+                          The Financial Services Compensation Scheme (FSCS) is
+                          the UK’s safety net for customers of authorized
+                          financial firms. If a company goes out of business or
+                          stops trading, the FSCS might compensate its
+                          customers. It covers businesses regulated by the
+                          Financial Conduct Authority (FCA).
+                          <br />
+                          Clients of E-Bull Trading AI Inc. fall under the
+                          ‘investments’ category. If there’s a problem with
+                          segregated accounts (accounts where your money is kept
+                          separate from the company’s funds), you’ll still be
+                          eligible for compensation. If E-Bull Trading AI Inc.
+                          went into liquidation, the money in segregated
+                          accounts would be returned to clients after the costs
+                          of managing the process. If there’s any missing money,
+                          you might still be compensated through the FSCS.
                         </p>
                         <GiCheckMark className="text-[#66B849] text-xl " />
                       </div>
                       <div className="flex justify-between items-center border-x py-2 bg-[#BBBBBB] px-2">
                         <p className="text-sm  text-gray-600 dark:text-gray-300  lg:text-base text-foreground/80 w-5/6">
-                        {config.site_name} uses its own funds for hedging. It does not use client funds for this purpose	
+                          {config.site_name} uses its own funds for hedging. It
+                          does not use client funds for this purpose
                         </p>
                         <GiCheckMark className="text-[#66B849] text-xl " />
                       </div>
                       <div className="flex justify-between items-center border-x py-2  px-2">
                         <p className="text-sm  text-gray-600 dark:text-gray-300 group-hover:font-semibold lg:text-base text-foreground/80 w-5/6">
-                        {config.site_name}  does not pass client funds through to hedging counter-parties	
+                          {config.site_name} does not pass client funds through
+                          to hedging counter-parties
                         </p>
                         <GiCheckMark className="text-[#66B849] text-xl " />
                       </div>
                       <div className="flex justify-between items-center border-x py-2 bg-[#BBBBBB] px-2">
                         <p className="text-sm  text-gray-600 dark:text-gray-300  lg:text-base text-foreground/80 w-5/6">
-                        {config.site_name}  does not initiate speculative positions in the market	
+                          {config.site_name} does not initiate speculative
+                          positions in the market
                         </p>
                         <GiCheckMark className="text-[#66B849] text-xl " />
                       </div>
                       <div className="flex justify-between items-center border-x py-2  px-2">
                         <p className="text-sm  text-gray-600 dark:text-gray-300 group-hover:font-semibold lg:text-base text-foreground/80 w-5/6">
-                        {config.site_name}  has no exposure to corporate or sovereign debt	
+                          {config.site_name} has no exposure to corporate or
+                          sovereign debt
                         </p>
                         <GiCheckMark className="text-[#66B849] text-xl " />
                       </div>
                       <div className="flex justify-between items-center border-x py-2 bg-[#BBBBBB] px-2">
                         <p className="text-sm  text-gray-600 dark:text-gray-300  lg:text-base text-foreground/80 w-5/6">
-                        {config.site_name}  does not invest funds of retail clients	
+                          {config.site_name} does not invest funds of retail
+                          clients
                         </p>
                         <GiCheckMark className="text-[#66B849] text-xl " />
                       </div>
                     </div>
                   </div>
                   <div className="lg:col-span-4">
-                    <div><img src='/public/key.png' alt="An image of a key" className="w-auto h-auto mx-auto my-5"/></div>
+                    <div>
+                      <img
+                        src="/public/key.png"
+                        alt="An image of a key"
+                        className="w-auto h-auto mx-auto my-5"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -595,7 +606,6 @@ function App() {
           </section>
         </Container>
       </Wrapper>
-
 
       <Wrapper className="flex flex-col items-center justify-center py-4 relative">
         <div
@@ -679,9 +689,6 @@ function App() {
           </div>
         </Container>
       </Wrapper>
-
-
-      
     </section>
   );
 }
