@@ -25,8 +25,8 @@ const Navbar = () => {
             <a href="#services" className="hover:text-foreground/80 text-sm">
               Our Services
             </a>
-            <a href="#about" className="hover:text-foreground/80 text-sm">
-              About Us
+            <a href="/LiveTrader" className="hover:text-foreground/80 text-sm">
+            LiveTrader
             </a>
             <a href="#market" className="hover:text-foreground/80 text-sm">
               Market
