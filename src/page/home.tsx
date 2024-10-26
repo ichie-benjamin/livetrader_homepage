@@ -23,6 +23,8 @@ import {
 import SectionBadge from "../components/ui/section-badge";
 import { GiCheckMark } from "react-icons/gi";
 import { UserIcon } from "lucide-react";
+import { buttonVariants } from "../components/ui/button";
+
 function App() {
   const firstTestimonial = TESTIMONIALS.slice(0, TESTIMONIALS.length / 2);
   const secondTestimonial = TESTIMONIALS.slice(TESTIMONIALS.length / 2);
@@ -30,6 +32,58 @@ function App() {
 
   return (
     <section className="w-full relative flex items-center justify-center flex-col px-2 md:px-0 py-8 text-[#A8A8A8]">
+  <header className="px-4 h-14 sticky top-0 inset-x-0 w-full bg-background/40 backdrop-blur-lg border-b border-gray-800 z-50">
+      <Container reverse>
+        <div className="flex items-center justify-between h-full mx-auto md:max-w-screen-xl">
+          {/* Logo Section */}
+          <div className="flex items-center">
+            <a href="/" className="flex items-center gap-2">
+              <img
+                src={config.logo}
+                alt="✨"
+                width={124}
+                height={24}
+                className="object-contain"
+              />
+            </a>
+          </div>
+
+          {/* Navigation Links */}
+          <nav className="hidden md:flex space-x-8">
+            <a href="#services" className="hover:text-foreground/80 text-sm">
+              Our Services
+            </a>
+            <a href="/LiveTrader" className="hover:text-foreground/80 text-sm">
+            LiveTrader
+            </a>
+            <a href="#market" className="hover:text-foreground/80 text-sm">
+              Market
+            </a>
+            <a href="#testimonials" className="hover:text-foreground/80 text-sm">
+              Testimonials
+            </a>
+          </nav>
+
+          {/* Buttons Section */}
+          <div className="flex items-center gap-4">
+            <a
+              href={config.login_url}
+              className={buttonVariants({ size: "sm", variant: "ghost" })}
+            >
+              Login
+            </a>
+            <a
+              href={config.signup_url}
+              className={buttonVariants({ size: "sm", className: "hidden md:flex" })}
+            >
+              Start free trial
+            </a>
+          </div>
+        </div>
+      </Container>
+    </header>
+
+
       {/* hero */}
 
       <div className="lg:ps-20">
