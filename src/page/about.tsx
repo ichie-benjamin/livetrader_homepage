@@ -1157,23 +1157,6 @@ const about = () => {
         </div>
       </section>
 
-      <section>
-        <div className="flex min-h-screen items-center justify-center bg-slate-100">
-          <div className="group h-96 w-80 [perspective:1500px]">
-            <div className="relative h-full w-full rounded-xl shadow-lg transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-              {/* Front side of the card  */}
-              <div className="absolute inset-0 h-full w-full rounded-xl bg-orange-800 shadow-lg flex items-center justify-center [backface-visibility:hidden]">
-                <p className="text-white font-bold text-xl">Front Side</p>
-              </div>
-
-              {/* Back side of the card */}
-              <div className="absolute inset-0 h-full w-full rounded-xl bg-green-800 shadow-lg flex items-center justify-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                <p className="text-white font-bold text-xl">Back Side</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
