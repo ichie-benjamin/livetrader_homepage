@@ -10,19 +10,19 @@ import { buttonVariants } from "../components/ui/button";
 const LiveTrader = () => {
   return (
     <>
-    <div className="w-full flex items-center bg-[#F3F7F9] text-black justify-end">
+    <div className="w-full hidden sm:flex items-center bg-[#F3F7F9] text-black justify-end">
 <ul className="flex items-center justify-center divide-x-2 text-sm py-2">
-  <li className="text-center pe-4">
+  <li className="text-center pe-4 hover:text-black text-gray-700 text-semibold">
     <a href="#">
     Offers
     </a>
   </li>
-  <li className="text-center px-4">
+  <li className="text-center px-4 hover:text-black text-gray-700 text-semibold">
     <a href="#">
     New York Red Bull
     </a>
   </li>
-  <li className="text-center px-4">
+  <li className="text-center px-4 hover:text-black text-gray-700 text-semibold">
     <a href="#">
 Legal
     </a>
@@ -82,11 +82,12 @@ Legal
                   href={config.signup_url}
                   className={buttonVariants({
                     size: "sm",
-                    className: "hidden md:flex",
+                    className: "hidden md:flex ",
                   })}
                 >
                   Start free trial
                 </a>
+                
               </div>
             </div>
           </Container>
@@ -511,7 +512,7 @@ Legal
                 </div>
                 <div className="flex items-center py-3">
                   <div className="w-8">
-                    <IoMdCheckmarkCircleOutline className="text-[#0063A6] text-2xl text-left-" />
+                    <IoMdCheckmarkCircleOutline className="text-[#0063A6] text-2xl" />
                   </div>
                   <p className="text-sm  text-gray-700 dark:text-gray-300 group-hover:font-semibold text-foreground/80 px-2">
                     We provide innovative trading education, empowering our
