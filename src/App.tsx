@@ -13,8 +13,8 @@ function App() {
         <Route path="/livetrader" element={<LiveTrader />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
-        <Route path="/" element={<Trading />} />
-        <Route path="/forex" element={<Forex />} />
+        <Route path="/rading" element={<Trading />} />
+        <Route path="/" element={<Forex />} />
       </Routes>
     </Router>
   );
