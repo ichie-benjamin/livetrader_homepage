@@ -5,6 +5,8 @@ import Contact from "./page/contact";
 import About from "./page/about";
 import Trading from "./page/trading";
 import Forex from "./page/forex";
+import Digitalcurrency from "./page/digitalcurrency"
+import Funding from "./page/funding";
 function App() {
   return (
     <Router>
@@ -12,9 +14,13 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/livetrader" element={<LiveTrader />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/" element={<About />} />
+        <Route path="/about" element={<About />} />
         <Route path="/trading" element={<Trading />} />
         <Route path="/forex" element={<Forex />} />
+        <Route path="/ref" element={<Digitalcurrency />} />
+        <Route path="/" element={<Funding />} />
+        
+
       </Routes>
     </Router>
   );

@@ -6,6 +6,7 @@ import { FaRobot } from "react-icons/fa6";
 import { FaUserAstronaut } from "react-icons/fa6";
 
 import Icons from "../components/global/icons";
+import { Currency } from "lucide-react";
 export const config = {
   site_name: "Live Trading",
   site_title: "Live trading - Your Trusted Trading Platform",
@@ -20,52 +21,474 @@ export const config = {
 
 export const Major = [
   {
-    SYMBOL:"AUDUSD",
-    DESCRIPTION:"Australian Dollar vs United States Dollar",
+    SYMBOL: "AUDUSD",
+    DESCRIPTION: "Australian Dollar vs United States Dollar",
     MIN: "0",
     AVG: "0.03",
     MIN2: "0.8",
     AVG2: "0.83",
   },
   {
-    SYMBOL:"EURUSD",
-    DESCRIPTION:"Euro vs United States Dollar",
-    MIN:"0",
-    AVG:"0.02",
-    MIN2:"o.8",
-    AVG2:"0.82",
+    SYMBOL: "EURUSD",
+    DESCRIPTION: "Euro vs United States Dollar",
+    MIN: "0",
+    AVG: "0.02",
+    MIN2: "o.8",
+    AVG2: "0.82",
   },
   {
-    SYMBOL:"GBPUSD",
-    DESCRIPTION:"British Pound vs United States Dollar",
-    MIN:"0",
-    AVG:"0.23",
-    MIN2:"0.8",
-    AVG2:"1.03",
+    SYMBOL: "GBPUSD",
+    DESCRIPTION: "British Pound vs United States Dollar",
+    MIN: "0",
+    AVG: "0.23",
+    MIN2: "0.8",
+    AVG2: "1.03",
   },
   {
-    SYMBOL:"USDCAD",
-    DESCRIPTION:"United States Dollar vs Canadian Dollar",
-    MIN:"0",
-    AVG:"0.25",
-    MIN2:"0.8",
-    AVG2:"1.05",
+    SYMBOL: "USDCAD",
+    DESCRIPTION: "United States Dollar vs Canadian Dollar",
+    MIN: "0",
+    AVG: "0.25",
+    MIN2: "0.8",
+    AVG2: "1.05",
   },
   {
-    SYMBOL:"USDCHF",
-    DESCRIPTION:"United States Dollar vs Swiss Franc",
-    MIN:"0",
-    AVG:"0.19",
-    MIN2:"0.8",
-    AVG2:"0.99",
+    SYMBOL: "USDCHF",
+    DESCRIPTION: "United States Dollar vs Swiss Franc",
+    MIN: "0",
+    AVG: "0.19",
+    MIN2: "0.8",
+    AVG2: "0.99",
   },
   {
-    SYMBOL:"USDJPY",
-    DESCRIPTION:"United States Dollar vs Japanese Yen",
-    MIN:"0",
-    AVG:"0.14",
-    MIN2:"0.8",
-    AVG2:"0.94",
+    SYMBOL: "USDJPY",
+    DESCRIPTION: "United States Dollar vs Japanese Yen",
+    MIN: "0",
+    AVG: "0.14",
+    MIN2: "0.8",
+    AVG2: "0.94",
+  },
+];
+
+export const AUD = [
+  {
+    title: "Credit and Debit Cards",
+    img: "/funding/mastercar.webp",
+    img2: "/funding/visa.webp",
+    Currencies: {
+      currency: [
+        { Currency: "AUD" },
+        { Currency: "USD" },
+        { Currency: "JPY" },
+        { Currency: "EUR" },
+        { Currency: "NZD" },
+        { Currency: "SGD" },
+        { Currency: "GPB" },
+        { Currency: "CAD" },
+      ],
+    },
+    time: "INSTANT",
+  },
+  {
+    title: "PayPal",
+    img: "/funding/paypal.webp",
+    Currencies: {
+      currency: [
+        { Currency: "AUD" },
+        { Currency: "USD" },
+        { Currency: "JPY" },
+        { Currency: "EUR" },
+        { Currency: "NZD" },
+        { Currency: "SGD" },
+        { Currency: "GPB" },
+        { Currency: "CAD" },
+        { Currency: "HKD" },
+        { Currency: "CHF" },
+      ],
+    },
+    time: "INSTANT",
+  },
+  {
+    title: "Neteller",
+    img: "/funding/neteller.webp",
+    Currencies: {
+      currency: [
+        { Currency: "AUD" },
+        { Currency: "USD" },
+        { Currency: "JPY" },
+        { Currency: "EUR" },
+        { Currency: "SGD" },
+        { Currency: "GPB" },
+        { Currency: "CAD" },
+      ],
+    },
+    time: "INSTANT",
+  },
+  {
+    title: "Neteller VIP",
+    img: "/funding/neteller.webp",
+    Currencies: {
+      currency: [
+        { Currency: "AUD" },
+        { Currency: "JPY" },
+        { Currency: "EUR" },
+        { Currency: "SGD" },
+        { Currency: "GPB" },
+        { Currency: "CAD" },
+      ],
+    },
+    time: "INSTANT",
+  },
+  {
+    title: "Wire Transfer",
+    img: "/funding/paypal.webp",
+    Currencies: {
+      currency: [
+        { Currency: "AUD" },
+        { Currency: "USD" },
+        { Currency: "JPY" },
+        { Currency: "EUR" },
+        { Currency: "NZD" },
+        { Currency: "SGD" },
+        { Currency: "GPB" },
+        { Currency: "CAD" },
+        { Currency: "CHF" },
+      ],
+    },
+    time: "INSTANT",
+  },
+  {
+    title: "Skrill",
+    img: "/funding/skrill.webp",
+    Currencies: {
+      currency: [
+        { Currency: "AUD" },
+        { Currency: "JPY" },
+        { Currency: "EUR" },
+        { Currency: "SGD" },
+        { Currency: "GBP" },
+      ],
+    },
+    time: "INSTANT",
+  },
+  {
+    title: "Bpay",
+    img: "/funding/bpay.webp",
+    Currencies: {
+      currency: [
+        { Currency: "AUD" },
+      ],
+    },
+    time: "INSTANT",
+  },
+  {
+    title: "Broker to Broker",
+    img: "/funding/broker.webp",
+    Currencies: {
+      currency: [
+        { Currency: "AUD" },
+        { Currency: "JPY" },
+        { Currency: "EUR" },
+        { Currency: "SGD" },
+        { Currency: "GBP" },
+        { Currency: "USD" },
+        { Currency: "NZD" },
+        { Currency: "CAD" },
+        { Currency: "CHF" },
+        { Currency: "HKD" },
+      ],
+    },
+    time: "INSTANT",
+  },
+  {
+    title: "Bpay",
+    img: "/funding/bpay.webp",
+    Currencies: {
+      currency: [
+        { Currency: "AUD" },
+      ],
+    },
+    time: "INSTANT",
+  },
+];
+
+export const CAD = [
+  {
+    title: "Credit and Debit Cards",
+    img: "/funding/mastercar.webp",
+    img2: "/funding/visa.webp",
+    Currencies: {
+      currency: [
+        { Currency: "AUD" },
+        { Currency: "USD" },
+        { Currency: "JPY" },
+        { Currency: "EUR" },
+        { Currency: "NZD" },
+        { Currency: "SGD" },
+        { Currency: "GPB" },
+        { Currency: "CAD" },
+      ],
+    },
+    time: "INSTANT",
+  },
+];
+
+
+export const Digitalcurrency = [
+  {
+    Img: "/digitalcurrency/btc-color.webp",
+    Title: "Bitcoin CFD",
+    Details:
+      "The first and largest cryptocurrency, Bitcoin paved the ways for hundreds of similar currencies and boasts a market cap of over $100 billion.",
+  },
+  {
+    Img: "/digitalcurrency/ethereum-color.webp",
+    Title: "Ethereum CFD",
+    Details:
+      "The world's second-largest cryptocurrency, it is labelled by many as 'the next Bitcoin'. Ethereum has received international recognition and support from giant organisations such as Microsoft, JP Morgan, and Intel",
+  },
+  {
+    Img: "/digitalcurrency/dash-color.webp",
+    Title: "Dash CFD",
+    Details:
+      "Dash's focus is on instant transactions and owner privacy. Dash has an infrastructure that enables much faster transactions than other cryptocurrencies and therefore displays higher liquidity than many of its counterparts.",
+  },
+  {
+    Img: "/digitalcurrency/lite-color.webp",
+    Title: "Litecoin CFD",
+    Details:
+      "Designed by a former Google engineer to improve upon Bitcoin's technology, Litecoin offers quicker processing times and a larger number of tokens. It is also the first cryptocurrency to implement SegWit, a method of speeding up transaction times without compromising the underlying blockchain technology.",
+  },
+  {
+    Img: "/digitalcurrency/btc-cash-color.webp",
+    Title: "Litecoin CFD",
+    Details:
+      "Designed by a former Google engineer to improve upon Bitcoin's technology, Litecoin offers quicker processing times and a larger number of tokens. It is also the first cryptocurrency to implement SegWit, a method of speeding up transaction times without compromising the underlying blockchain technology.",
+  },
+  {
+    Img: "/digitalcurrency/btc-cash-color.webp",
+    Title: "Bitcoin Cash CFD",
+    Details:
+      "Bitcoin Cash resulted from a hard fork of the Bitcoin blockchain. It increased block size from 1 megabyte to 8 megabytes without incorporating SegWit.",
+  },
+  {
+    Img: "/digitalcurrency/rippleIcon.webp",
+    Title: "Ripple CFD",
+    Details:
+      "Ripple is both a transaction network and crypto token which was created in 2012 as the go-to cryptocurrency for banks and global money transfers, and has recently experienced a period of growth.",
+  },
+  {
+    Img: "/digitalcurrency/eos-icon.webp",
+    Title: "EOS CFD",
+    Details:
+      "EOS is a decentralized operating system based on blockchain technology. It is designed to support of decentralized applications on a commercial-scale by giving all the required core functionalities.",
+  },
+  {
+    Img: "/digitalcurrency/emc-icon.webp",
+    Title: "Emercoin CFD",
+    Details:
+      "Emercoin is an open-source cryptocurrency which originated from Bitcoin, Peercoin and Namecoin. Other than being a cryptocurrency, it is also a platform for secure distributed blockchain business services.",
+  },
+  {
+    Img: "/digitalcurrency/nmc-icon.webp",
+    Title: "NameCoin CFD",
+    Details:
+      "Namecoin is a blockchain protocol that serves as a naming system. Since Namecoin is a fork of Bitcoin, it is also a cryptocurrency that can be used for peer-to-peer transactions.",
+  },
+  {
+    Img: "/digitalcurrency/ppc-icon.webp",
+    Title: "PeerCoin CFD",
+    Details:
+      "PeerCoin aims to solve the inefficiency problem of the Proof-of-Work that is used by bitcoin and many other coins using its own Proof-of-Stake system.",
+  },
+  {
+    Img: "/digitalcurrency/dot-icon.webp",
+    Title: "Polkadot CFD",
+    Details:
+      "Polkadot is a platform that allows diverse blockchains to transfer messages, including value, in a trust-free fashion; sharing their unique features while pooling their security. In brief, Polkadot is a scalable, heterogeneous, multi-chain technology.",
+  },
+  {
+    Img: "/digitalcurrency/xlm-icon.webp",
+    Title: "Stellar CFD",
+    Details:
+      "Stellar, or Stellar Lumens, is an open source, decentralized protocol for digital currency to fiat money low-cost transfers which allows cross-border transactions between any pair of currencies.",
+  },
+  {
+    Img: "/digitalcurrency/lnk-icon.webp",
+    Title: "Chainlink CFD",
+    Details:
+      "Chainlink is a decentralized oracle network and cryptocurrency that provides data to blockchains. It is one of the main sources of data used to feed information to applications in decentralized finance.",
+  },
+  {
+    Img: "/digitalcurrency/dgc-icon.webp",
+    Title: "Dogecoin CFD",
+    Details:
+      "Dogecoin was founded by software engineers Billy Markus and Jackson Palmer, as a payment system. This coin began as a 'meme coin' and is now seen as a popular option for traders.",
+  },
+  {
+    Img: "/digitalcurrency/tzs-icon.webp",
+    Title: "Tezos CFD",
+    Details:
+      "Tezos is a decentralized and Proof of Stake blockchain network that can perform peer-to-peer transactions and assists as a platform to arrange smart contracts.",
+  },
+  {
+    Img: "/digitalcurrency/usp-icon.webp",
+    Title: "Uniswap CFD",
+    Details:
+      "Uniswap is used to exchange cryptocurrencies. It enables automated transactions between cryptocurrency tokens on the Ethereum blockchain through smart contracts.",
+  },
+  {
+    Img: "/digitalcurrency/cdo-icon.webp",
+    Title: "Cardano CFD",
+    Details:
+      "Cardano is a public blockchain platform that enables peer-to-peer transactions with its internal cryptocurrency, Ada. It is open-source and decentralized, with consensus achieved using proof of stake.",
+  },
+  {
+    Img: "/digitalcurrency/bnc-icon.webp",
+    Title: "Binance Coin CFD",
+    Details:
+      "Binance Coin was initially formed as a utility token for reduced trading fees, but its uses have extended to payments for transaction fees (on the Binance Chain), travel bookings, entertainment, online services and financial services.",
+  },
+  {
+    Img: "/digitalcurrency/avalanche-icon.webp",
+    Title: "Avalanche CFD",
+    Details:
+      "Avalanche is a decentralized, open-source proof of stake blockchain platform. It uses smart contracts to support various blockchain-based projects with high transaction processing speed.",
+  },
+  {
+    Img: "/digitalcurrency/luna-icon.webp",
+    Title: "Luna CFD",
+    Details:
+      "One of the native tokens of the Terra network, a blockchain-based project in South Korea. Luna can be used to mint a stablecoin TerraUSD (UST) and maintain Terra stablecoins' price.",
+  },
+  {
+    Img: "/digitalcurrency/polygon-matic-icon.webp",
+    Title: "Polygon Matic CFD",
+    Details:
+      "Ethereum blockchain is used in the Polygon platform, which can connect and evolve Ethereum-compatible projects and blockchains. It uses a modified proof-of-stake consensus mechanism.",
+  },
+  {
+    Img: "/digitalcurrency/moonbeam-icon.webp",
+    Title: "Moonbeam CFD",
+    Details:
+      "An Ethereum-compatible smart contract platform on Polkadot founded by Derek Yoo. It can simplify the process of building and/or deploying Solidity projects in a Substrate-based environment.",
+  },
+  {
+    Img: "/digitalcurrency/kusama-icon.webp",
+    Title: "Kusama CFD",
+    Details:
+      "Kusama utilizes two types of blockchains, the relay chain and parachains in the Polkadot ecosystem. It serves like a sandbox that help testing and developing new features in early projects.",
+  },
+];
+
+export const digitalcurrencyTable = [
+  {
+    SYMBOL: "BCHUSD",
+    DESCRIPTION: "Bitcoin Cash vs United States Dollar CFD",
+    MIN: "2.210",
+    AVG: "5.839",
+  },
+  {
+    SYMBOL: "BTCUSD",
+    DESCRIPTION: "Bitcoin vs United States Dollar CFD",
+    MIN: "8.710",
+    AVG: "42.036",
+  },
+  {
+    SYMBOL: "DOTUSD",
+    DESCRIPTION: "Polkadot vs United States Dollar CFD",
+    MIN: "0.011",
+    AVG: "0.013",
+  },
+  {
+    SYMBOL: "DSHUSD",
+    DESCRIPTION: "Dash Coin vs United States Dollar CFD",
+    MIN: "0.000",
+    AVG: "1.241",
+  },
+  {
+    SYMBOL: "EMCUSD",
+    DESCRIPTION: "Emercoin vs United States Dollar CFD",
+    MIN: "0.157",
+    AVG: "0.157",
+  },
+  {
+    SYMBOL: "EOSUSD",
+    DESCRIPTION: "EOS vs United States Dollar CFD",
+    MIN: "0.000",
+    AVG: "0.064",
+  },
+  {
+    SYMBOL: "ETHUSD",
+    DESCRIPTION: "Ethereum vs United States Dollar CFD",
+    MIN: "4.560",
+    AVG: "11.605",
+  },
+  {
+    SYMBOL: "LNKUSD",
+    DESCRIPTION: "Chainlink vs United States Dollar CFD",
+    MIN: "0.012",
+    AVG: "0.020",
+  },
+  {
+    SYMBOL: "LTCUSD",
+    DESCRIPTION: "Lite Coin vs United States Dollar CFD",
+    MIN: "1.050",
+    AVG: "1.597",
+  },
+  {
+    SYMBOL: "NMCUSD",
+    DESCRIPTION: "NameCoin vs United States Dollar CFD",
+    MIN: "7.895",
+    AVG: "7.895",
+  },
+  {
+    SYMBOL: "PPCUSD",
+    DESCRIPTION: "PeerCoin vs United States Dollar CFD",
+    MIN: "0.184",
+    AVG: "0.276",
+  },
+  {
+    SYMBOL: "XLMUSD",
+    DESCRIPTION: "Stellar vs United States Dollar CFD",
+    MIN: "0.000",
+    AVG: "0.000",
+  },
+  {
+    SYMBOL: "XRPUSD",
+    DESCRIPTION: "Ripple vs United States Dollar CFD",
+    MIN: "0.008",
+    AVG: "0.020",
+  },
+  {
+    SYMBOL: "ADAUSD",
+    DESCRIPTION: "Cardano vs United States Dollar CFD",
+    MIN: "0.001",
+    AVG: "0.003",
+  },
+  {
+    SYMBOL: "BNBUSD",
+    DESCRIPTION: "Binance Smartchain vs United States Dollar CFD",
+    MIN: "1.266",
+    AVG: "1.415",
+  },
+  {
+    SYMBOL: "DOGUSD",
+    DESCRIPTION: "Doge vs United States Dollar CFD",
+    MIN: "0.001",
+    AVG: "0.001",
+  },
+  {
+    SYMBOL: "UNIUSD",
+    DESCRIPTION: "Uniswap vs United States Dollar CFD",
+    MIN: "0.061",
+    AVG: "0.064",
+  },
+  {
+    SYMBOL: "XTZUSD",
+    DESCRIPTION: "Tezos vs United States Dollar CFD",
+    MIN: "0.003",
+    AVG: "0.026",
   },
 ];
 
@@ -204,7 +627,7 @@ export const Minor = [
     MIN: "0",
     AVG: "0.82",
     MAX: "1",
-    MAXAVG: "1.82"
+    MAXAVG: "1.82",
   },
   {
     SYMBOL: "GBPNZD",
@@ -237,7 +660,7 @@ export const Minor = [
     AVG: "0.6",
     MAX: "1",
     MAXAVG: "1.6",
-  }
+  },
 ];
 export const Exotic = [
   {
@@ -503,9 +926,8 @@ export const Exotic = [
     AVG: "0.85",
     MAX: "1",
     MAXAVG: "1.85",
-  }
+  },
 ];
-
 
 export const MISSION_VISION_VALUES = {
   mission: {
@@ -995,14 +1417,13 @@ export const mobile_trading = [
   },
 ];
 
- 
 export const offers = [
   {
     title: "Powerful trading tools",
     description:
       "We offer you a range of powerful analysis tools to enhance your trading strategies, including Advanced charts powered by TradingView, Technical Analysis from Autochartist and the Economic overlay.",
     linkTitle: "See our trading tools",
-        img: "/trader/api.webp",
+    img: "/trader/api.webp",
     url: "/#",
   },
   {
@@ -1010,7 +1431,7 @@ export const offers = [
     description:
       "We offer forex online trading with tight spreads on all the major and minor currency pairs, nearly 24 hours a day, five days a week. Trade forex pairs using our powerful OANDA Trade platform, MT4 and TradingView.",
     linkTitle: "See FX pairs",
-        img: "/trader/broker.webp",
+    img: "/trader/broker.webp",
     url: "/#",
   },
   {
@@ -1018,7 +1439,7 @@ export const offers = [
     description:
       "Through our partnership with Paxos, you can trade the big names in crypto like Bitcoin and Ethereum with our user-friendly app. Super low commissions, no wallet needed and no mark-up when you buy or sell crypto.",
     linkTitle: "Explore crypto trading",
-        img: "/trader/meta.webp",
+    img: "/trader/meta.webp",
     url: "/#",
   },
 ];
