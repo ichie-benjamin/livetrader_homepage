@@ -17,8 +17,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/trading" element={<Trading />} />
         <Route path="/forex" element={<Forex />} />
-        <Route path="/ref" element={<Digitalcurrency />} />
-        <Route path="/" element={<Funding />} />
+        <Route path="/" element={<Digitalcurrency />} />
+        <Route path="/funding" element={<Funding />} />
         
 
       </Routes>
