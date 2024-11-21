@@ -10,7 +10,7 @@ import Funding from "./page/funding";
 function App() {
   return (
     <Router>
-      <Routes>
+      <Routes> 
         <Route path="/home" element={<Home />} />
         <Route path="/livetrader" element={<LiveTrader />} />
         <Route path="/contact" element={<Contact />} />

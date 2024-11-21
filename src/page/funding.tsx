@@ -28,7 +28,7 @@ const funding = () => {
                 href="#"
                 className="bg-hBlue text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded transition-transform duration-300 ease-in-out transform hover:scale-105"
               >
-                Fund Your Account{" "}
+                Fund Your Account
               </a>
             </div>
           </div>
@@ -106,7 +106,7 @@ const funding = () => {
           <div>
             <h1 className="text-xl sm:text-2xl font-bold">Bank Fees</h1>
             <p className="text-sm font-semibold mt-2">
-              IC Markets Global does not charge any additional fees for deposits
+              IC Market Global does not charge any additional fees for deposits
               or withdrawals. You should however be aware that you may incur
               fees, such as intermediary fees, on payments to and from some
               international banking institutions. IC Markets Global accepts no

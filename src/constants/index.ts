@@ -6,7 +6,6 @@ import { FaRobot } from "react-icons/fa6";
 import { FaUserAstronaut } from "react-icons/fa6";
 
 import Icons from "../components/global/icons";
-import { Currency } from "lucide-react";
 export const config = {
   site_name: "Live Trading",
   site_title: "Live trading - Your Trusted Trading Platform",
