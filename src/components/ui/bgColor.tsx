@@ -14,8 +14,8 @@ const ColorChangingTextOrBg: React.FC<ColorChangingTextOrBgProps> = ({
   const colors = [
     "green-600",
     "gray-800",
-    "blue-500",
-    "slate-800",
+    "hBlue",
+    "slate-700",
     "purple-500",
   ];
   const [colorIndex, setColorIndex] = useState(0);

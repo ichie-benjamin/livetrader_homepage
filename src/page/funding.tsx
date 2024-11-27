@@ -2,7 +2,8 @@ import { Navbar } from "../components";
 import Tabs from "../components/ui/tabs";
 import Hero from "/funding/account_funding_bg.webp";
 import Strength from "/forex/strength-bg.webp";
-
+import { Link } from "react-router-dom";
+import Dropdown from "../components/ui/drop";
 const funding = () => {
   return (
     <div>
@@ -34,43 +35,47 @@ const funding = () => {
           </div>
         </div>
       </div>
-      <div className="bg-black py-2 hidden md:flex items-center justify-center ">
-        <ul className="hidden lg:flex items-center gap-4  md:gap-8 text-xs font-extrabold text-gray-600 justify-center bg-black ">
+      <div className="bg-black relative py-2 items-center justify-center">
+        <ul className="items-center hidden md:flex gap-4  md:gap-8 text-xs font-extrabold text-gray-600 justify-center bg-black ">
           <li>
-            <a href="#" className="">
-              ACCOUNT OVERVIEW{" "}
-            </a>{" "}
+            <Link to="/forex" className="">
+              FOREX
+            </Link>{" "}
           </li>
           <li>
-            <a href="#">cTRADER RAW SPREAD ACCOUNT</a>{" "}
+            <Link to="/funding" className="text-hBlue">
+              FUNDING
+            </Link>{" "}
           </li>
           <li>
-            <a href="#" className="">
-              STANDARD{" "}
-            </a>{" "}
+            <Link to="/withdrawal" className="">
+              WITHDRAWAL
+            </Link>{" "}
           </li>
           <li>
-            <a href="#" className="">
-              ISLAMIC
-            </a>{" "}
+            <Link to="/trading" className="">
+              TRADING
+            </Link>{" "}
           </li>
           <li>
-            <a href="#" className="text-hBlue">
-              ACCOUNT FUNDING{" "}
-            </a>{" "}
+            <Link to="/digitalcurrency" className="">
+              DIGITAL CURRENCY
+            </Link>{" "}
           </li>
           <li>
-            <a href="#" className="">
-              FUND WITHDRAWAL{" "}
-            </a>{" "}
+            <Link to="/range-of-markets" className="">
+              RANGE OF MARKET
+            </Link>{" "}
           </li>
         </ul>
+
+        <Dropdown />
       </div>
       <div className="max-w-4xl mx-auto mb-20">
         <Tabs />
       </div>
       <section className="bg-slate-900">
-        <div className="max-w-4xl mx-auto text-gray-600 py-5 sm:py-14">
+        <div className="max-w-4xl mx-auto text-gray-600 py-5 sm:py-14 px-3">
           <div>
             <h1 className="text-xl sm:text-2xl font-bold">Payment process</h1>
             <p className="text-sm font-semibold mt-2">

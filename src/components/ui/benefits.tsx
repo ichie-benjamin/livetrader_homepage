@@ -135,7 +135,7 @@ export function TableDemo() {
   return (
     <Table>
       <TableHeader>
-        <TableRow>
+        <TableRow className="border-gray-800 text-gray-500">
           <TableHead></TableHead>
           <TableHead className="text-xl font-bold">Tier 1 (US$)</TableHead>
           <TableHead className="text-xl font-bold">Tier 2 (US$)</TableHead>
@@ -146,7 +146,7 @@ export function TableDemo() {
       </TableHeader>
       <TableBody>
         {tiers.map((tier) => (
-          <TableRow key={tier.tier}>
+          <TableRow key={tier.tier} className="border-gray-800  text-gray-500">
             <TableCell className="font-medium">{tier.tier}</TableCell>
             <TableCell className="font-semibold">{tier.tier1}</TableCell>
             <TableCell>{tier.tier2}</TableCell>

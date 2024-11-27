@@ -15,6 +15,9 @@ import {
 import { Exotic } from "../constants";
 import { Minor } from "../constants";
 import { Major } from "../constants";
+import { Link } from "react-router-dom";
+import Dropdown from "../components/ui/drop";
+
 const forex = () => {
   return (
     <>
@@ -46,49 +49,42 @@ const forex = () => {
           </div>
         </div>
       </div>
-      <div className="bg-black py-2 hidden md:flex items-center justify-center">
-        <ul className="flex items-center gap-4  md:gap-8 text-xs font-extrabold text-gray-600 justify-center bg-black ">
+
+      <div className="bg-black relative py-2 items-center justify-center">
+        <ul className="items-center hidden md:flex gap-4  md:gap-8 text-xs font-extrabold text-gray-600 justify-center bg-black ">
           <li>
-            <a href="#" className="">
-              RANGE OF MARKETS
-            </a>{" "}
-          </li>
-          <li>
-            <a href="#" className="text-hBlue">
+            <Link to="/forex" className="text-hBlue">
               FOREX
-            </a>{" "}
+            </Link>{" "}
           </li>
           <li>
-            <a href="#" className="">
-              Commodities CFDs{" "}
-            </a>{" "}
+            <Link to="/funding" className="">
+              FUNDING
+            </Link>{" "}
           </li>
           <li>
-            <a href="#" className="">
-              INDICES
-            </a>{" "}
+            <Link to="/withdrawal" className="">
+              WITHDRAWAL
+            </Link>{" "}
           </li>
           <li>
-            <a href="#" className="">
-              BONDS{" "}
-            </a>{" "}
+            <Link to="/trading" className="">
+              TRADING
+            </Link>{" "}
           </li>
           <li>
-            <a href="#" className="">
-              DIGITALCURRENCY
-            </a>{" "}
+            <Link to="/digitalcurrency" className="">
+              DIGITAL CURRENCY
+            </Link>{" "}
           </li>
           <li>
-            <a href="#" className="">
-              STOCKS
-            </a>{" "}
-          </li>
-          <li>
-            <a href="#" className="">
-              FUTURES
-            </a>{" "}
+            <Link to="/range-of-markets" className="">
+              RANGE OF MARKET
+            </Link>{" "}
           </li>
         </ul>
+
+        <Dropdown />
       </div>
       <div className="p-2 sm:p-4 mt-5 sm:mt-16">
         <div className="max-w-5xl mx-auto bg-slate-900 rounded-xl grid gap-4 -lg:gap-8 grid-cols-1 md:grid-cols-12">
@@ -268,7 +264,9 @@ const forex = () => {
           </div>
         </div>
       </section>
-{/* tabs */}
+
+      {/* tabs */}
+
       <div className="max-w-5xl mx-auto">
         <div role="tablist" className="tabs tabs-bordered">
           <input
@@ -278,7 +276,10 @@ const forex = () => {
             className="tab"
             aria-label="Major"
           />
-          <div role="tabpanel" className="tab-content py-10">
+          <div
+            role="major"
+            className="tab-content py-10 min-w-40 w-full overflow-x-auto "
+          >
             <div>
               <div className="w-full bg-slate-800- rounded-xl ">
                 <Table className="text-gray-500">
@@ -318,7 +319,10 @@ const forex = () => {
             aria-label="Minor"
             defaultChecked
           />
-          <div role="tabpanel" className="tab-content py-10">
+          <div
+            role="Minor"
+            className="tab-content py-10 min-w-40 w-full overflow-x-auto "
+          >
             <div className="w-full bg-slate-800- rounded-xl ">
               <Table className="text-gray-500">
                 <TableHeader className="rounded-3xl sticky top-0 w-full bg-slate-900">
@@ -355,7 +359,10 @@ const forex = () => {
             className="tab"
             aria-label="Exotic"
           />
-          <div role="tabpanel" className="tab-content py-10">
+          <div
+            role="Exotic"
+            className="tab-content py-10 min-w-40 w-full overflow-x-auto "
+          >
             <div className="w-full bg-slate-800- rounded-xl ">
               <Table className="text-gray-500">
                 <TableHeader className="rounded-3xl sticky top-0 w-full bg-slate-900">
@@ -399,21 +406,15 @@ const forex = () => {
               Forex{" "}
             </h1>
             <p className="text-xl md:text-2xl font-bol text-gray-400 text-center mt-5">
-            global markets today!
-
+              global markets today!
             </p>
-            <div className="my-10 flex items-center gap-4 justify-center">
-              <a
-                href="#"
-                className="bg-hBlue text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded transition-transform duration-300 ease-in-out transform hover:scale-105-"
-              >
-             Open Trading Account
-              </a>
-              <a
-                href="#"
-                className="hover:bg-hBlue border-hBlue border text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded transition-transform duration-300 ease-in-out transform hover:scale-105-"
-              >
-Try a Free Demo              </a>
+            <div className="my-10 flex flex-col sm:flex-row w-full items-center gap-4 justify-center">
+              <button className="hover:bg-hBlue w-full sm:w-auto border-hBlue border text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap bg-hBlue">
+                Open Trading Account
+              </button>
+              <button className=" border border-[#2955FF] hover:bg-hBlue w-full sm:w-auto text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap">
+                Try a Free Demo{" "}
+              </button>
             </div>
           </div>
         </div>

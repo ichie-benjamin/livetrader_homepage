@@ -15,81 +15,11 @@ import { AccordionItem } from "../components/ui/accordion";
 import { AccordionTrigger } from "../components/ui/accordion";
 import { AccordionContent } from "../components/ui/accordion";
 import { offers } from "../constants";
+import Navbar from "../components/home/navigation/navbar";
 const trading = () => {
   return (
     <>
-      <div className="w-full hidden sm:flex items-center bg-[#F3F7F9] text-black justify-end">
-        <ul className="flex items-center justify-center divide-x-2 text-sm py-2">
-          <li className="text-center pe-4 hover:text-black text-gray-700 text-semibold">
-            <a href="#">Offers</a>
-          </li>
-          <li className="text-center px-4 hover:text-black text-gray-700 text-semibold">
-            <a href="#">New York Red Bull</a>
-          </li>
-          <li className="text-center px-4 hover:text-black text-gray-700 text-semibold">
-            <a href="#">Legal</a>
-          </li>
-        </ul>
-      </div>
-      <header className="px-4 h-14 md:h-20 sticky top-0 inset-x-0 w-full bg-background/40 backdrop-blur-lg border-b border-gray-800 z-50">
-        <Container reverse>
-          <div className="flex items-center justify-between h-full mx-auto md:max-w-screen-xl">
-            {/* Logo Section */}
-            <div className="flex items-center">
-              <a href="/" className="flex items-center gap-2">
-                <img
-                  src={config.logo}
-                  alt="✨"
-                  width={124}
-                  height={24}
-                  className="object-contain"
-                />
-              </a>
-            </div>
-
-            {/* Navigation Links */}
-            <nav className="hidden md:flex space-x-8">
-              <a href="#services" className="hover:text-foreground/80 text-sm">
-                Our Services
-              </a>
-              <a
-                href="/LiveTrader"
-                className="hover:text-foreground/80 text-sm"
-              >
-                LiveTrader
-              </a>
-              <a href="#market" className="hover:text-foreground/80 text-sm">
-                Market
-              </a>
-              <a
-                href="#testimonials"
-                className="hover:text-foreground/80 text-sm"
-              >
-                Testimonials
-              </a>
-            </nav>
-
-            {/* Buttons Section */}
-            <div className="flex items-center gap-4">
-              <a
-                href={config.login_url}
-                className={buttonVariants({ size: "sm", variant: "ghost" })}
-              >
-                Login
-              </a>
-              <a
-                href={config.signup_url}
-                className={buttonVariants({
-                  size: "sm",
-                  className: "hidden md:flex ",
-                })}
-              >
-                Start free trial
-              </a>
-            </div>
-          </div>
-        </Container>
-      </header>
+      <Navbar />
       <div className="bg-slate-900">
         <div className="max-w-7xl mx-auto pb-10">
           <div className="grid lg:grid-cols-2 grid-cols-1">
@@ -126,21 +56,14 @@ const trading = () => {
                   Transparent pricing
                 </p>
               </div>
-              <div className="flex w-full mt-10 gap-4">
-                <a
-                  href={config.login_url}
-                  target="_blank"
-                  className="hover:bg-[#2955FF] w-full shadow-[#191d2e] shadow-xl relative border-[#2955FF]  bg-[#0070f3] font-bold rounded-md text-white transition duration-200 md:ease-linear md:w-48 text-center align-center py-4 border-radius"
-                >
+
+              <div className="my-10 flex flex-col sm:flex-row w-full items-center gap-4 justify-center">
+                <button className="hover:bg-hBlue w-full sm:w-auto border-hBlue border text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap bg-hBlue">
                   Create Account{" "}
-                </a>
-                <a
-                  href={config.login_url}
-                  target="_blank"
-                  className="w-full shadow-[#191d2e] shadow-xl relative border border-[#2955FF] hover:bg-[#2955FF] font-bold rounded-md text-white transition duration-200 md:ease-linear md:w-48 text-center align-center py-4 border-radius"
-                >
-                  Demo Account{" "}
-                </a>
+                </button>
+                <button className=" border border-[#2955FF] hover:bg-hBlue w-full sm:w-auto text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap">
+                  Start Trading
+                </button>
               </div>
             </div>
             <div className="">
@@ -239,23 +162,15 @@ const trading = () => {
                 currency pairs. Choose from our standard or premium forex
                 pricing modules - whatever’s best for, your forex trading needs.
               </p>
-
-              <div className="flex w-full mt-10 gap-4">
-                <a
-                  href={config.login_url}
-                  target="_blank"
-                  className="hover:bg-[#2955FF] w-full shadow-[#191d2e] shadow-xl relative border-[#2955FF]  bg-[#0070f3] font-bold rounded-md text-white transition duration-200 md:ease-linear max-w-60 text-center align-center py-4 border-radius"
-                >
+              <div className="my-10 flex flex-col sm:flex-row w-full items-center gap-4 justify-center md:justify-start">
+                <button className="hover:bg-hBlue w-full sm:w-auto border-hBlue border text-gray-200 font-bold py-3 sm:py-4 px-8  rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap bg-hBlue">
                   View all trading instruments{" "}
-                </a>
-                <a
-                  href={config.login_url}
-                  target="_blank"
-                  className="w-full shadow-[#191d2e] shadow-xl relative border border-[#2955FF] hover:bg-[#2955FF] font-bold rounded-md text-white transition duration-200 md:ease-linear max-w-60 text-center align-center py-4 border-radius"
-                >
+                </button>
+                <button className=" border border-[#2955FF] hover:bg-hBlue w-full sm:w-auto text-gray-200 font-bold py-3 sm:py-4 px-8  rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap">
                   View all margin rates
-                </a>
+                </button>
               </div>
+
               <p className="my-5 text-base text-gray-400 text-foreground/80 sm:mt-6 text-start">
                 Margin requirement will depend on the amount of leverage
                 allowed. The maximum leverage allowed is determined by the
@@ -331,22 +246,13 @@ const trading = () => {
           <p className="my-5 text-base  text-gray-400 text-foreground/80 sm:mt-6 text-center">
             Open an account in minutes.
           </p>
-          <div className="flex justify-center w-full my-10 gap-4">
-            <a
-              href={config.login_url}
-              target="_blank"
-              className="hover:bg-[#2955FF]  shadow-[#191d2e] shadow-xl relative border-[#2955FF]  bg-[#0070f3] font-bold rounded-md text-white transition duration-200 md:ease-linear max-w-60 md:w-48 text-center align-center w-full py-4 border-radius"
-            >
+          <div className="my-10 flex flex-col sm:flex-row w-full items-center gap-4 justify-center ">
+            <button className="hover:bg-hBlue w-full sm:w-auto border-hBlue border text-gray-200 font-bold py-3 sm:py-4 px-8  rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap bg-hBlue">
               Create account
-            </a>
-
-            <a
-              href={config.login_url}
-              target="_blank"
-              className="w-full shadow-[#191d2e] shadow-xl relative border border-[#2955FF] hover:bg-[#2955FF] font-bold rounded-md text-white transition duration-200 md:ease-linear max-w-60 md:w-48 text-center align-center py-4 border-radius"
-            >
+            </button>
+            <button className=" border border-[#2955FF] hover:bg-hBlue w-full sm:w-auto text-gray-200 font-bold py-3 sm:py-4 px-8  rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap">
               Try Demo Account{" "}
-            </a>
+            </button>
           </div>
         </div>
       </section>
@@ -362,13 +268,29 @@ const trading = () => {
             payment methods. Pick the payment option that works best for you,
             whether it’s debit card, bank wire transfer, or ACH deposit.
           </p>
-          <div className="flex justify-center">
-            <img src="/trader/visa.png" alt="visa card image" />
-            <img src="/trader/debit.png" alt="visa card image" />
-            <img src="/trader/transfer.png" alt="visa card image" />
-            <img src="/trader/clearing_house.png" alt="visa card image" />
+          <div className="flex justify-center flex-wrap">
+            <img
+              src="/trader/visa.png"
+              className="max-w-40 my-2"
+              alt="visa card image"
+            />
+            <img
+              src="/trader/debit.png"
+              className="max-w-40 my-2"
+              alt="visa card image"
+            />
+            <img
+              src="/trader/transfer.png"
+              className="max-w-40 my-2"
+              alt="visa card image"
+            />
+            <img
+              src="/trader/clearing_house.png"
+              className="max-w-40 my-2"
+              alt="visa card image"
+            />
           </div>
-          <div className="flex justify-center w-full my-10 gap-4">
+          <div className="flex justify-center w-full my-5 sm:my-10 gap-4">
             <a
               href={config.login_url}
               target="_blank"
@@ -641,7 +563,7 @@ const trading = () => {
                   <div className="w-8">
                     <TfiCup className="text-[#0063A6] text-2xl text-left-" />
                   </div>
-                  <p className="text-sm  text-gray-400 dark:text-gray-300 group-hover:font-semibold text-foreground/80">
+                  <p className="text-sm ps-2 md:ps-0 text-gray-400 dark:text-gray-300 group-hover:font-semibold text-foreground/80">
                     Voted Best Low Cost Broker (ADVFN International Financial
                     Awards 2023).
                   </p>
@@ -650,7 +572,7 @@ const trading = () => {
                   <div className="w-8">
                     <TfiCup className="text-[#0063A6] text-2xl text-left-" />
                   </div>
-                  <p className="text-sm  text-gray-400 dark:text-gray-300 group-hover:font-semibold text-foreground/80">
+                  <p className="text-sm ps-2 md:ps-0 text-gray-400 dark:text-gray-300 group-hover:font-semibold text-foreground/80">
                     Voted Best Forex Broker two years in a row (TradingView
                     Broker Awards 2021, 2020).
                   </p>
@@ -678,7 +600,7 @@ const trading = () => {
                   <div className="w-8">
                     <TfiCup className="text-[#0063A6] text-2xl text-left-" />
                   </div>
-                  <p className="text-sm  text-gray-400 dark:text-gray-300 group-hover:font-semibold text-foreground/80">
+                  <p className="text-sm ps-2 md:ps-0 text-gray-400 dark:text-gray-300 group-hover:font-semibold text-foreground/80">
                     Best Trading Tools winner (Online Personal Wealth Awards
                     2021).
                   </p>

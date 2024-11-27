@@ -17,7 +17,8 @@ import {
 import { Digitalcurrency } from "../constants";
 import { digitalcurrencyTable } from "../constants";
 import { CiSearch } from "react-icons/ci";
-
+import { Link } from "react-router-dom";
+import Dropdown from "../components/ui/drop";
 const digitalcurrency = () => {
   return (
     <div>
@@ -34,7 +35,7 @@ const digitalcurrency = () => {
               <h1 className="text-gray-300 md:text-4xl sm:text-3xl text-2xl font-extrabold text-center">
                 Cryptocurrency CFDs
               </h1>
-              <p className="text-xs md:text-base text-gray-400 text-center mt-10">
+              <p className="text-xs md:text-base text-gray-400 text-center mt-10 mx-2">
                 Cryptocurrencies are volatile, unregulated, decentralised and
                 controlled almost exclusively by retail speculators. Trade the
                 world’s newest and most exciting asset class as CFDs with an FSA
@@ -51,175 +52,172 @@ const digitalcurrency = () => {
             </div>
           </div>
         </div>
-        <div className="bg-black py-2 hidden md:flex items-center justify-center">
-          <ul className="flex items-center gap-4  md:gap-8 text-xs font-extrabold text-gray-600 justify-center bg-black ">
+        <div className="bg-black relative py-2 items-center justify-center">
+          <ul className="items-center hidden md:flex gap-4  md:gap-8 text-xs font-extrabold text-gray-600 justify-center bg-black ">
             <li>
-              <a href="#" className="">
-                RANGE OF MARKETS
-              </a>{" "}
+              <Link to="/forex" className="">
+                FOREX
+              </Link>{" "}
             </li>
             <li>
-              <a href="#">FOREX</a>{" "}
+              <Link to="/funding" className="">
+                FUNDING
+              </Link>{" "}
             </li>
             <li>
-              <a href="#" className="">
-                Commodities CFDs{" "}
-              </a>{" "}
+              <Link to="/withdrawal" className="">
+                WITHDRAWAL
+              </Link>{" "}
             </li>
             <li>
-              <a href="#" className="">
-                INDICES
-              </a>{" "}
+              <Link to="/trading" className="">
+                TRADING
+              </Link>{" "}
             </li>
             <li>
-              <a href="#" className="">
-                BONDS{" "}
-              </a>{" "}
+              <Link to="/digitalcurrency" className="text-hBlue">
+                DIGITAL CURRENCY
+              </Link>{" "}
             </li>
             <li>
-              <a href="#" className="text-hBlue">
-                DIGITALCURRENCY
-              </a>{" "}
-            </li>
-            <li>
-              <a href="#" className="">
-                STOCKS
-              </a>{" "}
-            </li>
-            <li>
-              <a href="#" className="">
-                FUTURES
-              </a>{" "}
+              <Link to="/range-of-markets" className="">
+                RANGE OF MARKET
+              </Link>{" "}
             </li>
           </ul>
+
+          <Dropdown />
         </div>
+
         <div className="bg-hBlue max-w-5xl my-5 rounded p-4 text-center mx-auto  mt-5 sm:mt-16">
           <p>
             Please note that some symbols may not be available on weekends.
             Detailed trading sessions are available on the platforms.
           </p>
         </div>
-        <div className="bg-slate-900 rounded-xl max-w-5xl mx-auto p-2 sm:p-4">
-          <div className="-mb-16">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 100 200"
-              width="100"
-              height="200"
-              className=""
-            >
-              {/* <!-- Dollar Sign --> */}
-              <text
-                x="50%"
-                y="50%"
-                font-size="100"
-                text-anchor="middle"
-                fill="gold"
-                font-family="Arial"
-                font-weight="light"
+        <div className="px-2">
+          <div className="bg-slate-900 rounded-xl max-w-5xl mx-auto p-2 sm:p-4">
+            <div className="-mb-16 ">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 100 200"
+                width="100"
+                height="200"
+                className=""
               >
-                $
-              </text>
+                {/* <!-- Dollar Sign --> */}
+                <text
+                  x="50%"
+                  y="50%"
+                  font-size="100"
+                  text-anchor="middle"
+                  fill="gold"
+                  font-family="Arial"
+                  font-weight="light"
+                >
+                  $
+                </text>
 
-              {/* <!-- Decorative Swirls --> */}
-              <path
-                d="M 40 30 Q 45 60 55 60 Q 45 80 40 120"
-                stroke="green"
-                stroke-width="4"
-                fill="none"
-              />
-              <path
-                d="M 60 30 Q 55 60 45 60 Q 55 80 60 120"
-                stroke="green"
-                stroke-width="4"
-                fill="none"
-              />
-            </svg>
-          </div>
-
-          <div className="grid gap-4 grid-cols-1 md:grid-cols-12">
-            <div className="md:col-span-8">
-              <div className="p-6">
-                <h6 className="text-gray-600 font-bold">
-                  Now you can trade Cryptocurrency 7 days a week on all IC
-                  Markets Global platforms.
-                </h6>
-                <h6 className="text-gray-600 font-bold my-8">
-                  The leverage available on Cryptocurrency pairs BTCUSD, ETHUSD,
-                  LTCUSD and BCHUSD is now 1:200 for clients registered with Raw
-                  Trading (not UK clients).
-                </h6>
-                <h6 className="text-gray-600 font-bold">
-                  Unlike other asset classes (FX, Equities, CFDs on Commodities,
-                  etc.), the Cryptocurrency market is dominated by retail
-                  speculators. With IC Markets Global Cryptocurrency CFDs, you
-                  will trade in a market where there is no central bank
-                  intervention, interbank dealers controlling order flow or
-                  giant pension funds moving prices.
-                </h6>
-                <p className="text-gray-500 leading-loose mt-5 text-xs">
-                  Price movements on Cryptocurrencies like Bitcoin or Ethereum
-                  are driven primarily by news and prevailing sentiment, i.e.
-                  the fear and greed of retail speculators. These sometimes
-                  dramatic shifts can lead to massive intraday price swings,
-                  making Cryptocurrency CFDs an exciting product for aggressive
-                  and experienced day traders.
-                </p>
-                <p className="text-gray-500 leading-loose mt-5 text-xs">
-                  The IC Markets Global Cryptocurrency CFD product allows
-                  traders to go long or short without actually holding the
-                  Cryptocurrency. This means traders can get exposure to the
-                  price of the Cryptocurrency without worrying about the
-                  security risks associated with storing it and the counterparty
-                  risk from the exchange. This is similar to trading Energy
-                  Futures such as oil rather than owning physical oil to
-                  speculate on its price.
-                </p>
-              </div>
+                {/* <!-- Decorative Swirls --> */}
+                <path
+                  d="M 40 30 Q 45 60 55 60 Q 45 80 40 120"
+                  stroke="green"
+                  stroke-width="4"
+                  fill="none"
+                />
+                <path
+                  d="M 60 30 Q 55 60 45 60 Q 55 80 60 120"
+                  stroke="green"
+                  stroke-width="4"
+                  fill="none"
+                />
+              </svg>
             </div>
-            <div className="md:col-span-4 p-6 text-gray-500">
-              <div className="bg-slate-950 rounded-xl w-full p-4 ">
-                <h6 className="text-xs font-bold text-gray">
-                  Cryptocurrency CFDs{" "}
-                </h6>
-                <h3 className="font-semibold text-lg sm:text-3xl">Facts</h3>
-                <hr className="border-gray-900 my-3" />
-                <div>
-                  <div className="flex items-start text-[10px] font-bold">
-                    <div>
+
+            <div className="grid gap-4 grid-cols-1 md:grid-cols-12">
+              <div className="md:col-span-8">
+                <div className="sm:p-6 px-2">
+                  <h6 className="text-gray-600 font-bold">
+                    Now you can trade Cryptocurrency 7 days a week on all IC
+                    Markets Global platforms.
+                  </h6>
+                  <h6 className="text-gray-600 font-bold my-8">
+                    The leverage available on Cryptocurrency pairs BTCUSD,
+                    ETHUSD, LTCUSD and BCHUSD is now 1:200 for clients
+                    registered with Raw Trading (not UK clients).
+                  </h6>
+                  <h6 className="text-gray-600 font-bold">
+                    Unlike other asset classes (FX, Equities, CFDs on
+                    Commodities, etc.), the Cryptocurrency market is dominated
+                    by retail speculators. With IC Markets Global Cryptocurrency
+                    CFDs, you will trade in a market where there is no central
+                    bank intervention, interbank dealers controlling order flow
+                    or giant pension funds moving prices.
+                  </h6>
+                  <p className="text-gray-500 leading-loose mt-5 text-xs">
+                    Price movements on Cryptocurrencies like Bitcoin or Ethereum
+                    are driven primarily by news and prevailing sentiment, i.e.
+                    the fear and greed of retail speculators. These sometimes
+                    dramatic shifts can lead to massive intraday price swings,
+                    making Cryptocurrency CFDs an exciting product for
+                    aggressive and experienced day traders.
+                  </p>
+                  <p className="text-gray-500 leading-loose mt-5 text-xs">
+                    The IC Markets Global Cryptocurrency CFD product allows
+                    traders to go long or short without actually holding the
+                    Cryptocurrency. This means traders can get exposure to the
+                    price of the Cryptocurrency without worrying about the
+                    security risks associated with storing it and the
+                    counterparty risk from the exchange. This is similar to
+                    trading Energy Futures such as oil rather than owning
+                    physical oil to speculate on its price.
+                  </p>
+                </div>
+              </div>
+              <div className="md:col-span-4 p-6 text-gray-500">
+                <div className="bg-slate-950 rounded-xl w-full p-4 ">
+                  <h6 className="text-xs font-bold text-gray">
+                    Cryptocurrency CFDs{" "}
+                  </h6>
+                  <h3 className="font-semibold text-lg sm:text-3xl">Facts</h3>
+                  <hr className="border-gray-900 my-3" />
+                  <div>
+                    <div className="flex items-start text-[10px] font-bold">
+                      <div>
+                        <FaCircleCheck className="text-hBlue me-2 text-xs" />
+                      </div>
+                      <div>
+                        <p className="mb-3">1:200 Leverage MetaTrader4/MT5</p>
+                        <p>1:5 Leverage cTrader and TradingView</p>
+                        <div className="flex items-center text-[10px] mt-2 font-bold"></div>
+                      </div>
+                    </div>
+
+                    <hr className="border-gray-900 my-3" />
+                    <div className="flex items-center text-[10px] font-bold">
                       <FaCircleCheck className="text-hBlue me-2 text-xs" />
+                      Trade the market 7 days a week
                     </div>
-                    <div>
-                      <p className="mb-3">1:200 Leverage MetaTrader4/MT5</p>
-                      <p>1:5 Leverage cTrader and TradingView</p>
-                      <div className="flex items-center text-[10px] mt-2 font-bold"></div>
+                    <hr className="border-gray-900 my-3" />
+                    <div className="flex items-center text-[10px] font-bold">
+                      <FaCircleCheck className="text-hBlue me-2 text-xs" />
+                      Long or short
                     </div>
-                  </div>
+                    <hr className="border-gray-900 my-3" />
+                    <div className="flex items-center text-[10px] font-bold w-full">
+                      <FaCircleCheck className="text-hBlue me-2 text-xs" />
+                      FSA regulated
+                    </div>
+                    <hr className="border-gray-900 my-3" />
+                    <div className="flex items-center text-[10px] font-bold w-full">
+                      <FaCircleCheck className="text-hBlue me-2 text-xs" />
+                      REAL live support!
+                    </div>
 
-                  <hr className="border-gray-900 my-3" />
-                  <div className="flex items-center text-[10px] font-bold">
-                    <FaCircleCheck className="text-hBlue me-2 text-xs" />
-                    Trade the market 7 days a week
+                    <button className="hover:bg-hBlue mt-5 bg-hBlue sm:bg-transparent hover:text-gray-900 text-gray-900 sm:text-gray-500 text-sm border border-hBlue w-full rounded py-1 font-bold">
+                      Open Account
+                    </button>
                   </div>
-                  <hr className="border-gray-900 my-3" />
-                  <div className="flex items-center text-[10px] font-bold">
-                    <FaCircleCheck className="text-hBlue me-2 text-xs" />
-                    Long or short
-                  </div>
-                  <hr className="border-gray-900 my-3" />
-                  <div className="flex items-center text-[10px] font-bold w-full">
-                    <FaCircleCheck className="text-hBlue me-2 text-xs" />
-                    FSA regulated
-                  </div>
-                  <hr className="border-gray-900 my-3" />
-                  <div className="flex items-center text-[10px] font-bold w-full">
-                    <FaCircleCheck className="text-hBlue me-2 text-xs" />
-                    REAL live support!
-                  </div>
-
-                  <button className="hover:bg-hBlue mt-5 bg-hBlue sm:bg-transparent hover:text-gray-900 text-gray-900 sm:text-gray-500 text-sm border border-hBlue w-full rounded py-1 font-bold">
-                    Open Account
-                  </button>
                 </div>
               </div>
             </div>
@@ -336,7 +334,7 @@ const digitalcurrency = () => {
           </div>
         </section>
 
-        <section className="max-w-5xl mx-auto">
+        <section className="max-w-5xl mx-auto pb-5 md:pb-5">
           <div className="flex flex-col- md:flex-row justify-between items-center mx-2">
             <h3 className="font-bold text-xl text-center- md:text-start sm:text-3xl w-full ">
               Spreads
@@ -398,15 +396,11 @@ const digitalcurrency = () => {
                 </TableBody>
               </Table>
             </div>
-            <div className="px-2 sm:px-4 overflow-x-hidden max-h-screen overflow-y-auto scrollbar-[2px] scrollbar-thumb-gray-700 scrollbar-track-gray-200 scrollbar-thumb-rounded w-full">
+            <div className="md:hidden px-2 sm:px-4 overflow-x-hidden max-h-screen overflow-y-auto scrollbar-[2px] scrollbar-thumb-gray-700 scrollbar-track-gray-200 scrollbar-thumb-rounded w-full">
               {digitalcurrencyTable.map((Dct, index) => (
                 <div
                   key={index}
-                  className="text-gray-500 mb-4 p-2 sm:p-6 h-full flex bg-slate-900 px-2 border border-slate-800 py-4 rounded justify-between items-end custom-scrollbar
-custom-scrollbar
-custom-scrollba
-custom-scrollbar
-custom-scrollbar"
+                  className="text-gray-500 mb-4 p-2 sm:p-6 h-full flex bg-slate-900 px-2 border border-slate-800 py-4 rounded justify-between items-end custom-scrollbar custom-scrollbar custom-scrollbar custom-scrollbar custom-scrollbar"
                 >
                   <div className="">
                     <h1 className="font-extrabold text-base">{Dct.SYMBOL}</h1>
@@ -437,16 +431,16 @@ custom-scrollbar"
           <div className="relative z-10 flex-col flex items-center justify-center h-full bg-black/70-">
             <div className="sm:max-w-2xl w-full px-4">
               <h1 className="text-gray-300 md:text-4xl sm:text-3xl text-2xl font-extrabold text-center">
-              Start trading
+                Start trading
               </h1>
               <p className="text-xl md:text-2xl font-bol text-gray-400 text-center mt-5">
-              global markets today!
+                global markets today!
               </p>
               <div className="my-10 flex flex-col sm:flex-row w-full items-center gap-4 justify-center">
                 <button className=" bg-hBlue w-full sm:w-auto text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap">
                   Open Trading Account
                 </button>
-            
+
                 <button className="hover:bg-hBlue w-full sm:w-auto border-hBlue border text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap">
                   Try a Free Demo{" "}
                 </button>

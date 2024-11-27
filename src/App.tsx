@@ -1,26 +1,26 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./page/home";
 import LiveTrader from "./page/Live-trader";
-import Contact from "./page/contact";
 import About from "./page/about";
 import Trading from "./page/trading";
 import Forex from "./page/forex";
-import Digitalcurrency from "./page/digitalcurrency"
+import Digitalcurrency from "./page/digitalcurrency";
 import Funding from "./page/funding";
+import Withdrawal from "./page/withdrawal";
+import RangeOfMarkets from "./page/rangeOfMarkets";
 function App() {
   return (
     <Router>
-      <Routes> 
-        <Route path="/home" element={<Home />} />
-        <Route path="/livetrader" element={<LiveTrader />} />
-        <Route path="/contact" element={<Contact />} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Home2" element={<LiveTrader />} />
         <Route path="/about" element={<About />} />
         <Route path="/trading" element={<Trading />} />
         <Route path="/forex" element={<Forex />} />
-        <Route path="/" element={<Digitalcurrency />} />
+        <Route path="/digitalcurrency" element={<Digitalcurrency />} />
         <Route path="/funding" element={<Funding />} />
-        
-
+        <Route path="/withdrawal" element={<Withdrawal />} />
+        <Route path="/range-of-markets" element={<RangeOfMarkets />} />
       </Routes>
     </Router>
   );

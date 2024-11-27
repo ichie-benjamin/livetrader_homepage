@@ -5,98 +5,16 @@ import { Wrapper } from "../components";
 import { TableDemo } from "../components/ui/benefits";
 import { Input } from "../components/ui/input";
 import { Textarea } from "../components/ui/textarea";
-import { buttonVariants } from "../components/ui/button";
-
+import Navbar from "../components/home/navigation/navbar";
 const LiveTrader = () => {
   return (
     <>
-    <div className="w-full hidden sm:flex items-center bg-[#F3F7F9] text-black justify-end">
-<ul className="flex items-center justify-center divide-x-2 text-sm py-2">
-  <li className="text-center pe-4 hover:text-black text-gray-700 text-semibold">
-    <a href="#">
-    Offers
-    </a>
-  </li>
-  <li className="text-center px-4 hover:text-black text-gray-700 text-semibold">
-    <a href="#">
-    New York Red Bull
-    </a>
-  </li>
-  <li className="text-center px-4 hover:text-black text-gray-700 text-semibold">
-    <a href="#">
-Legal
-    </a>
-  </li>
-</ul>
-    </div>
-        <header className="px-4 h-14 md:h-20 sticky top-0 inset-x-0 w-full bg-background/40 backdrop-blur-lg border-b border-gray-800 z-50">
-          <Container reverse>
-            <div className="flex items-center justify-between h-full mx-auto md:max-w-screen-xl">
-              {/* Logo Section */}
-              <div className="flex items-center">
-                <a href="/" className="flex items-center gap-2">
-                  <img
-                    src={config.logo}
-                    alt="✨"
-                    width={124}
-                    height={24}
-                    className="object-contain"
-                  />
-                </a>
-              </div>
+      <Navbar />
 
-              {/* Navigation Links */}
-              <nav className="hidden md:flex space-x-8">
-                <a
-                  href="#services"
-                  className="hover:text-foreground/80 text-sm"
-                >
-                  Our Services
-                </a>
-                <a
-                  href="/LiveTrader"
-                  className="hover:text-foreground/80 text-sm"
-                >
-                  LiveTrader
-                </a>
-                <a href="#market" className="hover:text-foreground/80 text-sm">
-                  Market
-                </a>
-                <a
-                  href="#testimonials"
-                  className="hover:text-foreground/80 text-sm"
-                >
-                  Testimonials
-                </a>
-              </nav>
 
-              {/* Buttons Section */}
-              <div className="flex items-center gap-4">
-                <a
-                  href={config.login_url}
-                  className={buttonVariants({ size: "sm", variant: "ghost" })}
-                >
-                  Login
-                </a>
-                <a
-                  href={config.signup_url}
-                  className={buttonVariants({
-                    size: "sm",
-                    className: "hidden md:flex ",
-                  })}
-                >
-                  Start free trial
-                </a>
-                
-              </div>
-            </div>
-          </Container>
-        </header>
-      {/* <div className="text-2xl font-bold text-center bg-[#F4F8FA] text-black">mab admnan danamm adjnm</div> */}
-      <section className=" bg-[#D7D4C6] ">
-
+      <section className=" bg-[#86857C] ">
         <section>
-          <Container className="text-gray-600">
+          <Container className="text-gray-800">
             <div className="grid lg:grid-cols-2 grid-cols-1">
               <div className="p-4 pb-10  mx-auto w-full max-w-screen-2xl px-2 sm:px-4 md:px-20">
                 <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
@@ -114,7 +32,7 @@ Legal
                   <div className="w-8">
                     <IoMdCheckmarkCircleOutline className="text-[#0063A6] text-2xl text-left-" />
                   </div>
-                  <p className="text-sm  text-gray-600 dark:text-gray-300 group-hover:font-semibold text-foreground/80">
+                  <p className="text-sm  text-gray-800 dark:text-gray-300 group-hover:font-semibold text-foreground/80">
                     A reduction of your trading costs by up to 34% with cash
                     rebates
                   </p>
@@ -123,7 +41,7 @@ Legal
                   <div className="w-10">
                     <IoMdCheckmarkCircleOutline className="text-[#0063A6] text-2xl text-left-" />
                   </div>
-                  <p className="text-sm  text-gray-600 dark:text-gray-300 group-hover:font-semibold text-foreground/80 px-2">
+                  <p className="text-sm  text-gray-800 dark:text-gray-300 group-hover:font-semibold text-foreground/80 px-2">
                     A dedicated relationship manager who will handle your
                     queries quickly. Access to exclusive discounts on
                     third-party platforms such as TradingView
@@ -133,7 +51,7 @@ Legal
                   <div className="w-8">
                     <IoMdCheckmarkCircleOutline className="text-[#0063A6] text-2xl text-left-" />
                   </div>
-                  <p className="text-sm  text-gray-600 dark:text-gray-300 group-hover:font-semibold text-foreground/80">
+                  <p className="text-sm  text-gray-800 dark:text-gray-300 group-hover:font-semibold text-foreground/80">
                     Access to VIP content and events
                   </p>
                 </div>
@@ -141,7 +59,7 @@ Legal
                   <div className="w-8">
                     <IoMdCheckmarkCircleOutline className="text-[#0063A6] text-2xl text-left-" />
                   </div>
-                  <p className="text-sm  text-gray-600 dark:text-gray-300 group-hover:font-semibold text-foreground/80">
+                  <p className="text-sm  text-gray-800 dark:text-gray-300 group-hover:font-semibold text-foreground/80">
                     Cash rebates from US$5 to US$17 per million
                   </p>
                 </div>
@@ -155,12 +73,13 @@ Legal
                   </a>
                 </div>
               </div>
-              <div className="">
+              <div className="relative">
                 <img
                   src={liveTraders[0].heroImage}
                   className="h-full w-full object-cover"
                   alt="im"
                 />
+                <div className="bg-black/40 w-full h-full absolute top-0"></div>
               </div>
             </div>
           </Container>
@@ -172,27 +91,27 @@ Legal
             <section className="w-full">
               <div className="flex flex-col text-[20px] sm:text-xl lg:text-2xl items-center mt-12 max-w-7xl- md:w-full ">
                 <h1 className="text-[#fff] my-1 font-bold">
-                Start {config.site_name} in three easy steps
+                  Start {config.site_name} in three easy steps
                 </h1>
-              
+
                 <div className="w-full mt-3">
                   <div className="grid grid-cols-1 mt-4 gap-4 md:grid-cols-3 group-hover: lg:gap-8">
                     {Steps.map((Steps) => {
                       return (
                         <div
                           key={Steps.title}
-                          className="flex w-full rounded-2xl  overflow-hidden- bg-gray-50 px-2 sm:px-4 group hover:bg-[#212121] justify-between relative group"
+                          className="flex w-full rounded-2xl  overflow-hidden bg-[#86857C] px-2 sm:px-4 group hover:bg-gray-900 justify-between relative group"
                         >
                           <div className="flex items-center h-full">
-                            <div className="text-[#0A0A0A] md:pb-16 gap-y-4">
+                            <div className="text-gray-800 md:pb-16 gap-y-4">
                               <div className="my-4">
                                 <img src={Steps.img} alt="" />
                               </div>
-                              <h1 className="text-base group-hover:text-gray-200 my-1 font-bold text-gray-600">
+                              <h1 className="text-base group-hover:text-gray-200 my-1 font-bold text-gray-800">
                                 {Steps.title}
                               </h1>
                               <p
-                                className=" text-gray-600 group-hover:text-gray-400 dark:text-gray-300
+                                className=" text-gray-800 group-hover:text-gray-400 dark:text-gray-300
                                  lg:text-base text-foreground/80 sm:my-6 text-start"
                               >
                                 {Steps.description}
@@ -212,7 +131,7 @@ Legal
       <Wrapper>
         <Container>
           <section className="py-10 sm:py-28 w-full">
-            <section className="w-full border">
+            <section className="w-full border border-gray-800">
               <TableDemo />
             </section>
           </section>
@@ -265,21 +184,20 @@ Legal
           </div>
         </div>
       </section>
-      <section className=" bg-[#D7D4C6] ">
+      <section className=" bg-[#909292] ">
         <section>
           <Container className="text-gray-600">
             <div className="grid lg:grid-cols-2 grid-cols-1">
-              <div className="max-h-fit">
+              <div className="max-h-fit relative">
                 <img
                   src={liveTraders[0].benefitsImage}
                   className="h-auto w-full object-cover"
                   alt="im"
                 />
+                <div className="bg-black/40 w-full h-full absolute top-0"></div>
               </div>
               <div className="p-4 pb-10 sm:py-10 md:pt-16 mx-auto w-full max-w-screen-2xl px-2 sm:px-4 md:px-20">
-                <h2 className="text-3xl font-semibold">
-                  Exclusive benefits
-                </h2>
+                <h2 className="text-3xl font-semibold">Exclusive benefits</h2>
 
                 <div className="flex items-center py-3 mt-4">
                   <div className="w-8">
@@ -406,7 +324,9 @@ Legal
               </div>
               <div className="p-4 pb-10 sm:py-10 md:pt-16 mx-auto w-full max-w-screen-2xl px-2 sm:px-4 md:px-20">
                 <div className="w-full items-center gap-1.5">
-                  <label htmlFor="firstname" className="text-xs font-bold">First Name</label>
+                  <label htmlFor="firstname" className="text-xs font-bold">
+                    First Name
+                  </label>
                   <Input
                     type="text"
                     id="firstname"
@@ -415,7 +335,9 @@ Legal
                   />
                 </div>
                 <div className="w-full items-center gap-1.5 mt-6">
-                  <label htmlFor="Lastname" className="text-xs font-bold">Last Name</label>
+                  <label htmlFor="Lastname" className="text-xs font-bold">
+                    Last Name
+                  </label>
                   <Input
                     type="text"
                     id="Lastname"
@@ -424,7 +346,9 @@ Legal
                   />
                 </div>
                 <div className="w-full items-center gap-1.5 mt-6">
-                  <label htmlFor="email" className="text-xs font-bold">Email</label>
+                  <label htmlFor="email" className="text-xs font-bold">
+                    Email
+                  </label>
                   <Input
                     type="email"
                     id="email"
@@ -433,7 +357,9 @@ Legal
                   />
                 </div>
                 <div className="w-full items-center gap-1.5 mt-6">
-                  <label htmlFor="phone" className="text-xs font-bold">Contact Number</label>
+                  <label htmlFor="phone" className="text-xs font-bold">
+                    Contact Number
+                  </label>
                   <Input
                     type="tel"
                     id="phone"
@@ -443,7 +369,9 @@ Legal
                 </div>
 
                 <div className="grid w-full gap-1.5 mt-6">
-                  <label htmlFor="comment" className="text-xs font-bold">Additional comments:</label>
+                  <label htmlFor="comment" className="text-xs font-bold">
+                    Additional comments:
+                  </label>
                   <Textarea
                     placeholder="Type your comment here."
                     id="comment"
@@ -474,7 +402,7 @@ Legal
         </section>
       </section>
 
-      <section className=" bg-[#919295] ">
+      <section className=" bg-[#909297] ">
         <section>
           <Container className="text-gray-700">
             <div className="grid lg:grid-cols-2 grid-cols-1">

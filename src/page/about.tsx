@@ -31,9 +31,10 @@ const about = () => {
   const meta5 = isPro ? meta_5_pro : meta_5_standard;
 
   return (
-    <div className="text-6xl-  bg-slate-800-">
+    <div className="">
       <Navbar />
-      <div className="relative h-screen overflow-hidden">
+<div className="overflow-x-hidden">
+<div className="relative h-screen overflow-hidden">
         <video
           src={video}
           autoPlay
@@ -42,38 +43,39 @@ const about = () => {
           className="w-full absolute max-h-screen h-full object-cover top-0 left-0 "
         />
         <div className="relative z-10 flex-col flex items-center justify-center h-full bg-black/70">
-          <h1 className="text-white lg:text-7xl md:text-4xl sm:text-3xl text-2xl font-extrabold text-center">
-            Unlock Your <br /> Trading Potential
-          </h1>
-          <p className="text-xs md:text-xl text-center mt-10">
-            Experience Effortless Trading with Our Competitive Spreads – Trade{" "}
-            <br />
-            with Confidence and Maximise Your Earnings.
-          </p>
-          <div className="my-10 flex items-center gap-4 justify-center md:justify-end">
-            <a
-              href="#"
-              className="bg-slate-900 text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded-3xl transition-transform duration-300 ease-in-out transform hover:scale-105"
-            >
-              Start Trading
-            </a>
-            <a
-              href="#"
-              className="bg-hBlue text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded-3xl transition-transform duration-300 ease-in-out transform hover:scale-105"
-            >
-              Try a Demo For Free
-            </a>
+          <div className="relative z-10 flex-col flex items-center justify-center h-full bg-black/70-">
+            <div className="sm:max-w-2xl w-full px-4">
+              <h1 className="text-gray-300 md:text-4xl sm:text-3xl text-2xl font-extrabold text-center">
+                Unlock Your Trading Potential{" "}
+              </h1>
+              <p className="text-xl md:text-2xl font-bol text-gray-400 text-center mt-5 sm:my-10">
+                Experience Effortless Trading with Our Competitive Spreads –
+                Trade with Confidence and Maximise Your Earnings.{" "}
+              </p>
+              <div className="my-10 flex flex-col sm:flex-row w-full items-center gap-4 justify-center">
+                <button className="bg-gray-950 w-full sm:w-auto text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap">
+                  Start Trading
+                </button>
+
+                <button className="hover:bg-hBlue w-full sm:w-auto border-hBlue border text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap bg-hBlue">
+                  Try a Demo For Free{" "}
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div className="max-w-4xl mx-auto py-10 sm:py-16 md:py-24">
-      <div className=" w-full my-10">
+        <div className=" w-full my-10">
           <h1 className="text-xl sm:text-2xl text-center md:text-3xl text-hBlue">
-          Why trade with us?
+            Why trade with us?
           </h1>
           <hr className="bg-hBlue border-hBlue h-0.5 w-20 mt-5 mb-8 mx-auto" />
-          <p className="text-gray-600 text-center  max-w-2xl mx-auto">At our core, we're dedicated to creating a trading environment that meets the diverse needs of traders, ranging from seasoned professionals to newcomers. Dive in to discover why trading with us is the right choice for you.
-
+          <p className="text-gray-600 text-center  max-w-2xl mx-auto">
+            At our core, we're dedicated to creating a trading environment that
+            meets the diverse needs of traders, ranging from seasoned
+            professionals to newcomers. Dive in to discover why trading with us
+            is the right choice for you.
           </p>
         </div>
         <div className="p-4">
@@ -106,7 +108,8 @@ const about = () => {
         </div>
       </div>
       {/* Live Prices  */}
-      <div className="overflow-hidden">
+
+      <div className="min-w-40 w-full overflow-x-auto">
         <div className="mx-auto max-w-5xl p-4 sm:p-10">
           <div role="tablist" className="tabs tabs-bordered">
             <input
@@ -401,11 +404,11 @@ const about = () => {
         <div className="max-w-5xl mx-auto mt-10 ">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6  md:gap-10">
             <div className="lg:col-span-5">
-              <div className="">
+              <div className=" min-w-[40rem] w-full overflow-x-auto">
                 <svg
-                  className="sm:pe-20 w-[450px]"
+                  className="sm:pe-20 w-[320px] sm:w-[450px] "
                   height="300"
-                  viewBox="0 0 500 300"
+                  viewBox="0 0 450 250"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   {/* <!-- Background Chart --> */}
@@ -963,9 +966,9 @@ const about = () => {
                 Complete a straightforward online registration form.
               </p>
             </div>
-            <div className="py-4 w-full flex justify-center rounded-b-3xl  font-bold text-2xl bg-[#020817] text-gray-500">
+            <ColorChangingTextOrBg className="py-4 w-full flex justify-center rounded-b-3xl  font-bold text-2xl text-gray-200">
               Apply
-            </div>
+            </ColorChangingTextOrBg>
           </div>
           <div className="rounded-3xl bg-slate-900 min-h-56- h-full w-full shadow shadow-black flex flex-col justify-between">
             <ColorChangingTextOrBg
@@ -983,9 +986,9 @@ const about = () => {
                 Easily upload the necessary documents for account verification.
               </p>
             </div>
-            <div className="py-4 w-full flex justify-center rounded-b-3xl  font-bold text-2xl bg-[#020817] text-gray-500">
+            <ColorChangingTextOrBg className="py-4 w-full flex justify-center rounded-b-3xl  font-bold text-2xl text-gray-200">
               Verify
-            </div>
+            </ColorChangingTextOrBg>
           </div>
           <div className="rounded-3xl bg-slate-900 min-h-56- h-full w-full shadow shadow-black flex flex-col justify-between">
             <ColorChangingTextOrBg
@@ -1004,9 +1007,9 @@ const about = () => {
                 options.
               </p>
             </div>
-            <div className="py-4 w-full flex justify-center rounded-b-3xl  font-bold text-2xl bg-[#020817] text-gray-500">
+            <ColorChangingTextOrBg className="py-4 w-full flex justify-center rounded-b-3xl  font-bold text-2xl text-gray-200">
               Fund
-            </div>
+            </ColorChangingTextOrBg>
           </div>
           <div className="rounded-3xl bg-slate-900 min-h-56- h-full w-full shadow shadow-black flex flex-col justify-between">
             <ColorChangingTextOrBg
@@ -1025,9 +1028,9 @@ const about = () => {
                 instruments.
               </p>
             </div>
-            <div className="py-4 w-full flex justify-center rounded-b-3xl  font-bold text-2xl bg-[#020817] text-gray-500">
+            <ColorChangingTextOrBg className="py-4 w-full flex justify-center rounded-b-3xl  font-bold text-2xl text-gray-200">
               Trade
-            </div>
+            </ColorChangingTextOrBg>
           </div>
         </div>
         <div className="flex justify-center py-10">
@@ -1138,25 +1141,19 @@ const about = () => {
                   instantly.
                 </p>
               </div>
-              <div className="h-full flex items-center gap-4 justify-center md:justify-end">
-                <a
-                  href="#"
-                  className="bg-hBlue text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded-3xl transition-transform duration-300 ease-in-out transform hover:scale-105"
-                >
+              <div className="my-10 flex flex-col sm:flex-row w-full items-center gap-4 justify-center">
+                <button className="hover:bg-hBlue w-full sm:w-auto border-hBlue border text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap bg-hBlue">
                   Try a Demo
-                </a>
-                <a
-                  href="#"
-                  className="bg-slate-900 text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded-3xl transition-transform duration-300 ease-in-out transform hover:scale-105"
-                >
+                </button>
+                <button className="bg-gray-900 w-full sm:w-auto text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap">
                   Start Trading
-                </a>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </section>
-
+</div>
     </div>
   );
 };
