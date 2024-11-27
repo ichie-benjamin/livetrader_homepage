@@ -23,6 +23,8 @@ import SectionBadge from "../components/ui/section-badge";
 import { GiCheckMark } from "react-icons/gi";
 import { UserIcon } from "lucide-react";
 import Navbar from "../components/home/navigation/navbar";
+import { Link } from "react-router-dom";
+
 function App() {
   const firstTestimonial = TESTIMONIALS.slice(0, TESTIMONIALS.length / 2);
   const secondTestimonial = TESTIMONIALS.slice(TESTIMONIALS.length / 2);
@@ -60,13 +62,12 @@ function App() {
                 </div>
                 <div className="mt-2 sm:mt-8 w-full">
                   <div className="mt-4 flex  items-center gap-6 w-full">
-                    <a
-                      target="_blank"
-                      href={config.login_url}
+                    <Link
+                      to={config.signup_url}
                       className="hover:bg-[#2955FF] w-full shadow-[#191d2e] shadow-xl relative border-[#2955FF] text-center py-3 rounded-xl bg-[#0070f3] font-bold text-white transition duration-200 lg:text-xl md:ease-linear md:w-60"
                     >
                       Open account
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
@@ -363,7 +364,7 @@ function App() {
             </div>
             <div className="flex justify-center w-full mt-16">
               <a
-                href={config.login_url}
+                href={config.signup_url}
                 target="_blank"
                 className="hover:bg-[#2955FF] w-full shadow-[#191d2e] shadow-xl relative border-[#2955FF]  bg-[#0070f3] font-bold rounded-md text-white transition duration-200 lg:text-xl md:ease-linear md:w-60 text-center align-center py-4 border-radius"
               >
@@ -497,9 +498,11 @@ function App() {
                   {/*<div className="flex items-center justify-center">*/}
                   {/*  <perk.icon className="w-8 h-8" />*/}
                   {/*</div>*/}
-                  <SectionBadge title={item.step} />
+                  <Link to={item.url}><SectionBadge title={item.step}  />
 
-                  <h3 className="text-lg font-medium mt-4">{item.step}</h3>
+                  </Link>
+                  
+                  <h3 className="text-lg font-medium mt-4"> {item.step} </h3>
                   <p className="text-muted-foreground mt-2 text-start lg:text-start">
                     {item.description}
                   </p>

@@ -14,6 +14,9 @@ import { AccordionTrigger } from "../components/ui/accordion";
 import { AccordionContent } from "../components/ui/accordion";
 import { offers } from "../constants";
 import Navbar from "../components/home/navigation/navbar";
+import { Link } from "react-router-dom";
+
+
 const trading = () => {
   return (
     <>
@@ -56,12 +59,12 @@ const trading = () => {
               </div>
 
               <div className="my-10 flex flex-col sm:flex-row w-full items-center gap-4 justify-center">
-                <button className="hover:bg-hBlue w-full sm:w-auto border-hBlue border text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap bg-hBlue">
+                <Link to={config.signup_url} className="hover:bg-hBlue w-full sm:w-auto border-hBlue border text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap bg-hBlue">
                   Create Account{" "}
-                </button>
-                <button className=" border border-[#2955FF] hover:bg-hBlue w-full sm:w-auto text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap">
+                </Link>
+                <Link to={config.login_url} className=" border border-[#2955FF] hover:bg-hBlue w-full sm:w-auto text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap">
                   Start Trading
-                </button>
+                </Link>
               </div>
             </div>
             <div className="">
@@ -245,12 +248,12 @@ const trading = () => {
             Open an account in minutes.
           </p>
           <div className="my-10 flex flex-col sm:flex-row w-full items-center gap-4 justify-center ">
-            <button className="hover:bg-hBlue w-full sm:w-auto border-hBlue border text-gray-200 font-bold py-3 sm:py-4 px-8  rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap bg-hBlue">
+            <Link to={config.login_url} className="hover:bg-hBlue w-full sm:w-auto border-hBlue border text-gray-200 font-bold py-3 sm:py-4 px-8  rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap bg-hBlue">
               Create account
-            </button>
-            <button className=" border border-[#2955FF] hover:bg-hBlue w-full sm:w-auto text-gray-200 font-bold py-3 sm:py-4 px-8  rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap">
+            </Link>
+            <Link to={config.signup_url} className=" border border-[#2955FF] hover:bg-hBlue w-full sm:w-auto text-gray-200 font-bold py-3 sm:py-4 px-8  rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap">
               Try Demo Account{" "}
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -289,13 +292,13 @@ const trading = () => {
             />
           </div>
           <div className="flex justify-center w-full my-5 sm:my-10 gap-4">
-            <a
-              href={config.login_url}
+            <Link
+              to={config.forgot_password}
               target="_blank"
               className="hover:bg-[#2955FF] w-full shadow-[#191d2e] shadow-xl relative border-[#2955FF]  bg-[#0070f3] font-bold rounded-md text-white transition duration-200 md:ease-linear max-w-60 text-center align-center py-4 border-radius"
             >
               Fund your account
-            </a>
+            </Link>
           </div>
         </div>
       </section>

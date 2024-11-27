@@ -3,7 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaXmark } from "react-icons/fa6";
 import Container from "../../global/container";
-import { buttonVariants } from "../../ui/button";
 import { config } from "../../../constants";
 
 const Navbar = () => {
@@ -56,7 +55,7 @@ const Navbar = () => {
 
             {/* Navigation Links */}
             <nav className="hidden md:flex space-x-8 items-center">
-              <div className="dropdown dropdown-hover">
+              {/* <div className="dropdown dropdown-hover">
                 <div
                   tabIndex={0}
                   role="button"
@@ -74,7 +73,9 @@ const Navbar = () => {
                       <Link
                         to="/"
                         className={`${
-                          isActive("/") ? "text-hBlue" : "hover:text-foreground/80"
+                          isActive("/")
+                            ? "text-hBlue"
+                            : "hover:text-foreground/80"
                         }`}
                       >
                         Home 1
@@ -84,7 +85,9 @@ const Navbar = () => {
                       <Link
                         to="/Home2"
                         className={`${
-                          isActive("/Home2") ? "text-hBlue" : "hover:text-foreground/80"
+                          isActive("/Home2")
+                            ? "text-hBlue"
+                            : "hover:text-foreground/80"
                         }`}
                       >
                         Home 2
@@ -92,7 +95,15 @@ const Navbar = () => {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> */}
+               <Link
+                to="/"
+                className={`${
+                  isActive("/") ? "text-hBlue" : "hover:text-foreground/80"
+                } text-sm`}
+              >
+               Home
+              </Link>
               <Link
                 to="/about"
                 className={`${
@@ -104,7 +115,9 @@ const Navbar = () => {
               <Link
                 to="/trading"
                 className={`${
-                  isActive("/trading") ? "text-hBlue" : "hover:text-foreground/80"
+                  isActive("/trading")
+                    ? "text-hBlue"
+                    : "hover:text-foreground/80"
                 } text-sm`}
               >
                 Trading
@@ -131,21 +144,25 @@ const Navbar = () => {
 
             {/* Buttons */}
             <div className="hidden md:flex items-center gap-4">
-              <a
-                href={config.login_url}
-                className={buttonVariants({ size: "sm", variant: "ghost" })}
+              
+              <Link
+                to={config.login_url}
+                className={`${
+                  isActive("/login") ? "text-hBlue" : "hover:text-foreground/80"
+                } text-sm`}
               >
-                Login
-              </a>
-              <a
-                href={config.signup_url}
-                className={buttonVariants({
-                  size: "sm",
-                  className: "hidden md:flex",
-                })}
+                Login{" "}
+              </Link>
+              <Link
+                to={config.signup_url}
+                className={`${
+                  isActive("/register")
+                    ? "text-hBlue"
+                    : "hover:text-foreground/80"
+                } text-sm`}
               >
-                Start free trial
-              </a>
+                Start a free trial{" "}
+              </Link>
             </div>
           </div>
         </Container>

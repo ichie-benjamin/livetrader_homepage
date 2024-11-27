@@ -8,6 +8,10 @@ import Digitalcurrency from "./page/digitalcurrency";
 import Funding from "./page/funding";
 import Withdrawal from "./page/withdrawal";
 import RangeOfMarkets from "./page/rangeOfMarkets";
+import Register from "./page/resgister";
+import Login from "./page/login";
+import Forgot_password from "./page/forgot_password";
+
 function App() {
   return (
     <Router>
@@ -21,6 +25,10 @@ function App() {
         <Route path="/funding" element={<Funding />} />
         <Route path="/withdrawal" element={<Withdrawal />} />
         <Route path="/range-of-markets" element={<RangeOfMarkets />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/Forgot_password" element={<Forgot_password />} />
+
       </Routes>
     </Router>
   );

@@ -24,6 +24,8 @@ import {
 } from "../components/ui/accordion";
 import ColorChangingTextOrBg from "../components/ui/bgColor";
 import { Why_trade_with_us } from "../constants";
+import { Link } from "react-router-dom";
+import { config } from "../constants";
 
 const about = () => {
   const [isPro, setIsPro] = useState(false);
@@ -53,13 +55,13 @@ const about = () => {
                 Trade with Confidence and Maximise Your Earnings.{" "}
               </p>
               <div className="my-10 flex flex-col sm:flex-row w-full items-center gap-4 justify-center">
-                <button className="bg-gray-950 w-full sm:w-auto text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap">
+                <Link to={config.login_url} className="bg-gray-950 w-full sm:w-auto text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap">
                   Start Trading
-                </button>
+                </Link>
 
-                <button className="hover:bg-hBlue w-full sm:w-auto border-hBlue border text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap bg-hBlue">
+                <Link to={config.signup_url} className="hover:bg-hBlue w-full sm:w-auto border-hBlue border text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap bg-hBlue">
                   Try a Demo For Free{" "}
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -1034,12 +1036,12 @@ const about = () => {
           </div>
         </div>
         <div className="flex justify-center py-10">
-          <a
-            href="#"
+          <Link
+            to={config.signup_url}
             className="bg-hBlue text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded-3xl transition-transform duration-300 ease-in-out transform hover:scale-105"
           >
             Open a Live Account
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -1142,12 +1144,12 @@ const about = () => {
                 </p>
               </div>
               <div className="my-10 flex flex-col sm:flex-row w-full items-center gap-4 justify-center">
-                <button className="hover:bg-hBlue w-full sm:w-auto border-hBlue border text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap bg-hBlue">
+                <Link to={config.signup_url} className="hover:bg-hBlue w-full sm:w-auto border-hBlue border text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap bg-hBlue">
                   Try a Demo
-                </button>
-                <button className="bg-gray-900 w-full sm:w-auto text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap">
+                </Link>
+                <Link to={config.login_url} className="bg-gray-900 w-full sm:w-auto text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap">
                   Start Trading
-                </button>
+                </Link>
               </div>
             </div>
           </div>

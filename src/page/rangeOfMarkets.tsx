@@ -4,7 +4,7 @@ import { Navbar } from "../components";
 import Strength from "/forex/strength-bg.webp";
 import { Link } from "react-router-dom";
 import Dropdown from "../components/ui/drop";
-
+import { config } from "../constants";
 const rangeOfMarkets = () => {
   return (
     <div>
@@ -26,12 +26,12 @@ const rangeOfMarkets = () => {
               liquid market with Raw spreads starting from 0.0 pips.
             </p>
             <div className="my-10 flex items-center gap-4 justify-center">
-              <a
-                href="#"
+              <Link
+                to={config.login_url}
                 className="bg-hBlue text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded transition-transform duration-300 ease-in-out transform hover:scale-105"
               >
                 Start Trading
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -715,13 +715,13 @@ const rangeOfMarkets = () => {
               global markets today!
             </p>
             <div className="my-10 flex flex-col sm:flex-row w-full items-center gap-4 justify-center">
-              <button className=" bg-hBlue w-full sm:w-auto text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap">
+            <Link to={config.signup_url} className=" bg-hBlue w-full sm:w-auto text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap">
                 Open Trading Account
-              </button>
+              </Link>
 
-              <button className="hover:bg-hBlue w-full sm:w-auto border-hBlue border text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap">
+              <Link to={config.login_url} className="hover:bg-hBlue w-full sm:w-auto border-hBlue border text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap">
                 Try a Free Demo{" "}
-              </button>
+              </Link>
             </div>
           </div>
         </div>

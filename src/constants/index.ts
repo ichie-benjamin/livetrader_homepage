@@ -13,9 +13,10 @@ export const config = {
     "Live trading is a reliable and secure platform for trading financial instruments. Join us to experience a seamless and efficient trading environment.",
   logo: "/images/logo.png",
   site_slogan: "Trading with ease",
-  login_url: "#",
+  login_url: "/login",
   email: "support@livetrader.com",
-  signup_url: "#",
+  signup_url: "/register",
+  forgot_password: "/forgot_password",
 };
 
 export const Major = [
@@ -1271,16 +1272,19 @@ export const WHY_CHOOSE_LIVETRADING = [
 export const HOW_TO_GET_STARTED = [
   {
     step: "Sign Up",
+    url: "/register",
     description:
       "Create an account with Live trading in just a few clicks. All you need is an email address to get started.",
   },
   {
     step: "Fund Your Account",
+    url: "/forgot_password",
     description:
       "Deposit funds using our secure payment methods. We support a variety of currencies and payment options for your convenience.",
   },
   {
     step: "Start Trading",
+    url: "/login",
     description:
       "Once your account is funded, you’re ready to start trading. Choose your markets, set your strategies, and begin your journey to financial freedom.",
   },
