@@ -1,7 +1,5 @@
 // import React from "react";
-import { Container } from "../components";
 import { config } from "../constants";
-import { buttonVariants } from "../components/ui/button";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { FaLaptopCode } from "react-icons/fa6";
 import { RiGraduationCapFill } from "react-icons/ri";
