@@ -147,6 +147,10 @@ const Navbar = () => {
               
               <Link
                 to={config.login_url}
+                onClick={(e) => {
+                  e.preventDefault(); // Prevent internal navigation
+                  window.open(config.login_url, "_blank", "noopener,noreferrer");
+                }}
                 className={`${
                   isActive("/login") ? "text-hBlue" : "hover:text-foreground/80"
                 } text-sm`}
@@ -155,6 +159,10 @@ const Navbar = () => {
               </Link>
               <Link
                 to={config.signup_url}
+                onClick={(e) => {
+                  e.preventDefault(); // Prevent internal navigation
+                  window.open(config.signup_url, "_blank", "noopener,noreferrer");
+                }}
                 className={`${
                   isActive("/register")
                     ? "text-hBlue"

@@ -59,10 +59,16 @@ const trading = () => {
               </div>
 
               <div className="my-10 flex flex-col sm:flex-row w-full items-center gap-4 justify-center">
-                <Link to={config.signup_url} className="hover:bg-hBlue w-full sm:w-auto border-hBlue border text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap bg-hBlue">
+                <Link to={config.signup_url}  onClick={(e) => {
+    e.preventDefault(); // Prevent internal navigation
+    window.open(config.signup_url, "_blank", "noopener,noreferrer");
+  }} className="hover:bg-hBlue w-full sm:w-auto border-hBlue border text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap bg-hBlue">
                   Create Account{" "}
                 </Link>
-                <Link to={config.login_url} className=" border border-[#2955FF] hover:bg-hBlue w-full sm:w-auto text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap">
+                <Link to={config.login_url}  onClick={(e) => {
+    e.preventDefault(); // Prevent internal navigation
+    window.open(config.login_url, "_blank", "noopener,noreferrer");
+  }} className=" border border-[#2955FF] hover:bg-hBlue w-full sm:w-auto text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded hover:transf transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap">
                   Start Trading
                 </Link>
               </div>

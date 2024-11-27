@@ -13,9 +13,9 @@ export const config = {
     "Live trading is a reliable and secure platform for trading financial instruments. Join us to experience a seamless and efficient trading environment.",
   logo: "/images/logo.png",
   site_slogan: "Trading with ease",
-  login_url: "/login",
+  login_url: "/traderoom/#/login",
   email: "support@livetrader.com",
-  signup_url: "/register",
+  signup_url: "/traderoom/#/register",
   forgot_password: "/forgot_password",
 };
 
