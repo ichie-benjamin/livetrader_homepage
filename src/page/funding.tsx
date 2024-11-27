@@ -152,7 +152,7 @@ const funding = () => {
             <div className="my-10 flex flex-col sm:flex-row w-full items-center gap-4 justify-center">
               <Link to={config.login_url}  onClick={(e) => {
     e.preventDefault(); // Prevent internal navigation
-    window.open(config.login, "_blank", "noopener,noreferrer");
+    window.open(config.login_url, "_blank", "noopener,noreferrer");
   }} className=" bg-hBlue w-full sm:w-auto text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap">
                 Open Trading Account
               </Link>
