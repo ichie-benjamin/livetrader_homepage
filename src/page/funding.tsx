@@ -37,42 +37,7 @@ const funding = () => {
           </div>
         </div>
       </div>
-      <div className="bg-black relative py-2 items-center justify-center">
-        <ul className="items-center hidden md:flex gap-4  md:gap-8 text-xs font-extrabold text-gray-600 justify-center bg-black ">
-          <li>
-            <Link to="/forex" className="">
-              FOREX
-            </Link>{" "}
-          </li>
-          <li>
-            <Link to="/funding" className="text-hBlue">
-              FUNDING
-            </Link>{" "}
-          </li>
-          <li>
-            <Link to="/withdrawal" className="">
-              WITHDRAWAL
-            </Link>{" "}
-          </li>
-          <li>
-            <Link to="/trading" className="">
-              TRADING
-            </Link>{" "}
-          </li>
-          <li>
-            <Link to="/digitalcurrency" className="">
-              DIGITAL CURRENCY
-            </Link>{" "}
-          </li>
-          <li>
-            <Link to="/range-of-markets" className="">
-              RANGE OF MARKET
-            </Link>{" "}
-          </li>
-        </ul>
-
-        <Dropdown />
-      </div>
+     
       <div className="max-w-4xl mx-auto mb-20">
         <Tabs />
       </div>
@@ -150,17 +115,33 @@ const funding = () => {
               a regulated Forex CFD provider today
             </p>
             <div className="my-10 flex flex-col sm:flex-row w-full items-center gap-4 justify-center">
-              <Link to={config.login_url}  onClick={(e) => {
-    e.preventDefault(); // Prevent internal navigation
-    window.open(config.login_url, "_blank", "noopener,noreferrer");
-  }} className=" bg-hBlue w-full sm:w-auto text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap">
+              <Link
+                to={config.login_url}
+                onClick={(e) => {
+                  e.preventDefault(); // Prevent internal navigation
+                  window.open(
+                    config.login_url,
+                    "_blank",
+                    "noopener,noreferrer"
+                  );
+                }}
+                className=" bg-hBlue w-full sm:w-auto text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap"
+              >
                 Open Trading Account
               </Link>
 
-              <Link to={config.signup_url}  onClick={(e) => {
-    e.preventDefault(); // Prevent internal navigation
-    window.open(config.signup_url, "_blank", "noopener,noreferrer");
-  }} className="hover:bg-hBlue w-full sm:w-auto border-hBlue border text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap">
+              <Link
+                to={config.signup_url}
+                onClick={(e) => {
+                  e.preventDefault(); // Prevent internal navigation
+                  window.open(
+                    config.signup_url,
+                    "_blank",
+                    "noopener,noreferrer"
+                  );
+                }}
+                className="hover:bg-hBlue w-full sm:w-auto border-hBlue border text-gray-200 font-bold py-3 sm:py-4 px-8 sm:px-14 rounded transition-transform duration-300 ease-in-out transform hover:scale-105- whitespace-nowrap"
+              >
                 Try a Free Demo{" "}
               </Link>
             </div>

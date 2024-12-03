@@ -16,7 +16,6 @@ import { Exotic } from "../constants";
 import { Minor } from "../constants";
 import { Major } from "../constants";
 import { Link } from "react-router-dom";
-import Dropdown from "../components/ui/drop";
 import { config } from "../constants";
 
 const forex = () => {
@@ -51,42 +50,7 @@ const forex = () => {
         </div>
       </div>
 
-      <div className="bg-black relative py-2 items-center justify-center">
-        <ul className="items-center hidden md:flex gap-4  md:gap-8 text-xs font-extrabold text-gray-600 justify-center bg-black ">
-          <li>
-            <Link to="/forex" className="text-hBlue">
-              FOREX
-            </Link>{" "}
-          </li>
-          <li>
-            <Link to="/funding" className="">
-              FUNDING
-            </Link>{" "}
-          </li>
-          <li>
-            <Link to="/withdrawal" className="">
-              WITHDRAWAL
-            </Link>{" "}
-          </li>
-          <li>
-            <Link to="/trading" className="">
-              TRADING
-            </Link>{" "}
-          </li>
-          <li>
-            <Link to="/digitalcurrency" className="">
-              DIGITAL CURRENCY
-            </Link>{" "}
-          </li>
-          <li>
-            <Link to="/range-of-markets" className="">
-              RANGE OF MARKET
-            </Link>{" "}
-          </li>
-        </ul>
-
-        <Dropdown />
-      </div>
+      
       <div className="p-2 sm:p-4 mt-5 sm:mt-16">
         <div className="max-w-5xl mx-auto bg-slate-900 rounded-xl grid gap-4 -lg:gap-8 grid-cols-1 md:grid-cols-12">
           <div className="md:col-span-8">
@@ -185,6 +149,7 @@ const forex = () => {
           <h3 className="font-bold text-2xl sm:text-3xl leading text-center">
             Forex Spreads{" "}
           </h3>
+          
           <h6 className="text-sm sm:text-base text-gray text-center my-4">
             IC Markets Global offers Forex traders some of the tightest spreads
             out of all Forex exchange brokers globally with our EUR/USD spread

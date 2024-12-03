@@ -53,42 +53,6 @@ const digitalcurrency = () => {
             </div>
           </div>
         </div>
-        <div className="bg-black relative py-2 items-center justify-center">
-          <ul className="items-center hidden md:flex gap-4  md:gap-8 text-xs font-extrabold text-gray-600 justify-center bg-black ">
-            <li>
-              <Link to="/forex" className="">
-                FOREX
-              </Link>{" "}
-            </li>
-            <li>
-              <Link to="/funding" className="">
-                FUNDING
-              </Link>{" "}
-            </li>
-            <li>
-              <Link to="/withdrawal" className="">
-                WITHDRAWAL
-              </Link>{" "}
-            </li>
-            <li>
-              <Link to="/trading" className="">
-                TRADING
-              </Link>{" "}
-            </li>
-            <li>
-              <Link to="/digitalcurrency" className="text-hBlue">
-                DIGITAL CURRENCY
-              </Link>{" "}
-            </li>
-            <li>
-              <Link to="/range-of-markets" className="">
-                RANGE OF MARKET
-              </Link>{" "}
-            </li>
-          </ul>
-
-          <Dropdown />
-        </div>
 
         <div className="bg-hBlue max-w-5xl my-5 rounded p-4 text-center mx-auto  mt-5 sm:mt-16">
           <p>

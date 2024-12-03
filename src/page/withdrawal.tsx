@@ -3,7 +3,6 @@ import Hero from "/digitalcurrency/btc-banner.webp";
 import { FaCheckCircle } from "react-icons/fa";
 import Strength from "/forex/strength-bg.webp";
 import { Link } from "react-router-dom";
-import Dropdown from "../components/ui/drop";
 import { config } from "../constants";
 const withdrawal = () => {
   return (
@@ -38,42 +37,7 @@ const withdrawal = () => {
         </div>
       </div>
 
-      <div className="bg-black relative py-2 items-center justify-center">
-        <ul className="items-center hidden md:flex gap-4  md:gap-8 text-xs font-extrabold text-gray-600 justify-center bg-black ">
-          <li>
-            <Link to="/forex" className="">
-              FOREX
-            </Link>{" "}
-          </li>
-          <li>
-            <Link to="/funding" className="">
-              FUNDING
-            </Link>{" "}
-          </li>
-          <li>
-            <Link to="/withdrawal" className="text-hBlue">
-              WITHDRAWAL
-            </Link>{" "}
-          </li>
-          <li>
-            <Link to="/trading" className="">
-              TRADING
-            </Link>{" "}
-          </li>
-          <li>
-            <Link to="/digitalcurrency" className="">
-              DIGITAL CURRENCY
-            </Link>{" "}
-          </li>
-          <li>
-            <Link to="/range-of-markets" className="">
-              RANGE OF MARKET
-            </Link>{" "}
-          </li>
-        </ul>
-
-        <Dropdown />
-      </div>
+     
       <div className="max-w-4xl mx-auto text-gray-500 my-5 sm:my-14 px-2">
         <h6 className="mb-5 sm:mb-9">
           If you do not yet have access to your Secure Client Area please follow
