@@ -18,7 +18,6 @@ import { Digitalcurrency } from "../constants";
 import { digitalcurrencyTable } from "../constants";
 import { CiSearch } from "react-icons/ci";
 import { Link } from "react-router-dom";
-import Dropdown from "../components/ui/drop";
 import { config } from "../constants";
 const digitalcurrency = () => {
   return (

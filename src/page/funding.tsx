@@ -3,7 +3,6 @@ import Tabs from "../components/ui/tabs";
 import Hero from "/funding/account_funding_bg.webp";
 import Strength from "/forex/strength-bg.webp";
 import { Link } from "react-router-dom";
-import Dropdown from "../components/ui/drop";
 import { config } from "../constants";
 
 const funding = () => {
