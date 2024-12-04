@@ -13,6 +13,7 @@ import {
 } from "../../ui/dropdown";
 
 import { FaPlus } from "react-icons/fa6";
+import { FaChevronDown } from "react-icons/fa";
 
 
 const Navbar = () => {
@@ -49,15 +50,15 @@ const Navbar = () => {
                 <div
                   tabIndex={0}
                   role="button"
-                  className={`group font-bold text-gray-400 ${
+                  className={`group font-bold text-gray-400 flex items-center gap-2 ${
                     isActive("/") || isActive("/home2")
                       ? "text-hBlue"
                       : "hover:text-foreground/80"
                   } text-sm`}
                 >
                   HOME{" "}
-                  <span className="font-extrabold px-1 text-lg group-hover:rotate-45">
-                    +
+                  <span className="font-extrabold px-1">
+                  <FaChevronDown />
                   </span>
                 </div>
                 <div tabIndex={1} className="dropdown-content menu">
@@ -101,37 +102,21 @@ const Navbar = () => {
                   </ul>
                 </div>
               </div>
-              <Link
-                to="/about"
-                className={`${
-                  isActive("/about") ? "text-hBlue" : "hover:text-foreground/80"
-                } text-sm`}
-              >
-                MARKET{" "}
-              </Link>
-              <Link
-                to="/trading"
-                className={`${
-                  isActive("/trading")
-                    ? "text-hBlue"
-                    : "hover:text-foreground/80"
-                } text-sm`}
-              >
-                ACCOUNT
-              </Link>
               <div className="dropdown font-bold dropdown-hover">
                 <div
                   tabIndex={0}
                   role="button"
-                  className={`${
-                    isActive("") || isActive("/home2")
+                  className={`flex items-center gap-2 ${
+                    isActive("/range-of-markets") || isActive("/range-of-markets")
                       ? "text-hBlue"
                       : "hover:text-foreground/80"
                   } text-sm`}
                 >
-                  MORE{" "}
-                  <span className="font-extrabold text-lg rotate-0 group-hover:rotate-45">
-                    +
+                  <Link to="/range-of-markets">
+                  MARKETS
+                  </Link>
+                  <span className="font-extrabold">
+                   <FaChevronDown />
                   </span>
                 </div>
                 <div tabIndex={0} className="dropdown-content menu">
@@ -160,6 +145,50 @@ const Navbar = () => {
                         STOCKS
                       </Link>
                     </li>
+                    <li>
+                      <Link
+                        to="/digitalcurrency"
+                        className={`font-bold rounded border-gray-700 hover:border ${
+                          isActive("/digitalcurrency")
+                            ? "text-hBlue"
+                            : "hover:text-foreground/80"
+                        }`}
+                      >
+                        DIGITAL CURRENCY
+                      </Link>
+                    </li>
+
+                    
+                  </ul>
+                </div>
+              </div>
+              <Link
+                to="/trading"
+                className={`${
+                  isActive("/trading")
+                    ? "text-hBlue"
+                    : "hover:text-foreground/80"
+                } text-sm`}
+              >
+                ACCOUNT
+              </Link>
+              <div className="dropdown font-bold dropdown-hover">
+                <div
+                  tabIndex={0}
+                  role="button"
+                  className={`flex items-center gap-2 ${
+                    isActive("") || isActive("/home2")
+                      ? "text-hBlue"
+                      : "hover:text-foreground/80"
+                  } text-sm`}
+                >
+                  MORE{" "}
+                  <span className="font-extrabold">
+                   <FaChevronDown />
+                  </span>
+                </div>
+                <div tabIndex={0} className="dropdown-content menu">
+                  <ul className="translate-y-1 bg-slate-900 rounded z-[1] w-52 p-2 shadow -translate-x-10 border-b border-x border-gray-700">
                     <li>
                       <Link
                         to="/funding"
@@ -194,31 +223,6 @@ const Navbar = () => {
                         }`}
                       >
                         TRADING
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/digitalcurrency"
-                        className={`font-bold rounded border-gray-700 hover:border ${
-                          isActive("/digitalcurrency")
-                            ? "text-hBlue"
-                            : "hover:text-foreground/80"
-                        }`}
-                      >
-                        DIGITAL CURRENCY
-                      </Link>
-                    </li>
-
-                    <li>
-                      <Link
-                        to="/range-of-markets"
-                        className={`font-bold rounded border-gray-700 hover:border ${
-                          isActive("/range-of-markets")
-                            ? "text-hBlue"
-                            : "hover:text-foreground/80"
-                        }`}
-                      >
-                        RANGE OF MARKET
                       </Link>
                     </li>
                   </ul>
@@ -277,9 +281,10 @@ const Navbar = () => {
         </Container>
       </header>
 
-      {/* mobile */}
+      {/***************************************** 
+                          mobile 
+      *****************************************/}
 
-      {/* Drawer */}
       <div
         className={`fixed top-0 left-0 z-50 h-full w-full text-sm bg-slate-950 sm:max-w-md shadow-lg transform transition-transform duration-500 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
@@ -298,8 +303,9 @@ const Navbar = () => {
         <div className="ps-6 font-bold text-gray-500 pt-4">
           <div>
             <DropdownMenu>
-              <DropdownMenuTrigger><span className="flex items-center gap-2">HOME<FaPlus /> </span></DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-slate-900 border-gray-600 ms-6">
+              <DropdownMenuTrigger><span className="flex items-center gap-2">HOME <FaChevronDown />
+              </span></DropdownMenuTrigger>
+              <DropdownMenuContent className="bg-slate-900 border-gray-800 ms-6">
                 <DropdownMenuLabel className="hover:bg-gray-800 hover:border hover:border-gray-500">
                   <Link to="/">Home 1</Link>
                 </DropdownMenuLabel>
@@ -312,31 +318,11 @@ const Navbar = () => {
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
-          <div className="my-2">
-            <Link
-              to="/trading"
-              className={`my-2 ${
-                isActive("/trading") ? "text-hBlue" : "hover:text-foreground/80"
-              } text-sm`}
-            >
-              MARKET
-            </Link>
-          </div>
-          <div className="my-2">
-            <Link
-              to="/trading"
-              className={`my-2 ${
-                isActive("/trading") ? "text-hBlue" : "hover:text-foreground/80"
-              } text-sm`}
-            >
-              ACCOUNT
-            </Link>
-          </div>
-
-          <div >
+          <div className="my-4">
             <DropdownMenu>
-              <DropdownMenuTrigger> <span className="flex items-center gap-2">MORE<FaPlus /> </span> </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-slate-900 border-gray-600 ms-6">
+              <DropdownMenuTrigger> <span className="flex items-center gap-2">MARKETS <FaChevronDown />
+              </span> </DropdownMenuTrigger>
+              <DropdownMenuContent className="bg-slate-900 border-gray-800 ms-6">
                 <DropdownMenuLabel className="hover:bg-gray-800 hover:border hover:border-gray-500">
                   <Link
                     to="/forex"
@@ -361,6 +347,37 @@ const Navbar = () => {
                     STOCKS
                   </Link>
                 </DropdownMenuLabel>
+                <DropdownMenuLabel className="hover:bg-gray-800 hover:border hover:border-gray-500">
+                  <Link
+                    to="/digitalcurrency"
+                    className={`font-bold rounded ${
+                      isActive("/digitalcurrency")
+                        ? "text-hBlue"
+                        : "hover:text-foreground/80"
+                    }`}
+                  >
+                    DIGITAL CURRENCY
+                  </Link>
+                </DropdownMenuLabel>
+              </DropdownMenuContent>
+            </DropdownMenu>
+          </div>
+          <div className="my-4">
+            <Link
+              to="/trading"
+              className={`my-2 ${
+                isActive("/trading") ? "text-hBlue" : "hover:text-foreground/80"
+              } text-sm`}
+            >
+              ACCOUNT
+            </Link>
+          </div>
+
+          <div >
+            <DropdownMenu>
+              <DropdownMenuTrigger> <span className="flex items-center gap-2">MORE <FaChevronDown />
+              </span> </DropdownMenuTrigger>
+              <DropdownMenuContent className="bg-slate-900 border-gray-800 ms-6">
                 <DropdownMenuLabel className="hover:bg-gray-800 hover:border hover:border-gray-500">
                   <Link
                     to="/funding"
@@ -396,30 +413,6 @@ const Navbar = () => {
                     }`}
                   >
                     TRADING
-                  </Link>
-                </DropdownMenuLabel>
-                <DropdownMenuLabel className="hover:bg-gray-800 hover:border hover:border-gray-500">
-                  <Link
-                    to="/digitalcurrency"
-                    className={`font-bold rounded ${
-                      isActive("/digitalcurrency")
-                        ? "text-hBlue"
-                        : "hover:text-foreground/80"
-                    }`}
-                  >
-                    DIGITAL CURRENCY
-                  </Link>
-                </DropdownMenuLabel>
-                <DropdownMenuLabel className="hover:bg-gray-800 hover:border hover:border-gray-500">
-                  <Link
-                    to="/range-of-markets"
-                    className={`font-bold rounded ${
-                      isActive("/range-of-markets")
-                        ? "text-hBlue"
-                        : "hover:text-foreground/80"
-                    }`}
-                  >
-                    RANGE OF MARKET
                   </Link>
                 </DropdownMenuLabel>
               </DropdownMenuContent>
