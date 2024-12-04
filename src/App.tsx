@@ -12,6 +12,8 @@ import Register from "./page/resgister";
 import Login from "./page/login";
 import Forgot_password from "./page/forgot_password";
 import Stock from "./page/stock";
+import Indices from "./page/indices";
+import Commodities from "./page/commodities";
 function App() {
   return (
     <Router>
@@ -29,6 +31,8 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/Forgot_password" element={<Forgot_password />} />
         <Route path="/stock" element={<Stock />} />
+        <Route path="/indices" element={<Indices />} />
+        <Route path="/commodities" element={<Commodities />} />
 
 
       </Routes>

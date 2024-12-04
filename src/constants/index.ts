@@ -376,9 +376,232 @@ export const Digitalcurrency = [
   },
 ];
 
+export const Stock = [
+  {
+    SYMBOL: "AUS200",
+    DESCRIPTION: "Australia S&P ASX 200 Index",
+    MIN: "0.000",
+    AVG: "1.220",
+  },
+  {
+    SYMBOL: "DE40",
+    DESCRIPTION: "Germany 40 Index",
+    MIN: "0.500",
+    AVG: "1.338",
+  },
+  {
+    SYMBOL: "F40",
+    DESCRIPTION: "France 40 Index",
+    MIN: "0.000",
+    AVG: "0.749",
+  },
+  {
+    SYMBOL: "JP225",
+    DESCRIPTION: "Japan 225 Index",
+    MIN: "6.000",
+    AVG: "8.858",
+  },
+  {
+    SYMBOL: "STOXX50",
+    DESCRIPTION: "EU Stocks 50 Index",
+    MIN: "0.200",
+    AVG: "1.760",
+  },
+  {
+    SYMBOL: "UK100",
+    DESCRIPTION: "UK 100 Index",
+    MIN: "1.000",
+    AVG: "2.133",
+  },
+  {
+    SYMBOL: "US30",
+    DESCRIPTION: "US Wall Street 30 Index",
+    MIN: "1.000",
+    AVG: "1.411",
+  },
+  {
+    SYMBOL: "US500",
+    DESCRIPTION: "US SPX 500 Index",
+    MIN: "0.200",
+    AVG: "0.492",
+  },
+  {
+    SYMBOL: "USTEC",
+    DESCRIPTION: "US Tech 100 Index",
+    MIN: "1.000",
+    AVG: "1.807",
+  },
+  {
+    SYMBOL: "CA60",
+    DESCRIPTION: "Canada 60 Index",
+    MIN: "0.600",
+    AVG: "0.600",
+  },
+  {
+    SYMBOL: "CHINA50",
+    DESCRIPTION: "FTSE China A50 Index",
+    MIN: "3.290",
+    AVG: "6.953",
+  },
+  {
+    SYMBOL: "CHINAH",
+    DESCRIPTION: "Hong Kong China H-shares Index",
+    MIN: "0.000",
+    AVG: "2.083",
+  },
+  {
+    SYMBOL: "ES35",
+    DESCRIPTION: "Spain 35 Index",
+    MIN: "4.200",
+    AVG: "4.426",
+  },
+  {
+    SYMBOL: "HK50",
+    DESCRIPTION: "Hong Kong 50 Index",
+    MIN: "7.000",
+    AVG: "8.169",
+  },
+  {
+    SYMBOL: "IT40",
+    DESCRIPTION: "Italy 40 Index",
+    MIN: "9.000",
+    AVG: "9.000",
+  },
+  {
+    SYMBOL: "MidDE50",
+    DESCRIPTION: "Germany Mid 50 Index",
+    MIN: "7.500",
+    AVG: "27.864",
+  },
+  {
+    SYMBOL: "NETH25",
+    DESCRIPTION: "Netherlands 25 Index",
+    MIN: "0.190",
+    AVG: "0.190",
+  },
+  {
+    SYMBOL: "NOR25",
+    DESCRIPTION: "Norway 25 Index",
+    MIN: "0.680",
+    AVG: "0.680",
+  },
+  {
+    SYMBOL: "SA40",
+    DESCRIPTION: "South Africa 40 Index",
+    MIN: "7.500",
+    AVG: "15.444",
+  },
+  {
+    SYMBOL: "SE30",
+    DESCRIPTION: "Sweden 30",
+    MIN: "0.380",
+    AVG: "0.380",
+  },
+  {
+    SYMBOL: "SWI20",
+    DESCRIPTION: "Switzerland 20 Index",
+    MIN: "3.000",
+    AVG: "3.500",
+  },
+  {
+    SYMBOL: "TecDE30",
+    DESCRIPTION: "Germany Tech 30 Index",
+    MIN: "2.300",
+    AVG: "3.172",
+  },
+  {
+    SYMBOL: "US2000",
+    DESCRIPTION: "US Small Cap 2000 Index",
+    MIN: "0.140",
+    AVG: "0.480",
+  },
+];
+
+export const Commodities = [
+  {
+    SYMBOL: "BRENT",
+    DESCRIPTION: "Brent Crude Oil Futures",
+    MIN: "0.020",
+    AVG: "0.028",
+  },
+  {
+    SYMBOL: "Cocoa",
+    DESCRIPTION: "Cocoa futures",
+    MIN: "3.000",
+    AVG: "4.608",
+  },
+  {
+    SYMBOL: "Coffee",
+    DESCRIPTION: "Coffee Futures",
+    MIN: "0.300",
+    AVG: "0.300",
+  },
+  {
+    SYMBOL: "Corn",
+    DESCRIPTION: "Corn Futures",
+    MIN: "0.680",
+    AVG: "0.680",
+  },
+  {
+    SYMBOL: "Cotton",
+    DESCRIPTION: "Cotton Futures",
+    MIN: "0.150",
+    AVG: "0.150",
+  },
+  {
+    SYMBOL: "OJ",
+    DESCRIPTION: "Orange Juice Futures",
+    MIN: "1.120",
+    AVG: "1.120",
+  },
+  {
+    SYMBOL: "Soybean",
+    DESCRIPTION: "Soybean Futures",
+    MIN: "1.350",
+    AVG: "1.350",
+  },
+  {
+    SYMBOL: "Sugar",
+    DESCRIPTION: "Sugar Futures",
+    MIN: "0.030",
+    AVG: "0.033",
+  },
+  {
+    SYMBOL: "Wheat",
+    DESCRIPTION: "Wheat Futures",
+    MIN: "0.750",
+    AVG: "0.750",
+  },
+  {
+    SYMBOL: "WTI",
+    DESCRIPTION: "West Texas Intermediate - Crude Oil Futures",
+    MIN: "0.020",
+    AVG: "0.027",
+  },
+  {
+    SYMBOL: "XBRUSD",
+    DESCRIPTION: "Brent Crude Oil Spot vs United States Dollar",
+    MIN: "0.030",
+    AVG: "0.034",
+  },
+  {
+    SYMBOL: "XNGUSD",
+    DESCRIPTION: "Natural Gas Spot vs United States Dollar",
+    MIN: "0.002",
+    AVG: "0.004",
+  },
+  {
+    SYMBOL: "XTIUSD",
+    DESCRIPTION: "WTI Crude Oil Spot vs United States Dollar",
+    MIN: "0.030",
+    AVG: "0.034",
+  },
+];
+
+
 export const digitalcurrencyTable = [
   {
-    SYMBOL: "BCHUSD",
+    SYMBOL:"BCHUSD",
     DESCRIPTION: "Bitcoin Cash vs United States Dollar CFD",
     MIN: "2.210",
     AVG: "5.839",

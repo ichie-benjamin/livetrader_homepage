@@ -11,15 +11,11 @@ import {
   TableHeader,
   TableRow,
 } from "../components/ui/table";
-// import { Exotic } from "../constants";
-// import { Minor } from "../constants";
-// import { Major } from "../constants";
-import { Digitalcurrency } from "../constants";
-import { digitalcurrencyTable } from "../constants";
+import { Commodities } from "../constants";
 import { CiSearch } from "react-icons/ci";
 import { Link } from "react-router-dom";
 import { config } from "../constants";
-const digitalcurrency = () => {
+const commodities = () => {
   return (
     <div>
       <>
@@ -33,13 +29,12 @@ const digitalcurrency = () => {
           <div className="relative z-10 flex-col flex items-center justify-center h-full bg-black/70-">
             <div className="max-w-2xl">
               <h1 className="text-gray-300 md:text-4xl sm:text-3xl text-2xl font-extrabold text-center">
-                Cryptocurrency CFDs
+                Commodities CFDs
               </h1>
               <p className="text-xs md:text-base text-gray-400 text-center mt-10 mx-2">
-                Cryptocurrencies are volatile, unregulated, decentralised and
-                controlled almost exclusively by retail speculators. Trade the
-                world’s newest and most exciting asset class as CFDs with an FSA
-                regulated Forex CFD Provider.
+                Gain exposure to the basket of instruments making up the index
+                in just one trade. The world’s most popular Indices are
+                available on all IC Markets Global trading platforms.
               </p>
               <div className="my-10 flex items-center gap-4 justify-center">
                 <Link
@@ -52,96 +47,35 @@ const digitalcurrency = () => {
             </div>
           </div>
         </div>
-
-        <div className="bg-hBlue max-w-5xl my-5 rounded p-4 text-center mx-auto  mt-5 sm:mt-16">
-          <p>
-            Please note that some symbols may not be available on weekends.
-            Detailed trading sessions are available on the platforms.
-          </p>
-        </div>
-        <div className="px-2">
+        <div className="px-2 my-5 sm:mt-10">
           <div className="bg-slate-900 rounded-xl max-w-5xl mx-auto p-2 sm:p-4">
-            <div className="-mb-16 ">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 100 200"
-                width="100"
-                height="200"
-                className=""
-              >
-                {/* <!-- Dollar Sign --> */}
-                <text
-                  x="50%"
-                  y="50%"
-                  font-size="100"
-                  text-anchor="middle"
-                  fill="gold"
-                  font-family="Arial"
-                  font-weight="light"
-                >
-                  $
-                </text>
-
-                {/* <!-- Decorative Swirls --> */}
-                <path
-                  d="M 40 30 Q 45 60 55 60 Q 45 80 40 120"
-                  stroke="green"
-                  stroke-width="4"
-                  fill="none"
-                />
-                <path
-                  d="M 60 30 Q 55 60 45 60 Q 55 80 60 120"
-                  stroke="green"
-                  stroke-width="4"
-                  fill="none"
-                />
-              </svg>
-            </div>
-
             <div className="grid gap-4 grid-cols-1 md:grid-cols-12">
               <div className="md:col-span-8">
+                <div className="-mb-16 ">
+                  <img
+                    src="/range-of-markets/comodities.png"
+                    className="sm:max-h-36 my-4"
+                    alt=""
+                  />
+                </div>
                 <div className="sm:p-6 px-2">
-                  <h6 className="text-gray-600 font-bold">
-                    Now you can trade Cryptocurrency 7 days a week on all IC
-                    Markets Global platforms.
+                  <h6 className="text-gray-500 font-bold">
+                    IC Markets Global offers a flexible and easy way to gain
+                    exposure to some of the world’s most popular CFDs on
+                    Commodities including energies and metals all from within
+                    your MetaTrader 4, 5, cTrader and TradingView trading
+                    platforms.
                   </h6>
-                  <h6 className="text-gray-600 font-bold my-8">
-                    The leverage available on Cryptocurrency pairs BTCUSD,
-                    ETHUSD, LTCUSD and BCHUSD is now 1:200 for clients
-                    registered with Raw Trading (not UK clients).
-                  </h6>
-                  <h6 className="text-gray-600 font-bold">
-                    Unlike other asset classes (FX, Equities, CFDs on
-                    Commodities, etc.), the Cryptocurrency market is dominated
-                    by retail speculators. With IC Markets Global Cryptocurrency
-                    CFDs, you will trade in a market where there is no central
-                    bank intervention, interbank dealers controlling order flow
-                    or giant pension funds moving prices.
-                  </h6>
-                  <p className="text-gray-500 leading-loose mt-5 text-xs">
-                    Price movements on Cryptocurrencies like Bitcoin or Ethereum
-                    are driven primarily by news and prevailing sentiment, i.e.
-                    the fear and greed of retail speculators. These sometimes
-                    dramatic shifts can lead to massive intraday price swings,
-                    making Cryptocurrency CFDs an exciting product for
-                    aggressive and experienced day traders.
-                  </p>
-                  <p className="text-gray-500 leading-loose mt-5 text-xs">
-                    The IC Markets Global Cryptocurrency CFD product allows
-                    traders to go long or short without actually holding the
-                    Cryptocurrency. This means traders can get exposure to the
-                    price of the Cryptocurrency without worrying about the
-                    security risks associated with storing it and the
-                    counterparty risk from the exchange. This is similar to
-                    trading Energy Futures such as oil rather than owning
-                    physical oil to speculate on its price.
+                  <p className="text-gray-500 mt-5 ">
+                    Commodity markets are attractive to speculators as they are
+                    susceptible to dramatic changes in supply and demand.
                   </p>
                 </div>
               </div>
               <div className="md:col-span-4 p-6 text-gray-500">
                 <div className="bg-slate-950 rounded-xl w-full p-4 ">
                   <h6 className="text-xs font-bold text-gray">
-                    Cryptocurrency CFDs{" "}
+                    Commodities CFDs
                   </h6>
                   <h3 className="font-semibold text-lg sm:text-3xl">Facts</h3>
                   <hr className="border-gray-900 my-3" />
@@ -151,8 +85,10 @@ const digitalcurrency = () => {
                         <FaCircleCheck className="text-hBlue me-2 text-xs" />
                       </div>
                       <div>
-                        <p className="mb-3">1:200 Leverage MetaTrader4/MT5</p>
-                        <p>1:5 Leverage cTrader and TradingView</p>
+                        <p className="mb-3">
+                          25 Indices to trade fromOver 22 CFDs on Commodities to
+                          trade
+                        </p>
                         <div className="flex items-center text-[10px] mt-2 font-bold"></div>
                       </div>
                     </div>
@@ -160,22 +96,27 @@ const digitalcurrency = () => {
                     <hr className="border-gray-900 my-3" />
                     <div className="flex items-center text-[10px] font-bold">
                       <FaCircleCheck className="text-hBlue me-2 text-xs" />
-                      Trade the market 7 days a week
+                      Energy, Agriculture and Metals
                     </div>
                     <hr className="border-gray-900 my-3" />
                     <div className="flex items-center text-[10px] font-bold">
                       <FaCircleCheck className="text-hBlue me-2 text-xs" />
-                      Long or short
+                      Spot and Futures CFDs
                     </div>
                     <hr className="border-gray-900 my-3" />
                     <div className="flex items-center text-[10px] font-bold w-full">
                       <FaCircleCheck className="text-hBlue me-2 text-xs" />
-                      FSA regulated
+                      Leverage up to 1:1000
                     </div>
                     <hr className="border-gray-900 my-3" />
                     <div className="flex items-center text-[10px] font-bold w-full">
                       <FaCircleCheck className="text-hBlue me-2 text-xs" />
-                      REAL live support!
+                      Spreads as low as 0.0 pips
+                    </div>
+                    <hr className="border-gray-900 my-3" />
+                    <div className="flex items-center text-[10px] font-bold w-full">
+                      <FaCircleCheck className="text-hBlue me-2 text-xs" />
+                      Deep liquidity
                     </div>
 
                     <button className="hover:bg-hBlue mt-5 bg-hBlue sm:bg-transparent hover:text-gray-900 text-gray-900 sm:text-gray-500 text-sm border border-hBlue w-full rounded py-1 font-bold">
@@ -188,63 +129,80 @@ const digitalcurrency = () => {
           </div>
         </div>
 
-        {/* grids */}
-        <section className="bg-slate-900 py-10 sm:py-20 my-5 sm:my-10 p-2 sm:p-4 m:p-10">
-          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8 ">
-            {Digitalcurrency.map((Dc, index) => (
-              <div
-                key={index}
-                className="max-w-lg mx-auto rounded-2xl bg-slate-950 h-full w-full p-4 sm:p-6 md text-gray-500 mb-10"
-              >
-                <div>
-                  <img
-                    src={Dc.Img}
-                    className="max-w-16 rounded-full mb-2"
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg sm:text-3xl">
-                    {Dc.Title}
-                  </h3>
-                  <p className="text-gray-500 leading-loose mt-5 text-xs">
-                    {Dc.Details}
+        <section className="px-2 my-5 py-5 sm:py-10 md:py-20 sm:my-14 bg-slate-900 text-gray-500">
+          <div className="max-w-5xl mx-auto  items-center">
+            <h3 className="font-bold text-xl md:text-start sm:text-3xl  w-full ">
+              Energies{" "}
+            </h3>
+            <div className=" my-4">
+              <p className="text-sm mt-2">
+                IC Markets Global allows trading of spot energy contracts
+                including Crude Oil, Brent, and Natural Gas from your chosen
+                trading platform against the US Dollar. Trading energy contracts
+                as a spot instrument has many advantages for investors who are
+                only interested in price speculation.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-4 lg:gap-8">
+              <div>
+                <h3 className="font-bold text-xl md:text-start sm:text-3xl  w-full ">
+                  Precious Metals
+                </h3>
+                <div className=" my-4">
+                  <p className="text-sm mt-2">
+                    IC Markets Global allows trading the spot price for metals
+                    including Gold or Silver against the US Dollar or Euro and
+                    the metals Platinum or Palladium against the US Dollar as a
+                    currency pair on 1:1000 leverage.
                   </p>
                 </div>
               </div>
-            ))}
+              <div>
+                <h3 className="font-bold text-xl md:text-start sm:text-3xl  w-full ">
+                  Soft CFDs on Commodities
+                </h3>
+                <div className=" my-4">
+                  <p className="text-sm mt-2">
+                    In addition to energy and metal contracts, at IC Markets
+                    Global we offer a range of soft commodity products to trade,
+                    including corn, soybeans, sugar, cocoa, coffee, and wheat as
+                    CFDs – all with low spreads and leverage up to 1:100.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
-
         <div>
           <div className="max-w-5xl mx-auto grid gap-4 lg:gap-10 grid-cols-1 md:grid-cols-12 p-2 sm:p-4">
-            <div className="col-span-6 w-full justify-center md:justify-start">
+            <div className="col-span-6 w-full flex items-center  justify-center md:justify-start">
               <img src={Forex} alt="" />
             </div>
             <div className="col-span-6 h-full flex items-center py-20">
               <div className="mx-auto max-w-5xl text-gray-500 flex flex-col md:items-center">
-                <h1 className="font-bold text-start w-full text-4xl sm:text-3xl">
-                  How does Cryptocurrency CFD
-                </h1>
-                <h1 className="font-bold text-start w-full text-4xl sm:text-3xl">
-                  trading work?
+                <h1 className="font-bold text-start w-full text-xl sm:text-2xl">
+                  How does CFDs on Commodities trading work?
                 </h1>
                 <p className="text-gray my-2 ">
-                  Bitcoin is a digital cryptocurrency that derives its value
-                  from supply and demand factors unique to this asset class.
-                </p>
-                <p className="text-gray my-2 text-start">
-                  Bitcoin is available in a finite supply and therefore
-                  increases in price as demand increases.
+                  CFDs on Commodities cover energy, agriculture and metals
+                  products. These products are traded in futures markets and
+                  derive their value from demand and supply characteristics.
                 </p>
                 <p className="text-gray my-2 ">
-                  Demand stems from speculative sources and more practical
-                  sources, for example Internet purchases paid for in Bitcoin.
+                  Supply characteristics include the weather in the case of
+                  agriculture and costs of extraction in the case of mining and
+                  energies.
                 </p>
                 <p className="text-gray my-2 ">
-                  Bitcoin also has a tendency to react to market sentiment in
-                  more traditional markets such as equities and foreign
-                  exchange, increasing during periods of negative sentiment.
+                  Demand for CFDs on Commodities tends to be characterised by
+                  broader conditions such as economic cycles and population
+                  growth. CFDs on Commodities can be traded as stand alone
+                  products or in pairs.
+                </p>
+                <p className="text-gray my-2 ">
+                  Metals and energies are traded against major currencies
+                  whereas agriculture futures contracts are traded as
+                  stand-alone contracts.
                 </p>
               </div>
             </div>
@@ -255,7 +213,7 @@ const digitalcurrency = () => {
           <div className="sm:my-10 text-gray-600 max-w-5xl mx-auto">
             <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center mx-2">
               <h3 className="font-bold text-xl text-center sm:text-start sm:text-3xl w-full ">
-                Bitcoin CFD Trading Example
+                Commodity trading example
               </h3>
 
               <button className="bg-hBlue my-5 flex-shrink-0  py-1.5 text-xs sm:text-base hover:bg-gray-300 px-4 rounded hover:text-hBlue gap-2 text-gray-800 flex items-center w-min font-bold">
@@ -270,28 +228,39 @@ const digitalcurrency = () => {
                   The gross profit on your trade is calculated as follows:
                 </h6>
                 <p className="text-sm font-bold mt-3">opening price</p>
-                <p className="text-xs mt-1">3910.25 * 2 = USD $7820.50</p>
+                <p className="text-xs mt-1">
+                  $435.25 * 100 contracts * 4 = USD $174,100
+                </p>
                 <hr className="border-gray-900 my-2" />
                 <p className="text-sm font-bold mt-3">Closing Price</p>
-                <p className="text-xs mt-1">4200.50 * 2 = USD $8401.00</p>
+                <p className="text-xs mt-1">
+                  $460 * 100 contracts * 4 = USD $184,000
+                </p>
                 <hr className="border-gray-900 my-2" />
                 <p className="text-sm font-bold mt-3">Gross Profit on Trade</p>
-                <p className="text-xs mt-1">USD $8401.00 - 7820.50 = $580.50</p>
+                <p className="text-xs mt-1">USD $184,000 - $174,100 = $9,900</p>
                 <hr className="border-gray-900 my-2" />
               </div>
               <div className="bg-slate-950 p-4 h-fit rounded-[8px]">
                 <h6 className="font-bold">Opening the Position</h6>
                 <p className="text-sm mt-3">
-                  The price of Bitcoin CFD against the US Dollar is
-                  3900.25/3910.25 and you decide to buy 2 contracts at 3910.25.
+                  Wheat_N7 is currently trading at 434.00/435.25 and you are
+                  expecting Australia’s East Coast crops to be affected by
+                  adverse weather patterns over the coming year which will
+                  result in lower than average crop yields.
+                </p>
+                <p className="text-sm mt-3 bg-slate-900 p-2">
+                  You buy 100 contracts of Wheat (4 bushels per contract) at
+                  435.25 which equals USD $174,100 (435.25 * 100 * 4).
                 </p>
               </div>
               <div className="bg-slate-950 p-4 h-fit rounded-[8px]">
                 <h6 className="font-bold">Closing the Position</h6>
                 <p className="text-sm mt-3">
-                  One month later Bitcoin CFD has increased to 4200.50/4210.50
-                  and you decide to take your profit by selling your 2 contracts
-                  at 4200.50 each.
+                  Your research surrounding weather conditions turns out to be
+                  correct. Lower crop yields this year have caused Wheat prices
+                  to increase to 460.00/462.15. You exit your position by
+                  selling your contracts at 460.
                 </p>
               </div>
             </div>
@@ -335,7 +304,7 @@ const digitalcurrency = () => {
               <h1>Product</h1>
               <h1>All Accounts</h1>
             </div>
-            <div className="w-full hidden md:flex px-2 rounded-xl ">
+            <div className="w-full hidden  max- h-[90vh] md:flex px-2 rounded-xl ">
               <Table className="text-gray-500 mb-10">
                 <TableHeader className=" rounded-t-lg sticky top-0 w-full bg-slate-900">
                   <TableRow className="rounded-full divide-gray-900 border-gray-900 border-none  first:rounded-tl-xl last:rounded-tr-xl bg-slate-900 hover:bg-slate-900">
@@ -348,10 +317,10 @@ const digitalcurrency = () => {
                   </TableRow>
                 </TableHeader>
 
-                <TableBody className="">
-                  {digitalcurrencyTable.map((Dct, index) => (
+                <TableBody className=" ">
+                  {Commodities.map((Dct, index) => (
                     <TableRow key={index} className="text-sm border-gray-800">
-                      <TableCell>{Dct.SYMBOL}</TableCell>
+                      <TableCell className="font-bold">{Dct.SYMBOL}</TableCell>
                       <TableCell>{Dct.DESCRIPTION}</TableCell>
                       <TableCell>{Dct.MIN}</TableCell>
                       <TableCell className="text-right">{Dct.AVG}</TableCell>
@@ -361,7 +330,7 @@ const digitalcurrency = () => {
               </Table>
             </div>
             <div className="md:hidden px-2 sm:px-4 overflow-x-hidden max-h-screen overflow-y-auto scrollbar-[2px] scrollbar-thumb-gray-700 scrollbar-track-gray-200 scrollbar-thumb-rounded w-full">
-              {digitalcurrencyTable.map((Dct, index) => (
+              {Commodities.map((Dct, index) => (
                 <div
                   key={index}
                   className="text-gray-500 mb-4 p-2 sm:p-6 h-full flex bg-slate-900 px-2 border border-slate-800 py-4 rounded justify-between items-end custom-scrollbar custom-scrollbar custom-scrollbar custom-scrollbar custom-scrollbar"
@@ -439,4 +408,4 @@ const digitalcurrency = () => {
   );
 };
 
-export default digitalcurrency;
+export default commodities;

@@ -14,11 +14,9 @@ import {
 
 import { FaChevronDown } from "react-icons/fa";
 
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-
 
   const isActive = (path: string) => location.pathname === path;
 
@@ -57,7 +55,7 @@ const Navbar = () => {
                 >
                   HOME{" "}
                   <span className="font-extrabold px-1">
-                  <FaChevronDown />
+                    <FaChevronDown />
                   </span>
                 </div>
                 <div tabIndex={1} className="dropdown-content menu">
@@ -106,16 +104,15 @@ const Navbar = () => {
                   tabIndex={0}
                   role="button"
                   className={`flex items-center gap-2 ${
-                    isActive("/range-of-markets") || isActive("/range-of-markets")
+                    isActive("/range-of-markets") ||
+                    isActive("/range-of-markets")
                       ? "text-hBlue"
                       : "hover:text-foreground/80"
                   } text-sm`}
                 >
-                  <Link to="/range-of-markets">
-                  MARKETS
-                  </Link>
+                  <Link to="/range-of-markets">MARKETS</Link>
                   <span className="font-extrabold">
-                   <FaChevronDown />
+                    <FaChevronDown />
                   </span>
                 </div>
                 <div tabIndex={0} className="dropdown-content menu">
@@ -146,6 +143,31 @@ const Navbar = () => {
                     </li>
                     <li>
                       <Link
+                        to="/indices"
+                        className={`font-bold rounded border-gray-700 hover:border ${
+                          isActive("/indices")
+                            ? "text-hBlue"
+                            : "hover:text-foreground/80"
+                        }`}
+                      >
+                        INDICES
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/commodities"
+                        className={`font-bold rounded border-gray-700 hover:border ${
+                          isActive("/commodities")
+                            ? "text-hBlue"
+                            : "hover:text-foreground/80"
+                        }`}
+                      >
+                        COMMODITIES
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
                         to="/digitalcurrency"
                         className={`font-bold rounded border-gray-700 hover:border ${
                           isActive("/digitalcurrency")
@@ -153,11 +175,9 @@ const Navbar = () => {
                             : "hover:text-foreground/80"
                         }`}
                       >
-                        DIGITAL CURRENCY
+                        CRYPTOCURRENCIES
                       </Link>
                     </li>
-
-                    
                   </ul>
                 </div>
               </div>
@@ -183,7 +203,7 @@ const Navbar = () => {
                 >
                   MORE{" "}
                   <span className="font-extrabold">
-                   <FaChevronDown />
+                    <FaChevronDown />
                   </span>
                 </div>
                 <div tabIndex={0} className="dropdown-content menu">
@@ -302,8 +322,11 @@ const Navbar = () => {
         <div className="ps-6 font-bold text-gray-500 pt-4">
           <div>
             <DropdownMenu>
-              <DropdownMenuTrigger><span className="flex items-center gap-2">HOME <FaChevronDown />
-              </span></DropdownMenuTrigger>
+              <DropdownMenuTrigger>
+                <span className="flex items-center gap-2">
+                  HOME <FaChevronDown />
+                </span>
+              </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-slate-900 border-gray-800 ms-6">
                 <DropdownMenuLabel className="hover:bg-gray-800 hover:border hover:border-gray-500">
                   <Link to="/">Home 1</Link>
@@ -319,8 +342,12 @@ const Navbar = () => {
           </div>
           <div className="my-4">
             <DropdownMenu>
-              <DropdownMenuTrigger> <span className="flex items-center gap-2">MARKETS <FaChevronDown />
-              </span> </DropdownMenuTrigger>
+              <DropdownMenuTrigger>
+                {" "}
+                <span className="flex items-center gap-2">
+                  MARKETS <FaChevronDown />
+                </span>{" "}
+              </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-slate-900 border-gray-800 ms-6">
                 <DropdownMenuLabel className="hover:bg-gray-800 hover:border hover:border-gray-500">
                   <Link
@@ -347,6 +374,33 @@ const Navbar = () => {
                   </Link>
                 </DropdownMenuLabel>
                 <DropdownMenuLabel className="hover:bg-gray-800 hover:border hover:border-gray-500">
+                  {" "}
+                  <Link
+                    to="/indices"
+                    className={`font-bold rounded border-gray-700 hover:border ${
+                      isActive("/indices")
+                        ? "text-hBlue"
+                        : "hover:text-foreground/80"
+                    }`}
+                  >
+                    INDICES
+                  </Link>
+                </DropdownMenuLabel>
+                <DropdownMenuLabel className="hover:bg-gray-800 hover:border hover:border-gray-500">
+                  {" "}
+                  <Link
+                    to="/commodities"
+                    className={`font-bold rounded border-gray-700 hover:border ${
+                      isActive("/commodities")
+                        ? "text-hBlue"
+                        : "hover:text-foreground/80"
+                    }`}
+                  >
+                    COMMODITIES
+                  </Link>
+                </DropdownMenuLabel>
+
+                <DropdownMenuLabel className="hover:bg-gray-800 hover:border hover:border-gray-500">
                   <Link
                     to="/digitalcurrency"
                     className={`font-bold rounded ${
@@ -355,7 +409,7 @@ const Navbar = () => {
                         : "hover:text-foreground/80"
                     }`}
                   >
-                    DIGITAL CURRENCY
+                    CRYPTOCURRENCIES
                   </Link>
                 </DropdownMenuLabel>
               </DropdownMenuContent>
@@ -372,10 +426,14 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <div >
+          <div>
             <DropdownMenu>
-              <DropdownMenuTrigger> <span className="flex items-center gap-2">MORE <FaChevronDown />
-              </span> </DropdownMenuTrigger>
+              <DropdownMenuTrigger>
+                {" "}
+                <span className="flex items-center gap-2">
+                  MORE <FaChevronDown />
+                </span>{" "}
+              </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-slate-900 border-gray-800 ms-6">
                 <DropdownMenuLabel className="hover:bg-gray-800 hover:border hover:border-gray-500">
                   <Link
