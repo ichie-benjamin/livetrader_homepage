@@ -12,7 +12,6 @@ import {
   DropdownMenuTrigger,
 } from "../../ui/dropdown";
 
-import { FaPlus } from "react-icons/fa6";
 import { FaChevronDown } from "react-icons/fa";
 
 
