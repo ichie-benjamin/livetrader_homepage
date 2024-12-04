@@ -11,7 +11,7 @@ export const config = {
   site_title: "Live trading - Your Trusted Trading Platform",
   site_description:
     "Live trading is a reliable and secure platform for trading financial instruments. Join us to experience a seamless and efficient trading environment.",
-  logo: "/public/logo.png",
+  logo: "/logo.png",
   site_slogan: "Trading with ease",
   login_url: "/traderoom/#/login",
   email: "support@livetrader.com",
