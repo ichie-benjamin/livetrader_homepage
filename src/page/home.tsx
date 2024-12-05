@@ -259,12 +259,10 @@ function App() {
                     </p>
                   </a>
                   <div className="w-full overflow-x-auto">
-  <div className="min-w-[550px]  h-full">
-  <TabsDemo />
-  </div>
-</div>
-
-                 
+                    <div className="min-w-[550px]  h-full">
+                      <TabsDemo />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
