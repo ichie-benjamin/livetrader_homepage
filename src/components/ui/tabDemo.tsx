@@ -43,7 +43,7 @@ export function TabsDemo() {
   ];
 
   return (
-    <div className="h-[30rem] sm:h-[45rem] [perspective:1000px] overflow-x-scroll md:overflow-hidden relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start mb-12 text-[red]">
+    <div className="h-[30rem] sm:h-[45rem] [perspective:1000px] overflow-x-scroll md:overflow-hidden relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start mb-12 ">
       <Tabs tabs={tabs} />
     </div>
   );

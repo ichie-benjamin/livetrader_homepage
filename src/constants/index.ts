@@ -7,7 +7,7 @@ import { FaUserAstronaut } from "react-icons/fa6";
 
 import Icons from "../components/global/icons";
 export const config = {
-  site_name: "Live Trading",
+  site_name: "Live View Trade",
   site_title: "Live trading - Your Trusted Trading Platform",
   site_description:
     "Live trading is a reliable and secure platform for trading financial instruments. Join us to experience a seamless and efficient trading environment.",
@@ -598,10 +598,9 @@ export const Commodities = [
   },
 ];
 
-
 export const digitalcurrencyTable = [
   {
-    SYMBOL:"BCHUSD",
+    SYMBOL: "BCHUSD",
     DESCRIPTION: "Bitcoin Cash vs United States Dollar CFD",
     MIN: "2.210",
     AVG: "5.839",
@@ -1149,15 +1148,15 @@ export const Exotic = [
 
 export const MISSION_VISION_VALUES = {
   mission: {
-    title: "Our Mission",
+    title: "Mission: Transform Online Trading",
     description:
-      "Our mission at Live trading is to establish ourselves as a global leader in online trading, offering access to any financial market, from Forex to Cryptocurrencies. We are committed to innovation and quality, building a reputation as a trusted and reliable partner for traders worldwide.",
+      "At Live View Trade, our mission is to drive transformation in online trading, bridging the gap between people and markets through future-proof trading technology and innovation. We strive to empower traders to take bold steps toward financial growth and mastery, offering limitless access to diverse global markets in a secure and seamless environment.",
     icon: "/path/to/mission-icon.png",
   },
   vision: {
-    title: "Our Vision",
+    title: "Vision: A Bright Trading Future for Everyone",
     description:
-      "Our vision is to empower people with easy and immediate access to financial markets, along with the education and tools necessary for success, irrespective of their experience level. We aim to provide global control over finances, ensuring financial independence for all.",
+      "We aim to shape the future with accessible, empowering, and transformative trading for everyone. We aspire to create a world where financial opportunities are boundless and every trader—regardless of experience—has the tools, knowledge, and confidence to achieve financial independence.",
     icon: "/path/to/vision-icon.png",
   },
   values: [
@@ -1165,25 +1164,38 @@ export const MISSION_VISION_VALUES = {
       image: "/images/about-benefit.svg",
       title: "Innovation",
       description:
-        "We continuously provide our clients with the latest and greatest in trading technology, ensuring they have the edge in the markets.",
+        "Live View Trade pushes the boundaries of trading technology, ensuring you can access cutting-edge tools that position you for success in a dynamic market landscape.",
     },
     {
       image: "/images/about-benefit-2.svg",
-      title: "Empowerment",
+      title: "Growth",
       description:
-        "We empower users of our platform to take control of their finances with the tools and knowledge they need to succeed.",
+        "Every feature, tool, and service we offer is crafted to enable you to grow your knowledge, refine your strategies, and achieve financial autonomy. We empower users of our platform to take control of their finances with the tools and knowledge they need to succeed.",
     },
     {
       image: "/images/afr-contact.webp",
-      title: "Client-focus",
+      title: "Client-Centric",
       description:
-        "Before we do anything, we always think about our users, and how they will benefit.",
+        "We believe trust is earned through honesty. From pricing to policies, we always ensure clarity and openness in all our operations.",
     },
     {
       image: "/images/about-benefit.svg",
       title: "Transparency",
       description:
         "We earn the trust of clients by being clear about everything from the very start.",
+    },
+
+    {
+      image: "/impact.jpg",
+      title: "Global Impact",
+      description:
+        "Trading connects the world, and so do we. Our platform is designed to bring opportunities to traders everywhere, creating a shared path to prosperity.",
+    },
+    {
+      image: "/adaptability.jpeg",
+      title: "Adaptability",
+      description:
+        "Markets evolve, and so does Live View Trade. We weather market trends, ensuring you can trade confidently, backed by tools that adapt to your needs.",
     },
   ],
 };
@@ -1456,55 +1468,55 @@ export const features = [
 ];
 export const WHY_CHOOSE_LIVETRADING = [
   {
-    title: "Advanced Trading Technology",
+    title: "Incisive Trading Technology",
     description:
-      "Experience seamless trading with our state-of-the-art technology, designed to handle the demands of high-frequency and large-scale trading. Our platform offers lightning-fast order execution, ensuring you never miss an opportunity.",
+      "Benefit from a platform built to meet the demands of modern trading. With ultra-fast order execution and robust infrastructure, Live View Trade efficiently handles high-frequency trading, ensuring you capitalise on every market opportunity.",
   },
   {
-    title: "Wide Range of Markets",
+    title: "Diverse Market Access",
     description:
-      "Diversify your portfolio with access to multiple markets. Live trading provides a vast array of trading instruments, including Forex, cryptocurrencies, commodities, indices, and more. Whether you're looking to trade Bitcoin or Gold, we've got you covered.",
+      "Explore a wide array of trading opportunities with Live View Trade. From Forex and cryptocurrencies to commodities, indices, and beyond, our platform empowers you to build a well-rounded portfolio tailored to your trading goals.",
   },
   {
-    title: "User-Friendly Interface",
+    title: "Intuitive User Interface",
     description:
-      "Our platform is designed with you in mind. Whether you're a seasoned trader or just starting, our intuitive interface makes it easy to manage your trades, monitor market trends, and execute strategies with confidence.",
+      "Trading is now even simpler for everyone. Our user-friendly interface ensures a smooth trading experience for beginners and seasoned professionals. Clearly defined tabs let you easily track trends, execute trades, and refine strategies.",
   },
   {
-    title: "Leverage Up to 100x",
+    title: "Turbo Leverage Options",
     description:
-      "Amplify your trading potential with our leverage options. Live trading offers up to 100x leverage on various assets, allowing you to optimize your positions and increase your returns. With great power comes great responsibility—trade wisely.",
+      "Unlock your trading potential with our powerful leverage options. Live View Trade provides up to 100x leverage across various assets, maximising your positions and enhancing your returns. However, leverage amplifies both opportunities and risks.",
   },
   {
-    title: "Secure and Reliable",
+    title: "Top-Tier Security",
     description:
-      "Your security is our priority. Live trading employs industry-leading security protocols, including advanced encryption and two-factor authentication (2FA), to protect your assets and personal information. Trade with peace of mind knowing your investments are safe.",
+      "Every trade should be secure. Your trades are secure with Live View Trade’s carefully crafted encryption, two-factor authentication (2FA), and rigorous security protocol. With your assets and personal information safe, trade with confidence.",
   },
   {
-    title: "Innovative Trading Tools",
+    title: "Advanced Trading Tools",
     description:
-      "Take advantage of our cutting-edge trading tools. Live trading offers advanced charting software, technical analysis tools, and real-time market data, giving you the edge you need to stay ahead in volatile markets.",
+      "Stay ahead in dynamic markets with innovative tools like real-time market data, sophisticated charting software, and comprehensive technical analysis features. Live View Trade gives you insights to help you make informed decisions.",
   },
 ];
 
 export const HOW_TO_GET_STARTED = [
   {
-    step: "Sign Up",
-    url: "/register",
+    step: "Create Account",
+    url: "/traderoom/#/register",
     description:
-      "Create an account with Live trading in just a few clicks. All you need is an email address to get started.",
+      "Sign up in seconds using just your email address and unlock access to a world of trading opportunities.",
   },
   {
-    step: "Fund Your Account",
+    step: "Securely Fund Acct.",
     url: "/forgot_password",
     description:
-      "Deposit funds using our secure payment methods. We support a variety of currencies and payment options for your convenience.",
+      "Effortlessly deposit funds using our secure payment options. Live View Trade supports multiple currencies and payment methods.",
   },
   {
     step: "Start Trading",
-    url: "/login",
+    url: "/traderoom/#/login",
     description:
-      "Once your account is funded, you’re ready to start trading. Choose your markets, set your strategies, and begin your journey to financial freedom.",
+      "It’s time to take charge of your financial future. Explore diverse markets, implement your strategies, and trade with confidence.",
   },
 ];
 

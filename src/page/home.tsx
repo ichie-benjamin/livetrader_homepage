@@ -28,7 +28,13 @@ import { Link } from "react-router-dom";
 function App() {
   const firstTestimonial = TESTIMONIALS.slice(0, TESTIMONIALS.length / 2);
   const secondTestimonial = TESTIMONIALS.slice(TESTIMONIALS.length / 2);
-  const words = ["Crypto Future", "CFD Trading", "Buying Crypto"];
+  const words = [
+    "Trade Stocks",
+    "Trade Forex",
+    "Trade Indices ",
+    "Trade Crypto",
+    "Trade Commodities",
+  ];
 
   return (
     <section className="w-full relative flex items-center justify-center flex-col px-2 md:px-0 text-[#A8A8A8]">
@@ -36,7 +42,7 @@ function App() {
 
       {/* hero */}
 
-      <div className="lg:ps-20">
+      <div className="lg:ps-20 overflow-x-hidden">
         <div className="absolute inset-0 dark:bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[linear-gradient(to_right,#161616_1px,transparent_1px),linear-gradient(to_bottom,#161616_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)] -z-10 h-[150vh]" />
 
         <Container className="w-full">
@@ -56,8 +62,8 @@ function App() {
 
             <div className="h-full relative- grid grid-cols-1 gap-8 gap-y-10  lg:grid-cols-12">
               <div className="col-span-6 sm:my-6 md:px-10 sm:px-4 px-2 sm:py-4">
-                <div className="text-3xl w-full md:text-6xl lg:text-6xl md:!leading-tight font-extrabold text-start bg-clip-text bg-gradient-to-b from-gray-50 to-gray-50 text-transparent">
-                  All-in-one platform for
+                <div className="text-3xl w-full md:text-6xl lg:text-6xl max-w-fit overflow-x-hidden md:!leading-tight font-extrabold text-start bg-clip-text bg-gradient-to-b from-gray-50 to-gray-50 text-transparent">
+                  One Platform, Rich Trading Options:
                   <FlipWords words={words} />
                 </div>
                 <div className="mt-2 sm:mt-8 w-full">
@@ -66,7 +72,7 @@ function App() {
                       to={config.signup_url}
                       className="hover:bg-[#2955FF] w-full shadow-[#191d2e] shadow-xl relative border-[#2955FF] text-center py-3 rounded-xl bg-[#0070f3] font-bold text-white transition duration-200 lg:text-xl md:ease-linear md:w-60"
                     >
-                      Open account
+                      Get Started
                     </Link>
                   </div>
                 </div>
@@ -150,12 +156,12 @@ function App() {
           <section className="w-full">
             <div className="flex flex-col text-[20px] sm:text-xl lg:text-2xl items-center mt-12 max-w-7xl- md:w-full ">
               <h1 className="text-[#fff] my-1 font-bold">
-                Why Choose {config.site_name}?
+                Reasons to Trade With Us
               </h1>
               <p className="max-w-3xl text-base md:text-lg text-foreground/80 sm:mt-6 text-start sm:text-center">
-                Join 1M+ traders who choose {config.site_name} as their go-to
-                trading platform. Start buying Crypto or trading Crypto Futures,
-                CFDs, and more today.
+                Unlock endless market opportunities here. Trusted by over two
+                million traders globally, Live View Trade is your powerful and
+                unified platform for trading digital currencies and CFDs.
               </p>
               <div className="w-full mt-3">
                 <div className="grid grid-cols-1 mt-4 gap-4 md:grid-cols-3 group-hover: lg:gap-8">
@@ -163,7 +169,7 @@ function App() {
                     return (
                       <div
                         key={item.title}
-                        className="flex w-full rounded-2xl  overflow-hidden- bg-gray-50 px-2 sm:px-4 group hover:bg-[#212121] justify-between relative"
+                        className="flex w-full rounded-2xl  overflow-hidden- bg-gray-50 px-2 sm:px-4 p-3 group hover:bg-[#212121] justify-between relative"
                       >
                         <div className="flex items-center h-full">
                           <div className="text-[#0A0A0A] md:py-8 gap-y-4">
@@ -171,8 +177,8 @@ function App() {
                               {item.title}
                             </h1>
                             <p
-                              className="text-xs  text-gray-600 dark:text-gray-300
-                                 lg:text-base text-foreground/80 sm:mt-6- text-start"
+                              className="text-xs  text-gray-700 
+                                 lg:text-base sm:mt-6- text-start"
                             >
                               {item.description}
                             </p>
@@ -192,34 +198,37 @@ function App() {
         <div className="mx-auto w-full">
           <h2 className=" text-3xl text-white text-center lg:text-6xl ">
             {" "}
+            98%
+          </h2>
+          <p className="max-w-3xl text-base text-center md:text-lg text-foreground/80 sm:mt-6 sm:text-center">
+            Platform Uptime
+          </p>
+        </div>
+        <div className="mx-auto w-full">
+          <h2 className=" text-3xl text-white text-center lg:text-6xl ">
+            {" "}
+            500+{" "}
+          </h2>
+          <p className="max-w-3xl text-base text-center md:text-lg text-foreground/80 sm:mt-6 sm:text-center">
+            Trading Instruments
+          </p>
+        </div>
+        <div className="mx-auto w-full">
+          <h2 className=" text-3xl text-white text-center lg:text-6xl ">
+            {" "}
+            5M+
+          </h2>
+          <p className="max-w-3xl text-base text-center md:text-lg text-foreground/80 sm:mt-6 sm:text-center">
+            Trades/Day
+          </p>
+        </div>
+        <div className="mx-auto w-full">
+          <h2 className=" text-3xl text-white text-center lg:text-6xl ">
+            {" "}
             24/7
           </h2>
           <p className="max-w-3xl text-base text-center md:text-lg text-foreground/80 sm:mt-6 sm:text-center">
-            Human support
-          </p>
-        </div>
-        <div className="mx-auto w-full">
-          <h2 className=" text-3xl text-white text-center lg:text-6xl "> 0%</h2>
-          <p className="max-w-3xl text-base text-center md:text-lg text-foreground/80 sm:mt-6 sm:text-center">
-            Fees from{" "}
-          </p>
-        </div>
-        <div className="mx-auto w-full">
-          <h2 className=" text-3xl text-white text-center lg:text-6xl ">
-            {" "}
-            $20,000
-          </h2>
-          <p className="max-w-3xl text-base text-center md:text-lg text-foreground/80 sm:mt-6 sm:text-center">
-            Compensation Fund per user
-          </p>
-        </div>
-        <div className="mx-auto w-full">
-          <h2 className=" text-3xl text-white text-center lg:text-6xl ">
-            {" "}
-            100%
-          </h2>
-          <p className="max-w-3xl text-base text-center md:text-lg text-foreground/80 sm:mt-6 sm:text-center">
-            Human support
+            Client Support
           </p>
         </div>
       </div>
@@ -236,19 +245,26 @@ function App() {
                     className="text-[#0A0A0A] text-center max-w-3xl mx-auto"
                   >
                     <h1 className="my-1 text-2xl md:text-4xl lg:text-5xl font-bold ">
-                      Trade your{" "}
+                      Trade Your
                       <span className="text-[#3760FF]">
                         {" "}
                         favourite markets{" "}
                       </span>
                     </h1>
                     <p className="text-sm  text-gray-600 dark:text-gray-300 group-hover:font-semibold lg:text-base text-foreground/80 my-6">
-                      Want to buy Bitcoin outright or trade CFDs on Gold or
-                      EUR/USD? We’ve got you covered with access to 100+ global
-                      markets on one platform.
+                      Live View Trade puts the world’s markets at your
+                      fingertips. Buy Bitcoin directly or trade CFDs on Gold,
+                      EUR/USD, with access to over 100 global trading
+                      instruments on a single, powerful platform.
                     </p>
                   </a>
-                  <TabsDemo />
+                  <div className="w-full overflow-x-auto">
+  <div className="min-w-[550px]  h-full">
+  <TabsDemo />
+  </div>
+</div>
+
+                 
                 </div>
               </div>
             </div>
@@ -260,11 +276,13 @@ function App() {
       <Wrapper>
         <section className="w-full">
           <div className="flex flex-col text-[20px] sm:text-xl lg:text-2xl items-center mt-12 max-w-7xl- md:w-full ">
-            <h1 className="text-[#fff] my-1 font-bold">Select your product</h1>
+            <h1 className="text-[#fff] my-1 font-bold">
+              Choose Your Trading Options
+            </h1>
             <p className="max-w-3xl text-base md:text-lg text-foreground/80 sm:mt-6 text-start sm:text-center">
-              Join 1M+ traders who choose PrimeXBT as their go-to trading
-              platform. Start buying Crypto or trading Crypto Futures, CFDs, and
-              more today.
+              Over 1 million traders trust Live View Trade as their platform of
+              choice. Do you want to buy cryptocurrencies, trade Crypto Futures,
+              or explore CFDs and beyond? That journey starts here.
             </p>
             <div className="w-full">
               <div className="grid grid-cols-1 mt-4 gap-4 md:grid-cols-2 group-hover: lg:gap-8">
@@ -275,7 +293,7 @@ function App() {
                         CFDs and Forex
                       </h1>
                       <p className="text-sm  text-gray-600 dark:text-gray-300 group-hover:font-semibold lg:text-base text-foreground/80 sm:mt-6- text-start">
-                        Trade 100+ markets like EUR/USD & SP500.
+                        Access 100+ markets, incl. S&P500 and EUR/USD.
                       </p>
                     </a>
                   </div>
@@ -298,7 +316,7 @@ function App() {
                         Buy Crypto
                       </h1>
                       <p className="text-sm text-gray-600 dark:text-gray-300 group-hover:font-semibold md:text-base text-foreground/80 sm:mt-6- text-start">
-                        Easily buy Crypto with Visa or Mastercard.
+                        Buy crypto with Visa/Mastercard—simple and secure.
                       </p>
                     </a>
                   </div>
@@ -321,7 +339,8 @@ function App() {
                         Crypto Futures
                       </h1>
                       <p className="text-sm  text-gray-600 dark:text-gray-300 group-hover:font-semibold lg:text-base text-foreground/80 sm:mt-6- text-start">
-                        Trade Crypto Futures Contracts incl. BTC & ETH.
+                        Trade Futures Contracts on top cryptos, incl. BTC and
+                        ETH.
                       </p>
                     </a>
                   </div>
@@ -344,7 +363,8 @@ function App() {
                         Copy Trading
                       </h1>
                       <p className="text-sm text-gray-600 dark:text-gray-300 group-hover:font-semibold md:text-base text-foreground/80 sm:mt-6- text-start">
-                        Profit from the markets by following the experts.{" "}
+                        Mirror the strategies of top-performing traders to your
+                        gain.
                       </p>
                     </a>
                   </div>
@@ -438,7 +458,7 @@ function App() {
                     {/* Values Section */}
                     <div className="mt-12">
                       <h2 className="text-center text-[#0A0A0A] mb-8 text-2xl md:text-2xl lg:text-3xl font-bold ">
-                        Our Values
+                        Core Principles
                       </h2>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {MISSION_VISION_VALUES.values.map((value, index) => (
@@ -455,11 +475,11 @@ function App() {
 
                             <div className="py-6">
                               <img
-                                className="h-full  object-center object-cover"
+                                className="h-ful mx-auto rounded-2xl object-center object-cover"
                                 alt="hero image"
                                 src={value.image}
-                                width={500}
-                                height={700}
+                                // width={500}
+                                // height={700}
                               />
                             </div>
                           </div>
@@ -479,11 +499,10 @@ function App() {
         <Container>
           <div className="max-w-md mx-auto text-start md:text-center">
             <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
-              Get started in minutes
+              Get started in 3 easy steps
             </h2>
             <p className="text-muted-foreground mt-6">
-              Our clients love how fast and simple our sign-up is. It takes just
-              a few minutes to get started!
+              Within minutes, you’ll be set up for convenient trading.
             </p>
           </div>
         </Container>
@@ -498,10 +517,10 @@ function App() {
                   {/*<div className="flex items-center justify-center">*/}
                   {/*  <perk.icon className="w-8 h-8" />*/}
                   {/*</div>*/}
-                  <Link to={item.url}><SectionBadge title={item.step}  />
-
+                  <Link to={item.url}>
+                    <SectionBadge title={item.step} />
                   </Link>
-                  
+
                   <h3 className="text-lg font-medium mt-4"> {item.step} </h3>
                   <p className="text-muted-foreground mt-2 text-start lg:text-start">
                     {item.description}
@@ -609,10 +628,10 @@ function App() {
           <div className="max-w-md mx-auto text-start md:text-center">
             <SectionBadge title="Our Customers" />
             <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
-              What people are saying
+              We Have Won Millions of Traders’ Trust.
             </h2>
             <p className="text-muted-foreground mt-6">
-              Trusted by over 5,000,000 traders
+              Hear Them Speak for Us.
             </p>
           </div>
         </Container>
