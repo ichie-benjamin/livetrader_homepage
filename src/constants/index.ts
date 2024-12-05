@@ -1154,7 +1154,7 @@ export const MISSION_VISION_VALUES = {
     icon: "/path/to/mission-icon.png",
   },
   vision: {
-    title: "Vision: A Bright Trading Future for Everyone",
+    title: "Empower Every Trader",
     description:
       "We aim to shape the future with accessible, empowering, and transformative trading for everyone. We aspire to create a world where financial opportunities are boundless and every trader—regardless of experience—has the tools, knowledge, and confidence to achieve financial independence.",
     icon: "/path/to/vision-icon.png",
@@ -1170,7 +1170,7 @@ export const MISSION_VISION_VALUES = {
       image: "/images/about-benefit-2.svg",
       title: "Growth",
       description:
-        "Every feature, tool, and service we offer is crafted to enable you to grow your knowledge, refine your strategies, and achieve financial autonomy. We empower users of our platform to take control of their finances with the tools and knowledge they need to succeed.",
+        "Every feature, tool, and service we offer is crafted to enable you to grow your knowledge, refine your strategies, and achieve financial autonomy. `",
     },
     {
       image: "/images/afr-contact.webp",
@@ -1182,7 +1182,7 @@ export const MISSION_VISION_VALUES = {
       image: "/images/about-benefit.svg",
       title: "Transparency",
       description:
-        "We earn the trust of clients by being clear about everything from the very start.",
+        "We believe trust is earned through honesty. From pricing to policies, we always ensure clarity and openness in all our operations.",
     },
 
     {

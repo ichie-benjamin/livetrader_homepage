@@ -63,7 +63,7 @@ function App() {
             <div className="h-full relative- grid grid-cols-1 gap-8 gap-y-10  lg:grid-cols-12">
               <div className="col-span-6 sm:my-6 md:px-10 sm:px-4 px-2 sm:py-4">
                 <div className="text-3xl w-full md:text-6xl lg:text-6xl max-w-fit overflow-x-hidden md:!leading-tight font-extrabold text-start bg-clip-text bg-gradient-to-b from-gray-50 to-gray-50 text-transparent">
-                  One Platform, Rich Trading Options:
+                  One Platform, Rich Options:
                   <FlipWords words={words} />
                 </div>
                 <div className="mt-2 sm:mt-8 w-full">
@@ -248,7 +248,7 @@ function App() {
                       Trade Your
                       <span className="text-[#3760FF]">
                         {" "}
-                        favourite markets{" "}
+                        Favourite Markets{" "}
                       </span>
                     </h1>
                     <p className="text-sm  text-gray-600 dark:text-gray-300 group-hover:font-semibold lg:text-base text-foreground/80 my-6">
@@ -476,8 +476,6 @@ function App() {
                                 className="h-ful mx-auto rounded-2xl object-center object-cover"
                                 alt="hero image"
                                 src={value.image}
-                                // width={500}
-                                // height={700}
                               />
                             </div>
                           </div>
