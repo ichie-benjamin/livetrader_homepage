@@ -169,7 +169,7 @@ function App() {
                     return (
                       <div
                         key={item.title}
-                        className="flex w-full rounded-2xl  overflow-hidden- bg-gray-50 px-2 sm:px-4 p-3 group hover:bg-[#212121] justify-between relative"
+                        className="flex w-full rounded-2xl  overflow-hidden- bg-gray-50 px-2 sm:px-4 p-3 group hover:bg-slate-900 justify-between relative"
                       >
                         <div className="flex items-center h-full">
                           <div className="text-[#0A0A0A] md:py-8 gap-y-4">
