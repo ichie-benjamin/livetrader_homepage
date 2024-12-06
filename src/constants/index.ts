@@ -1154,7 +1154,7 @@ export const MISSION_VISION_VALUES = {
     icon: "/path/to/mission-icon.png",
   },
   vision: {
-    title: "Empower Every Trader",
+    title: "Vision: Empower Every Trader",
     description:
       "We aim to shape the future with accessible, empowering, and transformative trading for everyone. We aspire to create a world where financial opportunities are boundless and every trader—regardless of experience—has the tools, knowledge, and confidence to achieve financial independence.",
     icon: "/path/to/vision-icon.png",
