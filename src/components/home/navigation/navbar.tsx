@@ -207,7 +207,7 @@ const Navbar = () => {
                   </span>
                 </div>
                 <div tabIndex={0} className="dropdown-content menu">
-                  <ul className="translate-y-1 bg-slate-900 rounded z-[1] w-52 p-2 shadow -translate-x-10 border-b border-x border-gray-700">
+                  <ul className="translate-y-1 bg-slate-900 rounded z-[1] w-56 p-2 shadow -translate-x-10 border-b border-x border-gray-700">
                     <li>
                       <Link
                         to="/funding"
@@ -242,6 +242,30 @@ const Navbar = () => {
                         }`}
                       >
                         TRADING
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/citationinvest"
+                        className={`font-bold rounded border-gray-700 hover:border ${
+                          isActive("/citationinvest")
+                            ? "text-hBlue"
+                            : "hover:text-foreground/80"
+                        }`}
+                      >
+                        CITATION INVEST
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/equitymarketspro"
+                        className={`whitespace-nowrap font-bold rounded border-gray-700 hover:border ${
+                          isActive("/equitymarketspro")
+                            ? "text-hBlue"
+                            : "hover:text-foreground/80"
+                        }`}
+                      >
+                        EQUITY MARKETSPRO
                       </Link>
                     </li>
                   </ul>
@@ -470,6 +494,30 @@ const Navbar = () => {
                     }`}
                   >
                     TRADING
+                  </Link>
+                </DropdownMenuLabel>
+                <DropdownMenuLabel className="hover:bg-gray-800 hover:border hover:border-gray-500">
+                  <Link
+                    to="/citationinvest"
+                    className={`font-bold rounded ${
+                      isActive("/citationinvest")
+                        ? "text-hBlue"
+                        : "hover:text-foreground/80"
+                    }`}
+                  >
+                    CITATION INVEST
+                  </Link>
+                </DropdownMenuLabel>
+                <DropdownMenuLabel className="hover:bg-gray-800 hover:border hover:border-gray-500">
+                  <Link
+                    to="/equitymarketspro"
+                    className={`font-bold rounded ${
+                      isActive("/equitymarketspro")
+                        ? "text-hBlue"
+                        : "hover:text-foreground/80"
+                    }`}
+                  >
+                    EQUITY MARKETSPRO
                   </Link>
                 </DropdownMenuLabel>
               </DropdownMenuContent>

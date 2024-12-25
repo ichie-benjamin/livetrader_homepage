@@ -19,6 +19,9 @@ export default {
     },
     extend: {
       colors: {
+        gray:"#363C50",
+        brown:"#363C50",
+        orange:"#E17410",
         hBlue: "#1D4AC8",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
