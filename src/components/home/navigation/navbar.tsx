@@ -317,7 +317,7 @@ const Navbar = () => {
                     : "hover:text-foreground/80"
                 } text-sm`}
               >
-                Client Area
+                Register{" "}
               </Link>
             </div>
           </div>
