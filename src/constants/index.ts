@@ -13,9 +13,9 @@ export const config = {
     "Live trading is a reliable and secure platform for trading financial instruments. Join us to experience a seamless and efficient trading environment.",
   logo: "/logo.png",
   site_slogan: "Trading with ease",
-  login_url: "/traderoom/#/login",
+  login_url: "https://online.bullsparktrade.com/login",
   email: "support@livetrader.com",
-  signup_url: "/traderoom/#/register",
+  signup_url: "https://online.bullsparktrade.com/login",
   forgot_password: "/forgot_password",
 };
 
