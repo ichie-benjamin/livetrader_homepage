@@ -43,12 +43,24 @@ const Navbar = () => {
 
             {/* Navigation Links */}
             <nav className="hidden md:flex space-x-8 items-center">
-              <div className="dropdown dropdown-hover">
+              <div>
+                  <Link
+                to="/"
+                className={`${
+                  isActive("/")
+                    ? "text-hBlue"
+                    : "hover:text-foreground/80"
+                } text-lg`}
+              >
+                Home
+              </Link>
+              </div>
+              {/* <div className="dropdown dropdown-hover">
                 <div
                   tabIndex={0}
                   role="button"
                   className={`group font-bold text-gray-400 flex items-center gap-2 ${
-                    isActive("/") || isActive("/home2")
+                    isActive("/trading") || isActive("/trading")
                       ? "text-hBlue"
                       : "hover:text-foreground/80"
                   } text-sm`}
@@ -98,7 +110,7 @@ const Navbar = () => {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> */}
               <div className="dropdown font-bold dropdown-hover">
                 <div
                   tabIndex={0}
@@ -182,9 +194,9 @@ const Navbar = () => {
                 </div>
               </div>
               <Link
-                to="/trading"
+                to="/account"
                 className={`${
-                  isActive("/trading")
+                  isActive("/account")
                     ? "text-hBlue"
                     : "hover:text-foreground/80"
                 } text-sm`}

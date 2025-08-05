@@ -20,10 +20,10 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Trading />} />
         <Route path="/LiveTrader" element={<LiveTrader />} />
         <Route path="/about" element={<About />} />
-        <Route path="/trading" element={<Trading />} />
+        <Route path="/account" element={<Funding />} />
         <Route path="/forex" element={<Forex />} />
         <Route path="/digitalcurrency" element={<Digitalcurrency />} />
         <Route path="/funding" element={<Funding />} />
