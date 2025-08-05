@@ -215,7 +215,9 @@ const Navbar = () => {
                   );
                 }}
                 className={`${
-                  isActive("/https://online.bullsparktrade.com/login") ? "text-hBlue" : "hover:text-foreground/80"
+                  isActive("/https://online.bullsparktrade.com")
+                    ? "text-hBlue"
+                    : "hover:text-foreground/80"
                 } text-sm`}
               >
                 Login{" "}
@@ -231,7 +233,7 @@ const Navbar = () => {
                   );
                 }}
                 className={`${
-                  isActive("/https://online.bullsparktrade.com/login")
+                  isActive("/https://online.bullsparktrade.com")
                     ? "text-hBlue"
                     : "hover:text-foreground/80"
                 } text-sm`}
