@@ -12,6 +12,7 @@ export const config = {
   site_description:
     "Bullspark trading is a reliable and secure platform for trading financial instruments. Join us to experience a seamless and efficient trading environment.",
   logo: "/logo.png",
+  fav_icon: "/favicon.png",
   site_slogan: "Trading with ease",
   login_url: "https://online.bullsparktrade.com",
   email: "support@livetrader.com",
