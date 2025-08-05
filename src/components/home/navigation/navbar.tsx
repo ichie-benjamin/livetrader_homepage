@@ -34,8 +34,8 @@ const Navbar = () => {
                 <img
                   src={config.logo}
                   alt="✨"
-                  width={164}
-                  height={54}
+                  width={131}
+                  height={43}
                   className="object-contain"
                 />
               </Link>
