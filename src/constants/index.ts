@@ -7,10 +7,10 @@ import { FaUserAstronaut } from "react-icons/fa6";
 
 import Icons from "../components/global/icons";
 export const config = {
-  site_name: "Live View Trade",
-  site_title: "Live trading - Your Trusted Trading Platform",
+  site_name: "Bullspark Trade",
+  site_title: "Bullspark trading - Your Trusted Trading Platform",
   site_description:
-    "Live trading is a reliable and secure platform for trading financial instruments. Join us to experience a seamless and efficient trading environment.",
+    "Bullspark trading is a reliable and secure platform for trading financial instruments. Join us to experience a seamless and efficient trading environment.",
   logo: "/logo.png",
   site_slogan: "Trading with ease",
   login_url: "https://online.bullsparktrade.com",
