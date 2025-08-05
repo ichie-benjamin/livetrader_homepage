@@ -44,73 +44,16 @@ const Navbar = () => {
             {/* Navigation Links */}
             <nav className="hidden md:flex space-x-8 items-center">
               <div>
-                  <Link
-                to="/"
-                className={`${
-                  isActive("/")
-                    ? "text-hBlue"
-                    : "hover:text-foreground/80"
-                } text-lg`}
-              >
-                Home
-              </Link>
-              </div>
-              {/* <div className="dropdown dropdown-hover">
-                <div
-                  tabIndex={0}
-                  role="button"
-                  className={`group font-bold text-gray-400 flex items-center gap-2 ${
-                    isActive("/trading") || isActive("/trading")
-                      ? "text-hBlue"
-                      : "hover:text-foreground/80"
-                  } text-sm`}
+                <Link
+                  to="/"
+                  className={`${
+                    isActive("/") ? "text-hBlue" : "hover:text-foreground/80"
+                  } text-lg`}
                 >
-                  HOME{" "}
-                  <span className="font-extrabold px-1">
-                    <FaChevronDown />
-                  </span>
-                </div>
-                <div tabIndex={1} className="dropdown-content menu">
-                  <ul className="translate-y-1 bg-slate-900 rounded z-[1] w-52 p-2 shadow -translate-x-10 border-b border-x border-gray-700">
-                    <li>
-                      <Link
-                        to="/"
-                        className={`font-bold rounded border-gray-700 hover:border ${
-                          isActive("/")
-                            ? "text-hBlue"
-                            : "hover:text-foreground/80"
-                        }`}
-                      >
-                        HOME 1
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/LiveTrader"
-                        className={`font-bold rounded border-gray-700 hover:border ${
-                          isActive("/LiveTrader")
-                            ? "text-hBlue"
-                            : "hover:text-foreground/80"
-                        }`}
-                      >
-                        HOME 2
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/trading"
-                        className={`font-bold rounded border-gray-700 hover:border ${
-                          isActive("/trading")
-                            ? "text-hBlue"
-                            : "hover:text-foreground/80"
-                        }`}
-                      >
-                        HOME 3
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div> */}
+                  Home
+                </Link>
+              </div>
+
               <div className="dropdown font-bold dropdown-hover">
                 <div
                   tabIndex={0}
@@ -244,42 +187,6 @@ const Navbar = () => {
                         WITHDRAWAL
                       </Link>
                     </li>
-                    <li>
-                      <Link
-                        to="/trading"
-                        className={`font-bold rounded border-gray-700 hover:border ${
-                          isActive("/trading")
-                            ? "text-hBlue"
-                            : "hover:text-foreground/80"
-                        }`}
-                      >
-                        TRADING
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/citationinvest"
-                        className={`font-bold rounded border-gray-700 hover:border ${
-                          isActive("/citationinvest")
-                            ? "text-hBlue"
-                            : "hover:text-foreground/80"
-                        }`}
-                      >
-                        CITATION INVEST
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="/equitymarketspro"
-                        className={`whitespace-nowrap font-bold rounded border-gray-700 hover:border ${
-                          isActive("/equitymarketspro")
-                            ? "text-hBlue"
-                            : "hover:text-foreground/80"
-                        }`}
-                      >
-                        EQUITY MARKETSPRO
-                      </Link>
-                    </li>
                   </ul>
                 </div>
               </div>
@@ -357,24 +264,16 @@ const Navbar = () => {
 
         <div className="ps-6 font-bold text-gray-500 pt-4">
           <div>
-            <DropdownMenu>
-              <DropdownMenuTrigger>
-                <span className="flex items-center gap-2">
-                  HOME <FaChevronDown />
-                </span>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-slate-900 border-gray-800 ms-6">
-                <DropdownMenuLabel className="hover:bg-gray-800 hover:border hover:border-gray-500">
-                  <Link to="/">Home 1</Link>
-                </DropdownMenuLabel>
-                <DropdownMenuLabel className="hover:bg-gray-800 hover:border hover:border-gray-500 my-1">
-                  <Link to="/LiveTrader">Home 2</Link>
-                </DropdownMenuLabel>
-                <DropdownMenuLabel className="hover:bg-gray-800 hover:border hover:border-gray-500">
-                  <Link to="/trading">Home 3</Link>
-                </DropdownMenuLabel>
-              </DropdownMenuContent>
-            </DropdownMenu>
+            <div className="my-4">
+              <Link
+                to="/"
+                className={`my-2 ${
+                  isActive("/") ? "text-hBlue" : "hover:text-foreground/80"
+                } text-sm`}
+              >
+                HOME
+              </Link>
+            </div>
           </div>
           <div className="my-4">
             <DropdownMenu>
@@ -495,42 +394,6 @@ const Navbar = () => {
                   >
                     WITHDRAWAL
                   </Link>{" "}
-                </DropdownMenuLabel>
-                <DropdownMenuLabel className="hover:bg-gray-800 hover:border hover:border-gray-500">
-                  <Link
-                    to="/trading"
-                    className={`font-bold rounded ${
-                      isActive("/trading")
-                        ? "text-hBlue"
-                        : "hover:text-foreground/80"
-                    }`}
-                  >
-                    TRADING
-                  </Link>
-                </DropdownMenuLabel>
-                <DropdownMenuLabel className="hover:bg-gray-800 hover:border hover:border-gray-500">
-                  <Link
-                    to="/citationinvest"
-                    className={`font-bold rounded ${
-                      isActive("/citationinvest")
-                        ? "text-hBlue"
-                        : "hover:text-foreground/80"
-                    }`}
-                  >
-                    CITATION INVEST
-                  </Link>
-                </DropdownMenuLabel>
-                <DropdownMenuLabel className="hover:bg-gray-800 hover:border hover:border-gray-500">
-                  <Link
-                    to="/equitymarketspro"
-                    className={`font-bold rounded ${
-                      isActive("/equitymarketspro")
-                        ? "text-hBlue"
-                        : "hover:text-foreground/80"
-                    }`}
-                  >
-                    EQUITY MARKETSPRO
-                  </Link>
                 </DropdownMenuLabel>
               </DropdownMenuContent>
             </DropdownMenu>

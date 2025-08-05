@@ -14,8 +14,6 @@ import Forgot_password from "./page/forgot_password";
 import Stock from "./page/stock";
 import Indices from "./page/indices";
 import Commodities from "./page/commodities";
-import Citationinvest from "./page/citationinvest";
-import Equitymarketspro from "./page/equitymarketspro";
 function App() {
   return (
     <Router>
@@ -35,9 +33,6 @@ function App() {
         <Route path="/stock" element={<Stock />} />
         <Route path="/indices" element={<Indices />} />
         <Route path="/commodities" element={<Commodities />} />
-        Equitymarketspro
-        <Route path="/citationinvest" element={<Citationinvest />} />
-        <Route path="/equitymarketspro" element={<Equitymarketspro />} />
       </Routes>
     </Router>
   );
