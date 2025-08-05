@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./page/home";
+// import Home from "./page/home";
 import LiveTrader from "./page/Live-trader";
 import About from "./page/about";
 import Trading from "./page/trading";
@@ -34,11 +34,10 @@ function App() {
         <Route path="/Forgot_password" element={<Forgot_password />} />
         <Route path="/stock" element={<Stock />} />
         <Route path="/indices" element={<Indices />} />
-        <Route path="/commodities" element={<Commodities />} />Equitymarketspro
+        <Route path="/commodities" element={<Commodities />} />
+        Equitymarketspro
         <Route path="/citationinvest" element={<Citationinvest />} />
         <Route path="/equitymarketspro" element={<Equitymarketspro />} />
-
-
       </Routes>
     </Router>
   );
